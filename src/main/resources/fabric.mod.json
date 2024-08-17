@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "eldritchrealms",
+	"version": "${version}",
+	"name": "Eldritch Realms",
+	"description": "The Eldritch Realm, a dimension that defies the laws of nature and plunges the intrepid explorer into an otherworldly landscape of cosmic horror.",
+	"authors": [
+		"KeebleKapa"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/user/keeblekapa",
+		"sources": "https://modrinth.com/user/keeblekapa"
+	},
+	"license": "MIT",
+	"icon": "assets/eldritchrealms/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.keeblekapa.eldritchrealms.EldritchRealms"
+		],
+		"client": [
+			"net.keeblekapa.eldritchrealms.EldritchRealmsClient"
+		],
+		"fabric-datagen": [
+			"net.keeblekapa.eldritchrealms.EldritchRealmsDataGenerator"
+		]
+	},
+	"mixins": [
+		"eldritchrealms.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"modmenu": "*",
+		"another-mod": "*"
+	}
+}
