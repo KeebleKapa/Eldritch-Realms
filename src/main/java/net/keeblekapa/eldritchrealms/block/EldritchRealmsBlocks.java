@@ -20,20 +20,6 @@ public class EldritchRealmsBlocks {
     // Abyssal Granite
     public static final Block ABYSSAL_GRANITE = registerBlock("abyssal_granite",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
-    public static final Block POLISHED_ABYSSAL_GRANITE = registerBlock("polished_abyssal_granite",
-            new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
-    public static final Block ABYSSAL_GRANITE_BRICKS = registerBlock("abyssal_granite_bricks",
-            new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
-    public static final Block CRACKED_ABYSSAL_GRANITE_BRICKS = registerBlock("cracked_abyssal_granite_bricks",
-            new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
-    public static final Block MOSSY_ABYSSAL_GRANITE = registerBlock("mossy_abyssal_granite",
-            new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
-    public static final Block MOSSY_POLISHED_ABYSSAL_GRANITE = registerBlock("mossy_polished_abyssal_granite",
-            new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
-    public static final Block MOSSY_ABYSSAL_GRANITE_BRICKS = registerBlock("mossy_abyssal_granite_bricks",
-            new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
-    public static final Block CRACKED_MOSSY_ABYSSAL_GRANITE_BRICKS = registerBlock("cracked_mossy_abyssal_granite_bricks",
-            new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
     public static final Block ABYSSAL_GRANITE_STAIRS = registerBlock("abyssal_granite_stairs",
             new StairsBlock(EldritchRealmsBlocks.ABYSSAL_GRANITE.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
@@ -41,6 +27,10 @@ public class EldritchRealmsBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
     public static final Block ABYSSAL_GRANITE_WALL = registerBlock("abyssal_granite_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
+
+
+    public static final Block POLISHED_ABYSSAL_GRANITE = registerBlock("polished_abyssal_granite",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
     public static final Block POLISHED_ABYSSAL_GRANITE_STAIRS = registerBlock("polished_abyssal_granite_stairs",
             new StairsBlock(EldritchRealmsBlocks.POLISHED_ABYSSAL_GRANITE.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
@@ -48,6 +38,10 @@ public class EldritchRealmsBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
     public static final Block POLISHED_ABYSSAL_GRANITE_WALL = registerBlock("polished_abyssal_granite_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
+
+
+    public static final Block ABYSSAL_GRANITE_BRICKS = registerBlock("abyssal_granite_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
     public static final Block ABYSSAL_GRANITE_BRICK_STAIRS = registerBlock("abyssal_granite_brick_stairs",
             new StairsBlock(EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICKS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
@@ -55,6 +49,10 @@ public class EldritchRealmsBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
     public static final Block ABYSSAL_GRANITE_BRICK_WALL = registerBlock("abyssal_granite_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
+
+
+    public static final Block CRACKED_ABYSSAL_GRANITE_BRICKS = registerBlock("cracked_abyssal_granite_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
     public static final Block CRACKED_ABYSSAL_GRANITE_BRICK_STAIRS = registerBlock("cracked_abyssal_granite_brick_stairs",
             new StairsBlock(EldritchRealmsBlocks.CRACKED_ABYSSAL_GRANITE_BRICKS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
@@ -62,6 +60,10 @@ public class EldritchRealmsBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
     public static final Block CRACKED_ABYSSAL_GRANITE_BRICK_WALL = registerBlock("cracked_abyssal_granite_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
+
+
+    public static final Block MOSSY_ABYSSAL_GRANITE = registerBlock("mossy_abyssal_granite",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
     public static final Block MOSSY_ABYSSAL_GRANITE_STAIRS = registerBlock("mossy_abyssal_granite_stairs",
             new StairsBlock(EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
@@ -69,6 +71,10 @@ public class EldritchRealmsBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
     public static final Block MOSSY_ABYSSAL_GRANITE_WALL = registerBlock("mossy_abyssal_granite_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
+
+
+    public static final Block MOSSY_POLISHED_ABYSSAL_GRANITE = registerBlock("mossy_polished_abyssal_granite",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
     public static final Block MOSSY_POLISHED_ABYSSAL_GRANITE_STAIRS = registerBlock("mossy_polished_abyssal_granite_stairs",
             new StairsBlock(EldritchRealmsBlocks.MOSSY_POLISHED_ABYSSAL_GRANITE.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
@@ -76,13 +82,21 @@ public class EldritchRealmsBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
     public static final Block MOSSY_POLISHED_ABYSSAL_GRANITE_WALL = registerBlock("mossy_polished_abyssal_granite_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
+
+
+    public static final Block MOSSY_ABYSSAL_GRANITE_BRICKS = registerBlock("mossy_abyssal_granite_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
     public static final Block MOSSY_ABYSSAL_GRANITE_BRICK_STAIRS = registerBlock("mossy_abyssal_granite_brick_stairs",
             new StairsBlock(EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_BRICKS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
-    public static final Block MOSSY_ABYSSAL_GRANITE_BRICK_SLAB = registerBlock("abyssal_granite_brick_slab",
+    public static final Block MOSSY_ABYSSAL_GRANITE_BRICK_SLAB = registerBlock("mossy_abyssal_granite_brick_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
-    public static final Block MOSSY_ABYSSAL_GRANITE_BRICK_WALL = registerBlock("abyssal_granite_brick_wall",
+    public static final Block MOSSY_ABYSSAL_GRANITE_BRICK_WALL = registerBlock("mossy_abyssal_granite_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
+
+
+    public static final Block CRACKED_MOSSY_ABYSSAL_GRANITE_BRICKS = registerBlock("cracked_mossy_abyssal_granite_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
     public static final Block CRACKED_MOSSY_ABYSSAL_GRANITE_BRICK_STAIRS = registerBlock("cracked_mossy_abyssal_granite_brick_stairs",
             new StairsBlock(EldritchRealmsBlocks.CRACKED_MOSSY_ABYSSAL_GRANITE_BRICKS.getDefaultState(),
                     FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
@@ -91,7 +105,12 @@ public class EldritchRealmsBlocks {
     public static final Block CRACKED_MOSSY_ABYSSAL_GRANITE_BRICK_WALL = registerBlock("cracked_mossy_abyssal_granite_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f, 6f).luminance(1)));
 
+
+
     // Veilstone
+
+
+
 
     // Gloomarble
 

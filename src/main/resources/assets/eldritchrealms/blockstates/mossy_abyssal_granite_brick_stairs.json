@@ -17,7 +17,7 @@
       "model": "eldritchrealms:block/mossy_abyssal_granite_brick_stairs_outer"
     },
     "facing=east,half=bottom,shape=straight": {
-      "model": "eldritchrealms:block/mossy_abyssal_g_brickranite_stairs"
+      "model": "eldritchrealms:block/mossy_abyssal_granite_brick_stairs"
     },
     "facing=east,half=top,shape=inner_left": {
       "model": "eldritchrealms:block/mossy_abyssal_granite_brick_stairs_inner",
@@ -42,7 +42,7 @@
       "y": 90
     },
     "facing=east,half=top,shape=straight": {
-      "model": "eldritchrealms:block/mossy_abyssal_g_brickranite_stairs",
+      "model": "eldritchrealms:block/mossy_abyssal_granite_brick_stairs",
       "uvlock": true,
       "x": 180
     },
@@ -67,7 +67,7 @@
       "y": 270
     },
     "facing=north,half=bottom,shape=straight": {
-      "model": "eldritchrealms:block/mossy_abyssal_g_brickranite_stairs",
+      "model": "eldritchrealms:block/mossy_abyssal_granite_brick_stairs",
       "uvlock": true,
       "y": 270
     },
@@ -94,7 +94,7 @@
       "x": 180
     },
     "facing=north,half=top,shape=straight": {
-      "model": "eldritchrealms:block/mossy_abyssal_g_brickranite_stairs",
+      "model": "eldritchrealms:block/mossy_abyssal_granite_brick_stairs",
       "uvlock": true,
       "x": 180,
       "y": 270
@@ -116,7 +116,7 @@
       "y": 90
     },
     "facing=south,half=bottom,shape=straight": {
-      "model": "eldritchrealms:block/mossy_abyssal_g_brickranite_stairs",
+      "model": "eldritchrealms:block/mossy_abyssal_granite_brick_stairs",
       "uvlock": true,
       "y": 90
     },
@@ -145,7 +145,7 @@
       "y": 180
     },
     "facing=south,half=top,shape=straight": {
-      "model": "eldritchrealms:block/mossy_abyssal_g_brickranite_stairs",
+      "model": "eldritchrealms:block/mossy_abyssal_granite_brick_stairs",
       "uvlock": true,
       "x": 180,
       "y": 90
@@ -171,7 +171,7 @@
       "y": 180
     },
     "facing=west,half=bottom,shape=straight": {
-      "model": "eldritchrealms:block/mossy_abyssal_g_brickranite_stairs",
+      "model": "eldritchrealms:block/mossy_abyssal_granite_brick_stairs",
       "uvlock": true,
       "y": 180
     },
@@ -200,7 +200,7 @@
       "y": 270
     },
     "facing=west,half=top,shape=straight": {
-      "model": "eldritchrealms:block/mossy_abyssal_g_brickranite_stairs",
+      "model": "eldritchrealms:block/mossy_abyssal_granite_brick_stairs",
       "uvlock": true,
       "x": 180,
       "y": 180
