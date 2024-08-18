@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "eldritchrealms:block/cracked_abyssal_granite_bricks",
+    "side": "eldritchrealms:block/cracked_abyssal_granite_bricks",
+    "top": "eldritchrealms:block/cracked_abyssal_granite_bricks"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "eldritchrealms:block/mossy_polished_abyssal_granite_slab"
+    },
+    "type=double": {
+      "model": "eldritchrealms:block/mossy_polished_abyssal_granite"
+    },
+    "type=top": {
+      "model": "eldritchrealms:block/mossy_polished_abyssal_granite_slab_top"
+    }
+  }
+}

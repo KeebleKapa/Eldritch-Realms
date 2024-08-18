@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "eldritchrealms:block/polished_abyssal_granite"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "eldritchrealms:block/polished_abyssal_granite",
+    "side": "eldritchrealms:block/polished_abyssal_granite",
+    "top": "eldritchrealms:block/polished_abyssal_granite"
+  }
+}

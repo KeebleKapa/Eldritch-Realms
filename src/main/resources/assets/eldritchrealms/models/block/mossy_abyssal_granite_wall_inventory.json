@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "eldritchrealms:block/mossy_abyssal_granite"
+  }
+}

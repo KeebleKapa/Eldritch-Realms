@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "eldritchrealms:block/cracked_abyssal_granite_brick_slab"
+    },
+    "type=double": {
+      "model": "eldritchrealms:block/cracked_abyssal_granite_brick"
+    },
+    "type=top": {
+      "model": "eldritchrealms:block/cracked_abyssal_granite_brick_slab_top"
+    }
+  }
+}
