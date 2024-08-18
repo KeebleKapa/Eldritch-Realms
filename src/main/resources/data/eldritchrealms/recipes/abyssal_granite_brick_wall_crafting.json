@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "eldritchrealms:abyssal_granite_bricks"
+    }
+  },
+  "result": {
+    "item": "eldritchrealms:abyssal_granite_brick_wall",
+    "count": 6
+  }
+}

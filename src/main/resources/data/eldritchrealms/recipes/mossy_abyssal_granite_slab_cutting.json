@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "eldritchrealms:mossy_abyssal_granite"
+  },
+  "result": "eldritchrealms:mossy_abyssal_granite_slab"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "eldritchrealms:polished_abyssal_granite"
+  },
+  "result": "eldritchrealms:abyssal_granite_brick_wall"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "eldritchrealms:cracked_mossy_abyssal_granite_bricks"
+  },
+  "result": "eldritchrealms:cracked_mossy_abyssal_granite_brick_stairs"
+}

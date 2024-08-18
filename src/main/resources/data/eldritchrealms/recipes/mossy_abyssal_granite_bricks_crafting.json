@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "eldritchrealms:abyssal_granite_bricks"
+    },
+    {
+      "item": "minecraft:vine"
+    }
+  ],
+  "result": {
+    "item": "eldritchrealms:mossy_abyssal_granite_bricks",
+    "count": 1
+  }
+}
