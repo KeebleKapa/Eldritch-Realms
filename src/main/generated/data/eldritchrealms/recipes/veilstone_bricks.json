@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "X": {
+      "item": "eldritchrealms:veilstone"
+    }
+  },
+  "pattern": [
+    "XX",
+    "XX"
+  ],
+  "result": {
+    "count": 4,
+    "item": "eldritchrealms:veilstone_bricks"
+  },
+  "show_notification": true
+}

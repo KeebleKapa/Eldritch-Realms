@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "X": {
+      "item": "eldritchrealms:abyssal_granite"
+    }
+  },
+  "pattern": [
+    "XX",
+    "XX"
+  ],
+  "result": {
+    "count": 4,
+    "item": "eldritchrealms:polished_abyssal_granite"
+  },
+  "show_notification": true
+}

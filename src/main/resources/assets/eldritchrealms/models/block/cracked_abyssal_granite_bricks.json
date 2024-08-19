@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "eldritchrealms:block/cracked_abyssal_granite_bricks"
-  }
-}

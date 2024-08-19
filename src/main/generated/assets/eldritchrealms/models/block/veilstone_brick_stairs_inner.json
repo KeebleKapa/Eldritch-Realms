@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "eldritchrealms:block/veilstone_bricks",
+    "side": "eldritchrealms:block/veilstone_bricks",
+    "top": "eldritchrealms:block/veilstone_bricks"
+  }
+}

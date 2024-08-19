@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "eldritchrealms:block/smooth_veilstone",
+    "side": "eldritchrealms:block/smooth_veilstone",
+    "top": "eldritchrealms:block/smooth_veilstone"
+  }
+}

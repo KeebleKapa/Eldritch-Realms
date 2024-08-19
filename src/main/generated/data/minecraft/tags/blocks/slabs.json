@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "eldritchrealms:abyssal_granite_brick_slab",
+    "eldritchrealms:abyssal_granite_slab",
+    "eldritchrealms:cracked_abyssal_granite_brick_slab",
+    "eldritchrealms:polished_abyssal_granite_slab",
+    "eldritchrealms:mossy_abyssal_granite_brick_slab",
+    "eldritchrealms:mossy_abyssal_granite_slab",
+    "eldritchrealms:cracked_mossy_abyssal_granite_brick_slab",
+    "eldritchrealms:mossy_polished_abyssal_granite_slab",
+    "eldritchrealms:veilstone_slab",
+    "eldritchrealms:cobbled_veilstone_slab",
+    "eldritchrealms:veilstone_brick_slab",
+    "eldritchrealms:smooth_veilstone_slab"
+  ]
+}

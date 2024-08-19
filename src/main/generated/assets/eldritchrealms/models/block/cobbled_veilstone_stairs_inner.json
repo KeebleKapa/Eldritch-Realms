@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "eldritchrealms:block/cobbled_veilstone",
+    "side": "eldritchrealms:block/cobbled_veilstone",
+    "top": "eldritchrealms:block/cobbled_veilstone"
+  }
+}

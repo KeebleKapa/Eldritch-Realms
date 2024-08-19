@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "eldritchrealms:block/veilstone_slab"
+    },
+    "type=double": {
+      "model": "eldritchrealms:block/veilstone"
+    },
+    "type=top": {
+      "model": "eldritchrealms:block/veilstone_slab_top"
+    }
+  }
+}

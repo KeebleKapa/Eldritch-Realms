@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "eldritchrealms:block/veilstone",
+    "side": "eldritchrealms:block/veilstone",
+    "top": "eldritchrealms:block/veilstone"
+  }
+}

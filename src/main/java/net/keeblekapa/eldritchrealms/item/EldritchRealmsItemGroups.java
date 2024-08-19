@@ -16,8 +16,23 @@ public class EldritchRealmsItemGroups {
             new Identifier(EldritchRealms.MOD_ID, "eldritch_realms"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.eldritch_realms"))
                     .icon(() -> new ItemStack(EldritchRealmsItems.DREADQUARTZ)).entries((displayContext, entries) -> {
-                        // Items
-                        entries.add(EldritchRealmsItems.DREADQUARTZ);
+                        // Blocks
+                        entries.add(EldritchRealmsBlocks.VEILSTONE);
+                        entries.add(EldritchRealmsBlocks.VEILSTONE_SLAB);
+                        entries.add(EldritchRealmsBlocks.VEILSTONE_STAIRS);
+                        entries.add(EldritchRealmsBlocks.VEILSTONE_WALL);
+                        entries.add(EldritchRealmsBlocks.COBBLED_VEILSTONE);
+                        entries.add(EldritchRealmsBlocks.COBBLED_VEILSTONE_SLAB);
+                        entries.add(EldritchRealmsBlocks.COBBLED_VEILSTONE_STAIRS);
+                        entries.add(EldritchRealmsBlocks.COBBLED_VEILSTONE_WALL);
+                        entries.add(EldritchRealmsBlocks.VEILSTONE_BRICKS);
+                        entries.add(EldritchRealmsBlocks.VEILSTONE_BRICK_SLAB);
+                        entries.add(EldritchRealmsBlocks.VEILSTONE_BRICK_STAIRS);
+                        entries.add(EldritchRealmsBlocks.VEILSTONE_BRICK_WALL);
+                        entries.add(EldritchRealmsBlocks.SMOOTH_VEILSTONE);
+                        entries.add(EldritchRealmsBlocks.SMOOTH_VEILSTONE_SLAB);
+                        entries.add(EldritchRealmsBlocks.SMOOTH_VEILSTONE_STAIRS);
+                        entries.add(EldritchRealmsBlocks.SMOOTH_VEILSTONE_WALL);
                         entries.add(EldritchRealmsBlocks.ABYSSAL_GRANITE);
                         entries.add(EldritchRealmsBlocks.ABYSSAL_GRANITE_SLAB);
                         entries.add(EldritchRealmsBlocks.ABYSSAL_GRANITE_STAIRS);
@@ -52,7 +67,8 @@ public class EldritchRealmsItemGroups {
                         entries.add(EldritchRealmsBlocks.CRACKED_MOSSY_ABYSSAL_GRANITE_BRICK_WALL);
 
 
-                        // Blocks
+                        // Items
+                        entries.add(EldritchRealmsItems.DREADQUARTZ);
 
 
 

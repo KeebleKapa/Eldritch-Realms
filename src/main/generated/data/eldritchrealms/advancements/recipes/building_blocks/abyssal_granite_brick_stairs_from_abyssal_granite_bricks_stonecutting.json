@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_abyssal_granite_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eldritchrealms:abyssal_granite_bricks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:abyssal_granite_brick_stairs_from_abyssal_granite_bricks_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_abyssal_granite_bricks",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:abyssal_granite_brick_stairs_from_abyssal_granite_bricks_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}
