@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "eldritchrealms:veilstone_bricks"
+  },
+  "result": "eldritchrealms:veilstone_brick_wall"
+}
