@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "eldritchrealms:block/smooth_veilstone",
+    "side": "eldritchrealms:block/smooth_veilstone_slab_side"
+  }
+}

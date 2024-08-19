@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "eldritchrealms:veilstone_bricks"
-  },
-  "result": "eldritchrealms:veilstone_brick_slab"
-}
