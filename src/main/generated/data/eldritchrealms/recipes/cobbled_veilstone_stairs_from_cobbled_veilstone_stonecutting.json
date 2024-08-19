@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "eldritchrealms:cobbled_veilstone"
+  },
+  "result": "eldritchrealms:cobbled_veilstone_stairs"
+}

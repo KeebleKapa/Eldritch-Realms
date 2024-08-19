@@ -8,9 +8,7 @@ import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
-import net.minecraft.recipe.CuttingRecipe;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.recipe.SmeltingRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 
@@ -207,6 +205,24 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.VEILSTONE_BRICKS)));
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_BRICKS, EldritchRealmsBlocks.VEILSTONE);
 
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_WALL, EldritchRealmsBlocks.VEILSTONE);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SMOOTH_VEILSTONE_WALL, EldritchRealmsBlocks.SMOOTH_VEILSTONE);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_BRICK_WALL, EldritchRealmsBlocks.VEILSTONE_BRICKS);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.COBBLED_VEILSTONE_WALL, EldritchRealmsBlocks.COBBLED_VEILSTONE);
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_BRICK_WALL, EldritchRealmsBlocks.VEILSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_WALL, EldritchRealmsBlocks.VEILSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.COBBLED_VEILSTONE_WALL, EldritchRealmsBlocks.COBBLED_VEILSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SMOOTH_VEILSTONE_WALL, EldritchRealmsBlocks.SMOOTH_VEILSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_BRICK_STAIRS, EldritchRealmsBlocks.VEILSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_STAIRS, EldritchRealmsBlocks.VEILSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.COBBLED_VEILSTONE_STAIRS, EldritchRealmsBlocks.COBBLED_VEILSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SMOOTH_VEILSTONE_STAIRS, EldritchRealmsBlocks.SMOOTH_VEILSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_BRICK_SLAB, EldritchRealmsBlocks.VEILSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_SLAB, EldritchRealmsBlocks.VEILSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.COBBLED_VEILSTONE_SLAB, EldritchRealmsBlocks.COBBLED_VEILSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SMOOTH_VEILSTONE_SLAB, EldritchRealmsBlocks.SMOOTH_VEILSTONE);
+
 
         createStairsRecipe(EldritchRealmsBlocks.COBBLED_VEILSTONE_STAIRS, Ingredient.ofItems(EldritchRealmsBlocks.COBBLED_VEILSTONE))
                 .criterion(hasItem(EldritchRealmsBlocks.COBBLED_VEILSTONE), conditionsFromItem(EldritchRealmsBlocks.COBBLED_VEILSTONE))
@@ -241,23 +257,8 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(EldritchRealmsBlocks.VEILSTONE_BRICKS), conditionsFromItem(EldritchRealmsBlocks.VEILSTONE_BRICKS))
                 .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.VEILSTONE_BRICK_SLAB)));
 
-        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.COBBLED_VEILSTONE_STAIRS, EldritchRealmsBlocks.COBBLED_VEILSTONE);
-        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_STAIRS, EldritchRealmsBlocks.VEILSTONE);
-        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SMOOTH_VEILSTONE_STAIRS, EldritchRealmsBlocks.SMOOTH_VEILSTONE);
-        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_BRICK_STAIRS, EldritchRealmsBlocks.VEILSTONE_BRICKS);
 
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_BRICK_WALL, EldritchRealmsBlocks.VEILSTONE);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_WALL, EldritchRealmsBlocks.VEILSTONE);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.COBBLED_VEILSTONE_WALL, EldritchRealmsBlocks.COBBLED_VEILSTONE);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SMOOTH_VEILSTONE_WALL, EldritchRealmsBlocks.SMOOTH_VEILSTONE);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_BRICK_STAIRS, EldritchRealmsBlocks.VEILSTONE);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_STAIRS, EldritchRealmsBlocks.VEILSTONE);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.COBBLED_VEILSTONE_STAIRS, EldritchRealmsBlocks.COBBLED_VEILSTONE);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SMOOTH_VEILSTONE_STAIRS, EldritchRealmsBlocks.SMOOTH_VEILSTONE);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_BRICK_SLAB, EldritchRealmsBlocks.VEILSTONE);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_SLAB, EldritchRealmsBlocks.VEILSTONE);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.COBBLED_VEILSTONE_SLAB, EldritchRealmsBlocks.COBBLED_VEILSTONE);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SMOOTH_VEILSTONE_SLAB, EldritchRealmsBlocks.SMOOTH_VEILSTONE);
+
 
 
     }

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "eldritchrealms:smooth_veilstone"
+  },
+  "result": "eldritchrealms:smooth_veilstone_slab"
+}

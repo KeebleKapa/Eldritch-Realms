@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:veilstone_brick_stairs_from_veilstone_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_veilstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eldritchrealms:veilstone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_veilstone",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:veilstone_brick_stairs_from_veilstone_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

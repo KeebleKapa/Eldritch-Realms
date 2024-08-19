@@ -1,0 +1,12 @@
+// 1.20.1	2024-08-18T22:23:18.2949297	Eldritch Realms/Tags for minecraft:block
+7b17a4166b2586a8c3ab41f471bde3168844de31 data\minecraft\tags\blocks\mineable\pickaxe.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_diamond_tool.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_iron_tool.json
+932fb3a7932ad31c4fac590d272ddf50a3f7b43e data\minecraft\tags\blocks\stairs.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\shovel.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\hoe.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\axe.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\needs_tool_level_4.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_stone_tool.json
+d1e970fe9041818f3abf90c2e5e4ead736c22fd4 data\minecraft\tags\blocks\slabs.json
+91468a85bd789147dec6d625bccaf0d93601a330 data\minecraft\tags\blocks\walls.json

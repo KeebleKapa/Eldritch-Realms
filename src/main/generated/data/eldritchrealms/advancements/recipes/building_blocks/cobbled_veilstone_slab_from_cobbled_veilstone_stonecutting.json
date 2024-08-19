@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cobbled_veilstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eldritchrealms:cobbled_veilstone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:cobbled_veilstone_slab_from_cobbled_veilstone_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_cobbled_veilstone",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:cobbled_veilstone_slab_from_cobbled_veilstone_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}
