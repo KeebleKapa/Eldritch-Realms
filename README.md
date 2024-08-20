@@ -7,15 +7,13 @@
 #### The mod is still in development so not everything that is planned is added quite yet, but will be with each update. And possibly adding new stuff that is not on this list.
 
 
-`Format: Status - Name - Date Started - Date Completed`
-
 ### Not Yet Added = ❌
 ### In Development = 🚧
 ### Added = ✔️
 ###
 ## Building Blocks:
-- ✔️ Abyssal Granite - 8/18/24 - 8/18/24
-- ✔️ Veilstone - 8/18/24 - 8/18/24
+- ✔️ Abyssal Granite
+- ✔️ Veilstone
 - ❌ Gloomarble
 - ❌ Shadowslate
 - ❌ Cursed Cobble
