@@ -16,7 +16,7 @@
 - ✔️ Veilstone
 - 🚧 Gloomarble
 - 🚧 Shadowslate
-- 🚧 Cursed Cobble
+- 🚧 Crimson Cobble
 - 🚧 Eldritch Limestone
 - ❌ Umbral Onyx
 - ❌ Wraithstone
