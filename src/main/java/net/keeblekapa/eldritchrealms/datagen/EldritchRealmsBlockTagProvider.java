@@ -18,11 +18,36 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
-        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
 
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+                .add(EldritchRealmsBlocks.SHADOWSLATE)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_SLAB)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_STAIRS)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_WALL)
+                .add(EldritchRealmsBlocks.POLISHED_SHADOWSLATE)
+                .add(EldritchRealmsBlocks.POLISHED_SHADOWSLATE_SLAB)
+                .add(EldritchRealmsBlocks.POLISHED_SHADOWSLATE_STAIRS)
+                .add(EldritchRealmsBlocks.POLISHED_SHADOWSLATE_WALL)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_BRICKS)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_BRICK_SLAB)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_BRICK_STAIRS)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_BRICK_WALL)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_TILES)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_TILE_SLAB)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_TILE_STAIRS)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_TILE_WALL)
+                .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICKS)
+                .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_SLAB)
+                .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_STAIRS)
+                .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_WALL)
+                .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILES)
+                .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_SLAB)
+                .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_STAIRS)
+                .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_WALL)
         ;
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+                .add(EldritchRealmsBlocks.GLOOMARBLE)
 
         ;
 
@@ -97,6 +122,38 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.SMOOTH_VEILSTONE_SLAB)
                 .add(EldritchRealmsBlocks.SMOOTH_VEILSTONE_STAIRS)
                 .add(EldritchRealmsBlocks.SMOOTH_VEILSTONE_WALL)
+
+                .add(EldritchRealmsBlocks.SHADOWSLATE)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_SLAB)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_STAIRS)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_WALL)
+                .add(EldritchRealmsBlocks.POLISHED_SHADOWSLATE)
+                .add(EldritchRealmsBlocks.POLISHED_SHADOWSLATE_SLAB)
+                .add(EldritchRealmsBlocks.POLISHED_SHADOWSLATE_STAIRS)
+                .add(EldritchRealmsBlocks.POLISHED_SHADOWSLATE_WALL)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_BRICKS)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_BRICK_SLAB)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_BRICK_STAIRS)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_BRICK_WALL)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_TILES)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_TILE_SLAB)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_TILE_STAIRS)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_TILE_WALL)
+                .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICKS)
+                .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_SLAB)
+                .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_STAIRS)
+                .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_WALL)
+                .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILES)
+                .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_SLAB)
+                .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_STAIRS)
+                .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_WALL)
+
+                .add(EldritchRealmsBlocks.CRIMSON_COBBLE)
+                .add(EldritchRealmsBlocks.CRIMSON_COBBLE_SLAB)
+                .add(EldritchRealmsBlocks.CRIMSON_COBBLE_STAIRS)
+                .add(EldritchRealmsBlocks.CRIMSON_COBBLE_WALL)
+
+                .add(EldritchRealmsBlocks.GLOOMARBLE)
         ;
 
         getOrCreateTagBuilder(BlockTags.SLABS)
@@ -113,6 +170,15 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.COBBLED_VEILSTONE_SLAB)
                 .add(EldritchRealmsBlocks.VEILSTONE_BRICK_SLAB)
                 .add(EldritchRealmsBlocks.SMOOTH_VEILSTONE_SLAB)
+
+                .add(EldritchRealmsBlocks.SHADOWSLATE_SLAB)
+                .add(EldritchRealmsBlocks.POLISHED_SHADOWSLATE_SLAB)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_BRICK_SLAB)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_TILE_SLAB)
+                .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_SLAB)
+                .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_SLAB)
+
+                .add(EldritchRealmsBlocks.CRIMSON_COBBLE_SLAB)
         ;
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
@@ -129,6 +195,16 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.COBBLED_VEILSTONE_STAIRS)
                 .add(EldritchRealmsBlocks.VEILSTONE_BRICK_STAIRS)
                 .add(EldritchRealmsBlocks.SMOOTH_VEILSTONE_STAIRS)
+
+                .add(EldritchRealmsBlocks.SHADOWSLATE_STAIRS)
+                .add(EldritchRealmsBlocks.POLISHED_SHADOWSLATE_STAIRS)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_BRICK_STAIRS)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_TILE_STAIRS)
+                .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_STAIRS)
+                .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_STAIRS)
+
+                .add(EldritchRealmsBlocks.CRIMSON_COBBLE_STAIRS)
+
         ;
 
         getOrCreateTagBuilder(BlockTags.WALLS)
@@ -145,6 +221,16 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.COBBLED_VEILSTONE_WALL)
                 .add(EldritchRealmsBlocks.VEILSTONE_BRICK_WALL)
                 .add(EldritchRealmsBlocks.SMOOTH_VEILSTONE_WALL)
+
+                .add(EldritchRealmsBlocks.SHADOWSLATE_WALL)
+                .add(EldritchRealmsBlocks.POLISHED_SHADOWSLATE_WALL)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_BRICK_WALL)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_TILE_WALL)
+                .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_WALL)
+                .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_WALL)
+
+                .add(EldritchRealmsBlocks.CRIMSON_COBBLE_WALL)
+
         ;
     }
 }

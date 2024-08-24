@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.keeblekapa.eldritchrealms.EldritchRealms;
+import net.keeblekapa.eldritchrealms.sound.EldritchRealmsSounds;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -151,10 +152,82 @@ public class EldritchRealmsBlocks {
 
 
     // Gloomarble
+    public static final Block GLOOMARBLE = registerBlock("gloomarble",
+            new Block(FabricBlockSettings.copyOf(Blocks.GLOWSTONE).strength(1.2f, 3f).luminance(8).requiresTool()));
 
     // Shadowslate
+    public static final Block SHADOWSLATE = registerBlock("shadowslate",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
+    public static final Block SHADOWSLATE_STAIRS = registerBlock("shadowslate_stairs",
+            new StairsBlock(EldritchRealmsBlocks.VEILSTONE.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
+    public static final Block SHADOWSLATE_SLAB = registerBlock("shadowslate_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
+    public static final Block SHADOWSLATE_WALL = registerBlock("shadowslate_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
 
-    // Cursed Cobble
+    public static final Block POLISHED_SHADOWSLATE = registerBlock("polished_shadowslate",
+            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
+    public static final Block POLISHED_SHADOWSLATE_STAIRS = registerBlock("polished_shadowslate_stairs",
+            new StairsBlock(EldritchRealmsBlocks.VEILSTONE.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
+    public static final Block POLISHED_SHADOWSLATE_SLAB = registerBlock("polished_shadowslate_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
+    public static final Block POLISHED_SHADOWSLATE_WALL = registerBlock("polished_shadowslate_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
+
+    public static final Block SHADOWSLATE_BRICKS = registerBlock("shadowslate_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
+    public static final Block SHADOWSLATE_BRICK_STAIRS = registerBlock("shadowslate_brick_stairs",
+            new StairsBlock(EldritchRealmsBlocks.VEILSTONE.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
+    public static final Block SHADOWSLATE_BRICK_SLAB = registerBlock("shadowslate_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
+    public static final Block SHADOWSLATE_BRICK_WALL = registerBlock("shadowslate_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
+
+    public static final Block CRACKED_SHADOWSLATE_BRICKS = registerBlock("cracked_shadowslate_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
+    public static final Block CRACKED_SHADOWSLATE_BRICK_STAIRS = registerBlock("cracked_shadowslate_brick_stairs",
+            new StairsBlock(EldritchRealmsBlocks.VEILSTONE.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
+    public static final Block CRACKED_SHADOWSLATE_BRICK_SLAB = registerBlock("cracked_shadowslate_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
+    public static final Block CRACKED_SHADOWSLATE_BRICK_WALL = registerBlock("cracked_shadowslate_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
+
+    public static final Block SHADOWSLATE_TILES = registerBlock("shadowslate_tiles",
+            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
+    public static final Block SHADOWSLATE_TILE_STAIRS = registerBlock("shadowslate_tile_stairs",
+            new StairsBlock(EldritchRealmsBlocks.VEILSTONE.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
+    public static final Block SHADOWSLATE_TILE_SLAB = registerBlock("shadowslate_tile_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
+    public static final Block SHADOWSLATE_TILE_WALL = registerBlock("shadowslate_tile_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
+
+    public static final Block CRACKED_SHADOWSLATE_TILES = registerBlock("cracked_shadowslate_tiles",
+            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
+    public static final Block CRACKED_SHADOWSLATE_TILE_STAIRS = registerBlock("cracked_shadowslate_tile_stairs",
+            new StairsBlock(EldritchRealmsBlocks.VEILSTONE.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
+    public static final Block CRACKED_SHADOWSLATE_TILE_SLAB = registerBlock("cracked_shadowslate_tile_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
+    public static final Block CRACKED_SHADOWSLATE_TILE_WALL = registerBlock("cracked_shadowslate_tile_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f, 10f).sounds(EldritchRealmsSounds.SHADOWSLATE_SOUNDS)));
+
+
+
+    // Crimson Cobble
+    public static final Block CRIMSON_COBBLE = registerBlock("crimson_cobble",
+            new Block(FabricBlockSettings.copyOf(Blocks.COBBLESTONE).strength(1.8f, 3.5f)));
+    public static final Block CRIMSON_COBBLE_STAIRS = registerBlock("crimson_cobble_stairs",
+            new StairsBlock(EldritchRealmsBlocks.VEILSTONE.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.COBBLESTONE).strength(1.8f, 3.5f)));
+    public static final Block CRIMSON_COBBLE_SLAB = registerBlock("crimson_cobble_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE).strength(1.8f, 3.5f)));
+    public static final Block CRIMSON_COBBLE_WALL = registerBlock("crimson_cobble_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE).strength(1.8f, 3.5f)));
 
     // Eldritch Limestone
 

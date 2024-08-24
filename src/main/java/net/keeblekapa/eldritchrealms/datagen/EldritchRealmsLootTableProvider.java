@@ -3,6 +3,7 @@ package net.keeblekapa.eldritchrealms.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.keeblekapa.eldritchrealms.block.EldritchRealmsBlocks;
+import net.keeblekapa.eldritchrealms.item.EldritchRealmsItems;
 import net.minecraft.block.Block;
 import net.minecraft.data.server.loottable.BlockLootTableGenerator;
 import net.minecraft.enchantment.Enchantments;
@@ -65,7 +66,7 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                 addDrop(EldritchRealmsBlocks.MOSSY_POLISHED_ABYSSAL_GRANITE_SLAB, slabDrops(EldritchRealmsBlocks.MOSSY_POLISHED_ABYSSAL_GRANITE_SLAB));
 
 
-                addDrop(EldritchRealmsBlocks.VEILSTONE, EldritchRealmsBlocks.COBBLED_VEILSTONE);
+                addDrop(EldritchRealmsBlocks.VEILSTONE, stoneDrops(EldritchRealmsBlocks.VEILSTONE, EldritchRealmsBlocks.COBBLED_VEILSTONE));
                 addDrop(EldritchRealmsBlocks.VEILSTONE_SLAB);
                 addDrop(EldritchRealmsBlocks.VEILSTONE_STAIRS);
                 addDrop(EldritchRealmsBlocks.VEILSTONE_WALL);
@@ -88,16 +89,99 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                 addDrop(EldritchRealmsBlocks.SMOOTH_VEILSTONE_SLAB, slabDrops(EldritchRealmsBlocks.SMOOTH_VEILSTONE_SLAB));
 
 
+                addDrop(EldritchRealmsBlocks.SHADOWSLATE);
+                addDrop(EldritchRealmsBlocks.SHADOWSLATE_STAIRS);
+                addDrop(EldritchRealmsBlocks.SHADOWSLATE_WALL);
+                addDrop(EldritchRealmsBlocks.POLISHED_SHADOWSLATE);
+                addDrop(EldritchRealmsBlocks.POLISHED_SHADOWSLATE_STAIRS);
+                addDrop(EldritchRealmsBlocks.POLISHED_SHADOWSLATE_WALL);
+                addDrop(EldritchRealmsBlocks.SHADOWSLATE_BRICKS);
+                addDrop(EldritchRealmsBlocks.SHADOWSLATE_BRICK_STAIRS);
+                addDrop(EldritchRealmsBlocks.SHADOWSLATE_BRICK_WALL);
+                addDrop(EldritchRealmsBlocks.SHADOWSLATE_TILES);
+                addDrop(EldritchRealmsBlocks.SHADOWSLATE_TILE_STAIRS);
+                addDrop(EldritchRealmsBlocks.SHADOWSLATE_TILE_WALL);
+                addDrop(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICKS);
+                addDrop(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_STAIRS);
+                addDrop(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_WALL);
+                addDrop(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILES);
+                addDrop(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_STAIRS);
+                addDrop(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_WALL);
+
+                addDrop(EldritchRealmsBlocks.SHADOWSLATE_SLAB, slabDrops(EldritchRealmsBlocks.SHADOWSLATE_SLAB));
+                addDrop(EldritchRealmsBlocks.POLISHED_SHADOWSLATE_SLAB, slabDrops(EldritchRealmsBlocks.POLISHED_SHADOWSLATE_SLAB));
+                addDrop(EldritchRealmsBlocks.SHADOWSLATE_BRICK_SLAB, slabDrops(EldritchRealmsBlocks.SHADOWSLATE_BRICK_SLAB));
+                addDrop(EldritchRealmsBlocks.SHADOWSLATE_TILE_SLAB, slabDrops(EldritchRealmsBlocks.SHADOWSLATE_TILE_SLAB));
+                addDrop(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_SLAB, slabDrops(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_SLAB));
+                addDrop(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_SLAB, slabDrops(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_SLAB));
+
+
+                addDrop(EldritchRealmsBlocks.CRIMSON_COBBLE);
+                addDrop(EldritchRealmsBlocks.CRIMSON_COBBLE_STAIRS);
+                addDrop(EldritchRealmsBlocks.CRIMSON_COBBLE_WALL);
+                addDrop(EldritchRealmsBlocks.CRIMSON_COBBLE_SLAB, slabDrops(EldritchRealmsBlocks.CRIMSON_COBBLE_SLAB));
+
+
+                addDrop(EldritchRealmsBlocks.GLOOMARBLE, sevenToNineDrops(EldritchRealmsBlocks.GLOOMARBLE, EldritchRealmsItems.GLOOMARBLE_DUST));
 
     }
 
-    public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {
+    public LootTable.Builder stoneDrops(Block drop, Block block) {
+        return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder) this.applyExplosionDecay(drop,
+                ((LeafEntry.Builder)
+                        ItemEntry.builder(block)
+                                .apply(SetCountLootFunction
+                                        .builder(UniformLootNumberProvider
+                                                .create(1.0f, 1.0f))))));
+    }
+
+    public LootTable.Builder oneToThreeDrops(Block drop, Item item) {
+        return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder) this.applyExplosionDecay(drop,
+                ((LeafEntry.Builder)
+                        ItemEntry.builder(item)
+                                .apply(SetCountLootFunction
+                                        .builder(UniformLootNumberProvider
+                                                .create(1.0f, 3.0f))))
+                        .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))));
+    }
+
+    public LootTable.Builder twoToFiveDrops(Block drop, Item item) {
         return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder) this.applyExplosionDecay(drop,
                 ((LeafEntry.Builder)
                         ItemEntry.builder(item)
                                 .apply(SetCountLootFunction
                                         .builder(UniformLootNumberProvider
                                                 .create(2.0f, 5.0f))))
+                        .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))));
+    }
+
+    public LootTable.Builder fourToSevenDrops(Block drop, Item item) {
+        return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder) this.applyExplosionDecay(drop,
+                ((LeafEntry.Builder)
+                        ItemEntry.builder(item)
+                                .apply(SetCountLootFunction
+                                        .builder(UniformLootNumberProvider
+                                                .create(4.0f, 7.0f))))
+                        .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))));
+    }
+
+    public LootTable.Builder sevenToNineDrops(Block drop, Item item) {
+        return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder) this.applyExplosionDecay(drop,
+                ((LeafEntry.Builder)
+                        ItemEntry.builder(item)
+                                .apply(SetCountLootFunction
+                                        .builder(UniformLootNumberProvider
+                                                .create(7.0f, 9.0f))))
+                        .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))));
+    }
+
+    public LootTable.Builder oneToTenDrops(Block drop, Item item) {
+        return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder) this.applyExplosionDecay(drop,
+                ((LeafEntry.Builder)
+                        ItemEntry.builder(item)
+                                .apply(SetCountLootFunction
+                                        .builder(UniformLootNumberProvider
+                                                .create(1.0f, 10.0f))))
                         .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))));
     }
 }

@@ -12,6 +12,13 @@
     "eldritchrealms:veilstone_slab",
     "eldritchrealms:cobbled_veilstone_slab",
     "eldritchrealms:veilstone_brick_slab",
-    "eldritchrealms:smooth_veilstone_slab"
+    "eldritchrealms:smooth_veilstone_slab",
+    "eldritchrealms:shadowslate_slab",
+    "eldritchrealms:polished_shadowslate_slab",
+    "eldritchrealms:shadowslate_brick_slab",
+    "eldritchrealms:shadowslate_tile_slab",
+    "eldritchrealms:cracked_shadowslate_brick_slab",
+    "eldritchrealms:cracked_shadowslate_tile_slab",
+    "eldritchrealms:crimson_cobble_slab"
   ]
 }

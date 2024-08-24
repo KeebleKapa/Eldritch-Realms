@@ -66,9 +66,42 @@ public class EldritchRealmsItemGroups {
                         entries.add(EldritchRealmsBlocks.CRACKED_MOSSY_ABYSSAL_GRANITE_BRICK_STAIRS);
                         entries.add(EldritchRealmsBlocks.CRACKED_MOSSY_ABYSSAL_GRANITE_BRICK_WALL);
 
+                        entries.add(EldritchRealmsBlocks.SHADOWSLATE);
+                        entries.add(EldritchRealmsBlocks.SHADOWSLATE_SLAB);
+                        entries.add(EldritchRealmsBlocks.SHADOWSLATE_STAIRS);
+                        entries.add(EldritchRealmsBlocks.SHADOWSLATE_WALL);
+                        entries.add(EldritchRealmsBlocks.POLISHED_SHADOWSLATE);
+                        entries.add(EldritchRealmsBlocks.POLISHED_SHADOWSLATE_SLAB);
+                        entries.add(EldritchRealmsBlocks.POLISHED_SHADOWSLATE_STAIRS);
+                        entries.add(EldritchRealmsBlocks.POLISHED_SHADOWSLATE_WALL);
+                        entries.add(EldritchRealmsBlocks.SHADOWSLATE_BRICKS);
+                        entries.add(EldritchRealmsBlocks.SHADOWSLATE_BRICK_SLAB);
+                        entries.add(EldritchRealmsBlocks.SHADOWSLATE_BRICK_STAIRS);
+                        entries.add(EldritchRealmsBlocks.SHADOWSLATE_BRICK_WALL);
+                        entries.add(EldritchRealmsBlocks.SHADOWSLATE_TILES);
+                        entries.add(EldritchRealmsBlocks.SHADOWSLATE_TILE_SLAB);
+                        entries.add(EldritchRealmsBlocks.SHADOWSLATE_TILE_STAIRS);
+                        entries.add(EldritchRealmsBlocks.SHADOWSLATE_TILE_WALL);
+                        entries.add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICKS);
+                        entries.add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_SLAB);
+                        entries.add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_STAIRS);
+                        entries.add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_WALL);
+                        entries.add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILES);
+                        entries.add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_SLAB);
+                        entries.add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_STAIRS);
+                        entries.add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_WALL);
+
+                        entries.add(EldritchRealmsBlocks.CRIMSON_COBBLE);
+                        entries.add(EldritchRealmsBlocks.CRIMSON_COBBLE_SLAB);
+                        entries.add(EldritchRealmsBlocks.CRIMSON_COBBLE_STAIRS);
+                        entries.add(EldritchRealmsBlocks.CRIMSON_COBBLE_WALL);
+
+                        entries.add(EldritchRealmsBlocks.GLOOMARBLE);
+                        entries.add(EldritchRealmsItems.GLOOMARBLE_DUST);
 
                         // Items
                         entries.add(EldritchRealmsItems.DREADQUARTZ);
+
 
 
 

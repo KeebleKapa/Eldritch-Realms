@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_shadowslate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eldritchrealms:shadowslate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "eldritchrealms:shadowslate_wall"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_shadowslate",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "eldritchrealms:shadowslate_wall"
+    ]
+  },
+  "sends_telemetry_event": false
+}

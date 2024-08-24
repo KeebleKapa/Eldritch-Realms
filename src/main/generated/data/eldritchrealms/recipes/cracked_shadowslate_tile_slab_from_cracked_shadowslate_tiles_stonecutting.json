@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "eldritchrealms:cracked_shadowslate_tiles"
+  },
+  "result": "eldritchrealms:cracked_shadowslate_tile_slab"
+}

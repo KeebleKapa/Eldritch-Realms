@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "eldritchrealms:crimson_cobble"
+  },
+  "result": "eldritchrealms:crimson_cobble_wall"
+}

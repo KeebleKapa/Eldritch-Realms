@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "eldritchrealms:block/polished_shadowslate_slab"
+    },
+    "type=double": {
+      "model": "eldritchrealms:block/polished_shadowslate"
+    },
+    "type=top": {
+      "model": "eldritchrealms:block/polished_shadowslate_slab_top"
+    }
+  }
+}

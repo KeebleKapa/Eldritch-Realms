@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "cracked_shadowslate_tiles_smelting",
+  "ingredient": {
+    "item": "eldritchrealms:shadowslate_tiles"
+  },
+  "result": "eldritchrealms:cracked_shadowslate_tiles"
+}

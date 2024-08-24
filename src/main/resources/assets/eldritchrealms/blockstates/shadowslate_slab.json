@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "eldritchrealms:block/shadowslate_slab"
+    },
+    "type=double": {
+      "model": "eldritchrealms:block/shadowslate"
+    },
+    "type=top": {
+      "model": "eldritchrealms:block/shadowslate_slab_top"
+    }
+  }
+}

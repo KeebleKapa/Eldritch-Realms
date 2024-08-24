@@ -1,0 +1,33 @@
+{
+  "shadowslate_break": {
+    "subtitle": "sounds.eldritchrealms.shadowslate_break",
+    "sounds": [
+      "eldritchrealms:shadowslate_break1",
+      "eldritchrealms:shadowslate_break2",
+      "eldritchrealms:shadowslate_break3",
+      "eldritchrealms:shadowslate_break4"
+    ]
+  },
+  "shadowslate_place": {
+    "subtitle": "sounds.eldritchrealms.shadowslate_place",
+    "sounds": [
+      "eldritchrealms:shadowslate_place1",
+      "eldritchrealms:shadowslate_place2",
+      "eldritchrealms:shadowslate_place3",
+      "eldritchrealms:shadowslate_place4",
+      "eldritchrealms:shadowslate_place5",
+      "eldritchrealms:shadowslate_place6"
+    ]
+  },
+  "shadowslate_step": {
+    "subtitle": "sounds.eldritchrealms.shadowslate_step",
+    "sounds": [
+      "eldritchrealms:shadowslate_step1",
+      "eldritchrealms:shadowslate_step2",
+      "eldritchrealms:shadowslate_step3",
+      "eldritchrealms:shadowslate_step4",
+      "eldritchrealms:shadowslate_step5",
+      "eldritchrealms:shadowslate_step6"
+    ]
+  }
+}

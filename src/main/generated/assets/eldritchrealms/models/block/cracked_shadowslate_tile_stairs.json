@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "eldritchrealms:block/cracked_shadowslate_tiles",
+    "side": "eldritchrealms:block/cracked_shadowslate_tiles",
+    "top": "eldritchrealms:block/cracked_shadowslate_tiles"
+  }
+}

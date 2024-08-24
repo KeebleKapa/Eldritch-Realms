@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "eldritchrealms:block/shadowslate_bricks",
+    "side": "eldritchrealms:block/shadowslate_bricks",
+    "top": "eldritchrealms:block/shadowslate_bricks"
+  }
+}

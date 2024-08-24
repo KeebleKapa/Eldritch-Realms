@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "eldritchrealms:block/crimson_cobble_slab"
+    },
+    "type=double": {
+      "model": "eldritchrealms:block/crimson_cobble"
+    },
+    "type=top": {
+      "model": "eldritchrealms:block/crimson_cobble_slab_top"
+    }
+  }
+}

@@ -3,11 +3,13 @@ package net.keeblekapa.eldritchrealms.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.keeblekapa.eldritchrealms.block.EldritchRealmsBlocks;
+import net.keeblekapa.eldritchrealms.item.EldritchRealmsItems;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
@@ -19,11 +21,67 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
     public static final List<ItemConvertible> CRACKED_ABYSSAL_GRANITE_BRICKS_SMELTING = List.of(EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICKS);
     public static final List<ItemConvertible> VEILSTONE_SMELTING = List.of(EldritchRealmsBlocks.COBBLED_VEILSTONE);
     public static final List<ItemConvertible> SMOOTH_VEILSTONE_SMELTING = List.of(EldritchRealmsBlocks.VEILSTONE);
+    public static final List<ItemConvertible> CRACKED_SHADOWSLATE_BRICKS_SMELTING = List.of(EldritchRealmsBlocks.SHADOWSLATE_BRICKS);
+    public static final List<ItemConvertible> CRACKED_SHADOWSLATE_TILES_SMELTING = List.of(EldritchRealmsBlocks.SHADOWSLATE_TILES);
 
     public EldritchRealmsRecipeProvider(FabricDataOutput output) {super(output);}
 
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.STONE_AXE)
+                .pattern(" SS")
+                .pattern(" WS")
+                .pattern(" W ")
+                .input('S', EldritchRealmsBlocks.CRIMSON_COBBLE)
+                .input('W', Items.STICK)
+                .criterion(hasItem(EldritchRealmsBlocks.CRIMSON_COBBLE), conditionsFromItem(EldritchRealmsBlocks.CRIMSON_COBBLE))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.STONE_AXE) + "_from_crimson"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.STONE_HOE)
+                .pattern(" SS")
+                .pattern(" W ")
+                .pattern(" W ")
+                .input('S', EldritchRealmsBlocks.CRIMSON_COBBLE)
+                .input('W', Items.STICK)
+                .criterion(hasItem(EldritchRealmsBlocks.CRIMSON_COBBLE), conditionsFromItem(EldritchRealmsBlocks.CRIMSON_COBBLE))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.STONE_HOE) + "_from_crimson"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.STONE_PICKAXE)
+                .pattern("SSS")
+                .pattern(" W ")
+                .pattern(" W ")
+                .input('S', EldritchRealmsBlocks.CRIMSON_COBBLE)
+                .input('W', Items.STICK)
+                .criterion(hasItem(EldritchRealmsBlocks.CRIMSON_COBBLE), conditionsFromItem(EldritchRealmsBlocks.CRIMSON_COBBLE))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.STONE_PICKAXE) + "_from_crimson"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.STONE_SHOVEL)
+                .pattern(" S ")
+                .pattern(" W ")
+                .pattern(" W ")
+                .input('S', EldritchRealmsBlocks.CRIMSON_COBBLE)
+                .input('W', Items.STICK)
+                .criterion(hasItem(EldritchRealmsBlocks.CRIMSON_COBBLE), conditionsFromItem(EldritchRealmsBlocks.CRIMSON_COBBLE))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.STONE_SHOVEL) + "_from_crimson"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.STONE_SWORD)
+                .pattern(" S ")
+                .pattern(" S ")
+                .pattern(" W ")
+                .input('S', EldritchRealmsBlocks.CRIMSON_COBBLE)
+                .input('W', Items.STICK)
+                .criterion(hasItem(EldritchRealmsBlocks.CRIMSON_COBBLE), conditionsFromItem(EldritchRealmsBlocks.CRIMSON_COBBLE))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.STONE_SWORD) + "_from_crimson"));
+
+
+
+
 
         // Abyssal Granite
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_ABYSSAL_GRANITE, 4)
@@ -153,17 +211,17 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(EldritchRealmsBlocks.CRACKED_MOSSY_ABYSSAL_GRANITE_BRICKS), conditionsFromItem(EldritchRealmsBlocks.CRACKED_MOSSY_ABYSSAL_GRANITE_BRICKS))
                 .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.CRACKED_MOSSY_ABYSSAL_GRANITE_BRICK_SLAB)));
 
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ABYSSAL_GRANITE_SLAB, EldritchRealmsBlocks.ABYSSAL_GRANITE);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_ABYSSAL_GRANITE_SLAB, EldritchRealmsBlocks.ABYSSAL_GRANITE);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_ABYSSAL_GRANITE_SLAB, EldritchRealmsBlocks.POLISHED_ABYSSAL_GRANITE);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICK_SLAB, EldritchRealmsBlocks.ABYSSAL_GRANITE);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICK_SLAB, EldritchRealmsBlocks.POLISHED_ABYSSAL_GRANITE);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICK_SLAB, EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICKS);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_BRICK_SLAB, EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_BRICKS);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.CRACKED_ABYSSAL_GRANITE_BRICK_SLAB, EldritchRealmsBlocks.CRACKED_ABYSSAL_GRANITE_BRICKS);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.CRACKED_MOSSY_ABYSSAL_GRANITE_BRICK_SLAB, EldritchRealmsBlocks.CRACKED_MOSSY_ABYSSAL_GRANITE_BRICKS);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_SLAB, EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.MOSSY_POLISHED_ABYSSAL_GRANITE_SLAB, EldritchRealmsBlocks.MOSSY_POLISHED_ABYSSAL_GRANITE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ABYSSAL_GRANITE_SLAB, EldritchRealmsBlocks.ABYSSAL_GRANITE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_ABYSSAL_GRANITE_SLAB, EldritchRealmsBlocks.ABYSSAL_GRANITE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_ABYSSAL_GRANITE_SLAB, EldritchRealmsBlocks.POLISHED_ABYSSAL_GRANITE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICK_SLAB, EldritchRealmsBlocks.ABYSSAL_GRANITE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICK_SLAB, EldritchRealmsBlocks.POLISHED_ABYSSAL_GRANITE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICK_SLAB, EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICKS, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_BRICK_SLAB, EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_BRICKS, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.CRACKED_ABYSSAL_GRANITE_BRICK_SLAB, EldritchRealmsBlocks.CRACKED_ABYSSAL_GRANITE_BRICKS, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.CRACKED_MOSSY_ABYSSAL_GRANITE_BRICK_SLAB, EldritchRealmsBlocks.CRACKED_MOSSY_ABYSSAL_GRANITE_BRICKS, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE_SLAB, EldritchRealmsBlocks.MOSSY_ABYSSAL_GRANITE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.MOSSY_POLISHED_ABYSSAL_GRANITE_SLAB, EldritchRealmsBlocks.MOSSY_POLISHED_ABYSSAL_GRANITE, 2);
 
         // Abyssal Granite Walls
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ABYSSAL_GRANITE_WALL, EldritchRealmsBlocks.ABYSSAL_GRANITE);
@@ -220,11 +278,11 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_STAIRS, EldritchRealmsBlocks.VEILSTONE);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.COBBLED_VEILSTONE_STAIRS, EldritchRealmsBlocks.COBBLED_VEILSTONE);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SMOOTH_VEILSTONE_STAIRS, EldritchRealmsBlocks.SMOOTH_VEILSTONE);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_BRICK_SLAB, EldritchRealmsBlocks.VEILSTONE);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_BRICK_SLAB, EldritchRealmsBlocks.VEILSTONE_BRICKS);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_SLAB, EldritchRealmsBlocks.VEILSTONE);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.COBBLED_VEILSTONE_SLAB, EldritchRealmsBlocks.COBBLED_VEILSTONE);
-        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SMOOTH_VEILSTONE_SLAB, EldritchRealmsBlocks.SMOOTH_VEILSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_BRICK_SLAB, EldritchRealmsBlocks.VEILSTONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_BRICK_SLAB, EldritchRealmsBlocks.VEILSTONE_BRICKS, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.VEILSTONE_SLAB, EldritchRealmsBlocks.VEILSTONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.COBBLED_VEILSTONE_SLAB, EldritchRealmsBlocks.COBBLED_VEILSTONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SMOOTH_VEILSTONE_SLAB, EldritchRealmsBlocks.SMOOTH_VEILSTONE, 2);
 
 
         createStairsRecipe(EldritchRealmsBlocks.COBBLED_VEILSTONE_STAIRS, Ingredient.ofItems(EldritchRealmsBlocks.COBBLED_VEILSTONE))
@@ -262,6 +320,163 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
 
 
 
+        // Gloomarble
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.GLOOMARBLE)
+                .pattern("XXX")
+                .pattern("XXX")
+                .pattern("XXX")
+                .input('X', EldritchRealmsItems.GLOOMARBLE_DUST)
+                .criterion(hasItem(EldritchRealmsItems.GLOOMARBLE_DUST), conditionsFromItem(EldritchRealmsItems.GLOOMARBLE_DUST))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsItems.GLOOMARBLE_DUST)));
+
+
+        // Shadowslate
+        offerSmelting(exporter, CRACKED_SHADOWSLATE_BRICKS_SMELTING, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICKS,
+                0.1f, 200, "cracked_shadowslate_bricks_smelting");
+
+        offerSmelting(exporter, CRACKED_SHADOWSLATE_TILES_SMELTING, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILES,
+                0.1f, 200, "cracked_shadowslate_tiles_smelting");
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_BRICKS, 4)
+                .pattern("XX")
+                .pattern("XX")
+                .input('X', EldritchRealmsBlocks.SHADOWSLATE)
+                .criterion(hasItem(EldritchRealmsBlocks.SHADOWSLATE), conditionsFromItem(EldritchRealmsBlocks.SHADOWSLATE))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.POLISHED_SHADOWSLATE)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_SHADOWSLATE, EldritchRealmsBlocks.SHADOWSLATE);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_BRICKS, 4)
+                .pattern("XX")
+                .pattern("XX")
+                .input('X', EldritchRealmsBlocks.POLISHED_SHADOWSLATE)
+                .criterion(hasItem(EldritchRealmsBlocks.POLISHED_SHADOWSLATE), conditionsFromItem(EldritchRealmsBlocks.POLISHED_SHADOWSLATE))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.SHADOWSLATE_BRICKS)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_BRICKS, EldritchRealmsBlocks.SHADOWSLATE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_BRICKS, EldritchRealmsBlocks.POLISHED_SHADOWSLATE);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_TILES, 4)
+                .pattern("XX")
+                .pattern("XX")
+                .input('X', EldritchRealmsBlocks.SHADOWSLATE_BRICKS)
+                .criterion(hasItem(EldritchRealmsBlocks.SHADOWSLATE_BRICKS), conditionsFromItem(EldritchRealmsBlocks.SHADOWSLATE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.SHADOWSLATE_TILES)));
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_TILES, EldritchRealmsBlocks.SHADOWSLATE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_TILES, EldritchRealmsBlocks.POLISHED_SHADOWSLATE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_TILES, EldritchRealmsBlocks.SHADOWSLATE_BRICKS);
+
+
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_WALL, EldritchRealmsBlocks.SHADOWSLATE);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_SHADOWSLATE_WALL, EldritchRealmsBlocks.POLISHED_SHADOWSLATE);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_BRICK_WALL, EldritchRealmsBlocks.SHADOWSLATE_BRICKS);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_TILE_WALL, EldritchRealmsBlocks.SHADOWSLATE_TILES);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_WALL, EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICKS);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_WALL, EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILES);
+
+
+        createStairsRecipe(EldritchRealmsBlocks.SHADOWSLATE_STAIRS, Ingredient.ofItems(EldritchRealmsBlocks.SHADOWSLATE))
+                .criterion(hasItem(EldritchRealmsBlocks.SHADOWSLATE), conditionsFromItem(EldritchRealmsBlocks.SHADOWSLATE))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.SHADOWSLATE_STAIRS)));
+
+        createStairsRecipe(EldritchRealmsBlocks.POLISHED_SHADOWSLATE_STAIRS, Ingredient.ofItems(EldritchRealmsBlocks.POLISHED_SHADOWSLATE))
+                .criterion(hasItem(EldritchRealmsBlocks.POLISHED_SHADOWSLATE), conditionsFromItem(EldritchRealmsBlocks.POLISHED_SHADOWSLATE))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.POLISHED_SHADOWSLATE_STAIRS)));
+
+        createStairsRecipe(EldritchRealmsBlocks.SHADOWSLATE_BRICK_STAIRS, Ingredient.ofItems(EldritchRealmsBlocks.SHADOWSLATE_BRICKS))
+                .criterion(hasItem(EldritchRealmsBlocks.SHADOWSLATE_BRICKS), conditionsFromItem(EldritchRealmsBlocks.SHADOWSLATE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.SHADOWSLATE_BRICK_STAIRS)));
+
+        createStairsRecipe(EldritchRealmsBlocks.SHADOWSLATE_TILE_STAIRS, Ingredient.ofItems(EldritchRealmsBlocks.SHADOWSLATE_TILES))
+                .criterion(hasItem(EldritchRealmsBlocks.SHADOWSLATE_TILES), conditionsFromItem(EldritchRealmsBlocks.SHADOWSLATE_TILES))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.SHADOWSLATE_TILE_STAIRS)));
+
+        createStairsRecipe(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_STAIRS, Ingredient.ofItems(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICKS))
+                .criterion(hasItem(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICKS), conditionsFromItem(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_STAIRS)));
+
+        createStairsRecipe(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_STAIRS, Ingredient.ofItems(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILES))
+                .criterion(hasItem(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILES), conditionsFromItem(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILES))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_STAIRS)));
+
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_SLAB, Ingredient.ofItems(EldritchRealmsBlocks.SHADOWSLATE))
+                .criterion(hasItem(EldritchRealmsBlocks.SHADOWSLATE), conditionsFromItem(EldritchRealmsBlocks.SHADOWSLATE))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.SHADOWSLATE_SLAB)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_SHADOWSLATE_SLAB, Ingredient.ofItems(EldritchRealmsBlocks.POLISHED_SHADOWSLATE))
+                .criterion(hasItem(EldritchRealmsBlocks.POLISHED_SHADOWSLATE), conditionsFromItem(EldritchRealmsBlocks.POLISHED_SHADOWSLATE))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.POLISHED_SHADOWSLATE_SLAB)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_BRICK_SLAB, Ingredient.ofItems(EldritchRealmsBlocks.SHADOWSLATE_BRICKS))
+                .criterion(hasItem(EldritchRealmsBlocks.SHADOWSLATE_BRICKS), conditionsFromItem(EldritchRealmsBlocks.SHADOWSLATE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.SHADOWSLATE_BRICK_SLAB)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_TILE_SLAB, Ingredient.ofItems(EldritchRealmsBlocks.SHADOWSLATE_TILES))
+                .criterion(hasItem(EldritchRealmsBlocks.SHADOWSLATE_TILES), conditionsFromItem(EldritchRealmsBlocks.SHADOWSLATE_TILES))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.SHADOWSLATE_TILE_SLAB)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_SLAB, Ingredient.ofItems(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICKS))
+                .criterion(hasItem(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICKS), conditionsFromItem(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_SLAB)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_SLAB, Ingredient.ofItems(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILES))
+                .criterion(hasItem(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILES), conditionsFromItem(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILES))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_SLAB)));
+
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_STAIRS, EldritchRealmsBlocks.SHADOWSLATE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_SHADOWSLATE_STAIRS, EldritchRealmsBlocks.SHADOWSLATE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_BRICK_STAIRS, EldritchRealmsBlocks.SHADOWSLATE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_TILE_STAIRS, EldritchRealmsBlocks.SHADOWSLATE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_SHADOWSLATE_STAIRS, EldritchRealmsBlocks.POLISHED_SHADOWSLATE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_BRICK_STAIRS, EldritchRealmsBlocks.POLISHED_SHADOWSLATE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_TILE_STAIRS, EldritchRealmsBlocks.POLISHED_SHADOWSLATE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_BRICK_STAIRS, EldritchRealmsBlocks.SHADOWSLATE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_TILE_STAIRS, EldritchRealmsBlocks.SHADOWSLATE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_TILE_STAIRS, EldritchRealmsBlocks.SHADOWSLATE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_STAIRS, EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_STAIRS, EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICKS);
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_SLAB, EldritchRealmsBlocks.SHADOWSLATE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_SHADOWSLATE_SLAB, EldritchRealmsBlocks.SHADOWSLATE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_BRICK_SLAB, EldritchRealmsBlocks.SHADOWSLATE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_TILE_SLAB, EldritchRealmsBlocks.SHADOWSLATE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_SHADOWSLATE_SLAB, EldritchRealmsBlocks.POLISHED_SHADOWSLATE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_BRICK_SLAB, EldritchRealmsBlocks.POLISHED_SHADOWSLATE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_TILE_SLAB, EldritchRealmsBlocks.POLISHED_SHADOWSLATE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_BRICK_SLAB, EldritchRealmsBlocks.SHADOWSLATE_BRICKS, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_TILE_SLAB, EldritchRealmsBlocks.SHADOWSLATE_BRICKS, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_TILE_SLAB, EldritchRealmsBlocks.SHADOWSLATE_TILES, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_SLAB, EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILES, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_SLAB, EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICKS, 2);
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_WALL, EldritchRealmsBlocks.SHADOWSLATE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_SHADOWSLATE_WALL, EldritchRealmsBlocks.SHADOWSLATE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_BRICK_WALL, EldritchRealmsBlocks.SHADOWSLATE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_TILE_WALL, EldritchRealmsBlocks.SHADOWSLATE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_SHADOWSLATE_WALL, EldritchRealmsBlocks.POLISHED_SHADOWSLATE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_BRICK_WALL, EldritchRealmsBlocks.POLISHED_SHADOWSLATE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_TILE_WALL, EldritchRealmsBlocks.POLISHED_SHADOWSLATE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_BRICK_WALL, EldritchRealmsBlocks.SHADOWSLATE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_TILE_WALL, EldritchRealmsBlocks.SHADOWSLATE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSLATE_TILE_WALL, EldritchRealmsBlocks.SHADOWSLATE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_WALL, EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILES);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICK_WALL, EldritchRealmsBlocks.CRACKED_SHADOWSLATE_BRICKS);
+
+        // Crimson Cobble
+        createStairsRecipe(EldritchRealmsBlocks.CRIMSON_COBBLE_STAIRS, Ingredient.ofItems(EldritchRealmsBlocks.CRIMSON_COBBLE))
+                .criterion(hasItem(EldritchRealmsBlocks.CRIMSON_COBBLE), conditionsFromItem(EldritchRealmsBlocks.CRIMSON_COBBLE))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.CRIMSON_COBBLE_STAIRS)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.CRIMSON_COBBLE_SLAB, Ingredient.ofItems(EldritchRealmsBlocks.CRIMSON_COBBLE))
+                .criterion(hasItem(EldritchRealmsBlocks.CRIMSON_COBBLE), conditionsFromItem(EldritchRealmsBlocks.CRIMSON_COBBLE))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.CRIMSON_COBBLE_SLAB)));
+
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.CRIMSON_COBBLE_WALL, EldritchRealmsBlocks.CRIMSON_COBBLE);
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.CRIMSON_COBBLE_STAIRS, EldritchRealmsBlocks.CRIMSON_COBBLE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.CRIMSON_COBBLE_SLAB, EldritchRealmsBlocks.CRIMSON_COBBLE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.CRIMSON_COBBLE_WALL, EldritchRealmsBlocks.CRIMSON_COBBLE);
 
 
     }

@@ -16,6 +16,8 @@ public class EldritchRealmsItems {
     // Materials
     public static final Item DREADQUARTZ = registerItem("dreadquartz", new Item(new FabricItemSettings()));
 
+    public static final Item GLOOMARBLE_DUST = registerItem("gloomarble_dust", new Item(new FabricItemSettings()));
+
     // Tools
 
 

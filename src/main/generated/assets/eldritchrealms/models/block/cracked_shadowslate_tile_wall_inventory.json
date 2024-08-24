@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "eldritchrealms:block/cracked_shadowslate_tiles"
+  }
+}

@@ -1,4 +1,29 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "eldritchrealms:shadowslate",
+    "eldritchrealms:shadowslate_slab",
+    "eldritchrealms:shadowslate_stairs",
+    "eldritchrealms:shadowslate_wall",
+    "eldritchrealms:polished_shadowslate",
+    "eldritchrealms:polished_shadowslate_slab",
+    "eldritchrealms:polished_shadowslate_stairs",
+    "eldritchrealms:polished_shadowslate_wall",
+    "eldritchrealms:shadowslate_bricks",
+    "eldritchrealms:shadowslate_brick_slab",
+    "eldritchrealms:shadowslate_brick_stairs",
+    "eldritchrealms:shadowslate_brick_wall",
+    "eldritchrealms:shadowslate_tiles",
+    "eldritchrealms:shadowslate_tile_slab",
+    "eldritchrealms:shadowslate_tile_stairs",
+    "eldritchrealms:shadowslate_tile_wall",
+    "eldritchrealms:cracked_shadowslate_bricks",
+    "eldritchrealms:cracked_shadowslate_brick_slab",
+    "eldritchrealms:cracked_shadowslate_brick_stairs",
+    "eldritchrealms:cracked_shadowslate_brick_wall",
+    "eldritchrealms:cracked_shadowslate_tiles",
+    "eldritchrealms:cracked_shadowslate_tile_slab",
+    "eldritchrealms:cracked_shadowslate_tile_stairs",
+    "eldritchrealms:cracked_shadowslate_tile_wall"
+  ]
 }

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "eldritchrealms:polished_shadowslate"
+  },
+  "result": "eldritchrealms:shadowslate_tile_slab"
+}

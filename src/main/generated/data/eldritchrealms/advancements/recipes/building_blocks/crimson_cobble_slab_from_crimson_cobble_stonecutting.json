@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crimson_cobble": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eldritchrealms:crimson_cobble"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:crimson_cobble_slab_from_crimson_cobble_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_crimson_cobble",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:crimson_cobble_slab_from_crimson_cobble_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "S": {
+      "item": "eldritchrealms:crimson_cobble"
+    },
+    "W": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " SS",
+    " WS",
+    " W "
+  ],
+  "result": {
+    "item": "minecraft:stone_axe"
+  },
+  "show_notification": true
+}

@@ -12,6 +12,13 @@
     "eldritchrealms:veilstone_stairs",
     "eldritchrealms:cobbled_veilstone_stairs",
     "eldritchrealms:veilstone_brick_stairs",
-    "eldritchrealms:smooth_veilstone_stairs"
+    "eldritchrealms:smooth_veilstone_stairs",
+    "eldritchrealms:shadowslate_stairs",
+    "eldritchrealms:polished_shadowslate_stairs",
+    "eldritchrealms:shadowslate_brick_stairs",
+    "eldritchrealms:shadowslate_tile_stairs",
+    "eldritchrealms:cracked_shadowslate_brick_stairs",
+    "eldritchrealms:cracked_shadowslate_tile_stairs",
+    "eldritchrealms:crimson_cobble_stairs"
   ]
 }

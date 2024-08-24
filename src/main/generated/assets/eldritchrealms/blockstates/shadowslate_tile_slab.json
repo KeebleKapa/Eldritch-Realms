@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "eldritchrealms:block/shadowslate_tile_slab"
+    },
+    "type=double": {
+      "model": "eldritchrealms:block/shadowslate_tiles"
+    },
+    "type=top": {
+      "model": "eldritchrealms:block/shadowslate_tile_slab_top"
+    }
+  }
+}
