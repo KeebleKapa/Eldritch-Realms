@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "X": {
+      "item": "eldritchrealms:polished_eldritch_limestone"
+    }
+  },
+  "pattern": [
+    "XX",
+    "XX"
+  ],
+  "result": {
+    "count": 4,
+    "item": "eldritchrealms:eldritch_limestone_bricks"
+  },
+  "show_notification": true
+}

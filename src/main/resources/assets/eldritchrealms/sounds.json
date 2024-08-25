@@ -29,5 +29,26 @@
       "eldritchrealms:shadowslate_step5",
       "eldritchrealms:shadowslate_step6"
     ]
+  },
+  "tuff_bricks_place": {
+    "subtitle": "sounds.eldritchrealms.tuff_bricks_place",
+    "sounds": [
+      "eldritchrealms:tuff_bricks_place1",
+      "eldritchrealms:tuff_bricks_place2",
+      "eldritchrealms:tuff_bricks_place3",
+      "eldritchrealms:tuff_bricks_place4",
+      "eldritchrealms:tuff_bricks_place5"
+    ]
+  },
+  "tuff_bricks_step": {
+    "subtitle": "sounds.eldritchrealms.tuff_bricks_step",
+    "sounds": [
+      "eldritchrealms:tuff_bricks_step1",
+      "eldritchrealms:tuff_bricks_step2",
+      "eldritchrealms:tuff_bricks_step3",
+      "eldritchrealms:tuff_bricks_step4",
+      "eldritchrealms:tuff_bricks_step5",
+      "eldritchrealms:tuff_bricks_step6"
+    ]
   }
 }

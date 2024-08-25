@@ -19,6 +19,9 @@
     "eldritchrealms:shadowslate_tile_stairs",
     "eldritchrealms:cracked_shadowslate_brick_stairs",
     "eldritchrealms:cracked_shadowslate_tile_stairs",
-    "eldritchrealms:crimson_cobble_stairs"
+    "eldritchrealms:crimson_cobble_stairs",
+    "eldritchrealms:eldritch_limestone_stairs",
+    "eldritchrealms:polished_eldritch_limestone_stairs",
+    "eldritchrealms:eldritch_limestone_brick_stairs"
   ]
 }

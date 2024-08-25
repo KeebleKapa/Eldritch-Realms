@@ -77,6 +77,19 @@
     "eldritchrealms:crimson_cobble_slab",
     "eldritchrealms:crimson_cobble_stairs",
     "eldritchrealms:crimson_cobble_wall",
+    "eldritchrealms:eldritch_limestone",
+    "eldritchrealms:eldritch_limestone_pillar",
+    "eldritchrealms:eldritch_limestone_slab",
+    "eldritchrealms:eldritch_limestone_stairs",
+    "eldritchrealms:eldritch_limestone_wall",
+    "eldritchrealms:polished_eldritch_limestone",
+    "eldritchrealms:polished_eldritch_limestone_slab",
+    "eldritchrealms:polished_eldritch_limestone_stairs",
+    "eldritchrealms:polished_eldritch_limestone_wall",
+    "eldritchrealms:eldritch_limestone_bricks",
+    "eldritchrealms:eldritch_limestone_brick_slab",
+    "eldritchrealms:eldritch_limestone_brick_stairs",
+    "eldritchrealms:eldritch_limestone_brick_wall",
     "eldritchrealms:gloomarble"
   ]
 }

@@ -106,10 +106,33 @@ public class EldritchRealmsModelProvider extends FabricModelProvider {
         cstPool.slab(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_SLAB);
         cstPool.wall(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_WALL);
 
+
+
+
         BlockStateModelGenerator.BlockTexturePool ccPool = blockStateModelGenerator.registerCubeAllModelTexturePool(EldritchRealmsBlocks.CRIMSON_COBBLE);
         ccPool.stairs(EldritchRealmsBlocks.CRIMSON_COBBLE_STAIRS);
         ccPool.slab(EldritchRealmsBlocks.CRIMSON_COBBLE_SLAB);
         ccPool.wall(EldritchRealmsBlocks.CRIMSON_COBBLE_WALL);
+
+
+
+
+        BlockStateModelGenerator.BlockTexturePool elPool = blockStateModelGenerator.registerCubeAllModelTexturePool(EldritchRealmsBlocks.ELDRITCH_LIMESTONE);
+        elPool.stairs(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_STAIRS);
+        elPool.slab(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_SLAB);
+        elPool.wall(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool pelPool = blockStateModelGenerator.registerCubeAllModelTexturePool(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE);
+        pelPool.stairs(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_STAIRS);
+        pelPool.slab(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_SLAB);
+        pelPool.wall(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool elbPool = blockStateModelGenerator.registerCubeAllModelTexturePool(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS);
+        elbPool.stairs(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_STAIRS);
+        elbPool.slab(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_SLAB);
+        elbPool.wall(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_WALL);
+
+
 
 
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.GLOOMARBLE);

@@ -121,6 +121,20 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                 addDrop(EldritchRealmsBlocks.CRIMSON_COBBLE_WALL);
                 addDrop(EldritchRealmsBlocks.CRIMSON_COBBLE_SLAB, slabDrops(EldritchRealmsBlocks.CRIMSON_COBBLE_SLAB));
 
+                addDrop(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_PILLAR);
+                addDrop(EldritchRealmsBlocks.ELDRITCH_LIMESTONE);
+                addDrop(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_STAIRS);
+                addDrop(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_SLAB, slabDrops(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_SLAB));
+                addDrop(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_WALL);
+                addDrop(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE);
+                addDrop(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_STAIRS);
+                addDrop(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_SLAB, slabDrops(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_SLAB));
+                addDrop(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_WALL);
+                addDrop(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS);
+                addDrop(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_STAIRS);
+                addDrop(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_SLAB, slabDrops(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_SLAB));
+                addDrop(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_WALL);
+
 
                 addDrop(EldritchRealmsBlocks.GLOOMARBLE, sevenToNineDrops(EldritchRealmsBlocks.GLOOMARBLE, EldritchRealmsItems.GLOOMARBLE_DUST));
 

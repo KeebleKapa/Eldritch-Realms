@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "eldritchrealms:block/polished_eldritch_limestone",
+    "side": "eldritchrealms:block/polished_eldritch_limestone",
+    "top": "eldritchrealms:block/polished_eldritch_limestone"
+  }
+}

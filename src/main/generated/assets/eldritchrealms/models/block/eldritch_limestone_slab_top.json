@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "eldritchrealms:block/eldritch_limestone",
+    "side": "eldritchrealms:block/eldritch_limestone",
+    "top": "eldritchrealms:block/eldritch_limestone"
+  }
+}

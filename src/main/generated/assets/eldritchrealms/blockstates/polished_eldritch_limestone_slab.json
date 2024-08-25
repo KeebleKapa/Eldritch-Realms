@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "eldritchrealms:block/polished_eldritch_limestone_slab"
+    },
+    "type=double": {
+      "model": "eldritchrealms:block/polished_eldritch_limestone"
+    },
+    "type=top": {
+      "model": "eldritchrealms:block/polished_eldritch_limestone_slab_top"
+    }
+  }
+}

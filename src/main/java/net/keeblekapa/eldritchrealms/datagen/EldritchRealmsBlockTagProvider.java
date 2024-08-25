@@ -153,6 +153,20 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.CRIMSON_COBBLE_STAIRS)
                 .add(EldritchRealmsBlocks.CRIMSON_COBBLE_WALL)
 
+                .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE)
+                .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_PILLAR)
+                .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_SLAB)
+                .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_STAIRS)
+                .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_WALL)
+                .add(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE)
+                .add(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_SLAB)
+                .add(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_STAIRS)
+                .add(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_WALL)
+                .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS)
+                .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_SLAB)
+                .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_STAIRS)
+                .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_WALL)
+
                 .add(EldritchRealmsBlocks.GLOOMARBLE)
         ;
 
@@ -179,6 +193,10 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_SLAB)
 
                 .add(EldritchRealmsBlocks.CRIMSON_COBBLE_SLAB)
+
+                .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_SLAB)
+                .add(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_SLAB)
+                .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_SLAB)
         ;
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
@@ -205,6 +223,10 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
 
                 .add(EldritchRealmsBlocks.CRIMSON_COBBLE_STAIRS)
 
+                .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_STAIRS)
+                .add(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_STAIRS)
+                .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_STAIRS)
+
         ;
 
         getOrCreateTagBuilder(BlockTags.WALLS)
@@ -230,6 +252,10 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_WALL)
 
                 .add(EldritchRealmsBlocks.CRIMSON_COBBLE_WALL)
+
+                .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_WALL)
+                .add(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_WALL)
+                .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_WALL)
 
         ;
     }

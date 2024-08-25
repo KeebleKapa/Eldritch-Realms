@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_mirrored",
+  "textures": {
+    "end": "eldritchrealms:block/eldritch_limestone_pillar_top",
+    "side": "eldritchrealms:block/eldritch_limestone_pillar_side"
+  }
+}

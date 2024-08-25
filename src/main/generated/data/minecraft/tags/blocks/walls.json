@@ -19,6 +19,9 @@
     "eldritchrealms:shadowslate_tile_wall",
     "eldritchrealms:cracked_shadowslate_brick_wall",
     "eldritchrealms:cracked_shadowslate_tile_wall",
-    "eldritchrealms:crimson_cobble_wall"
+    "eldritchrealms:crimson_cobble_wall",
+    "eldritchrealms:eldritch_limestone_wall",
+    "eldritchrealms:polished_eldritch_limestone_wall",
+    "eldritchrealms:eldritch_limestone_brick_wall"
   ]
 }

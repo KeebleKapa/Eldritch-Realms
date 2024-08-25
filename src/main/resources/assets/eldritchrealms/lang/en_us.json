@@ -32,6 +32,7 @@
   "block.eldritchrealms.cracked_mossy_abyssal_granite_brick_stairs":"Cracked Mossy Abyssal Granite Brick Stairs",
   "block.eldritchrealms.cracked_mossy_abyssal_granite_brick_slab":"Cracked Mossy Abyssal Granite Brick Slab",
   "block.eldritchrealms.cracked_mossy_abyssal_granite_brick_wall":"Cracked Mossy Abyssal Granite Brick Wall",
+
   "block.eldritchrealms.veilstone": "Veilstone",
   "block.eldritchrealms.veilstone_stairs": "Veilstone Stairs",
   "block.eldritchrealms.veilstone_slab": "Veilstone Slab",
@@ -48,6 +49,7 @@
   "block.eldritchrealms.veilstone_brick_stairs": "Veilstone Brick Stairs",
   "block.eldritchrealms.veilstone_brick_slab": "Veilstone Brick Slab",
   "block.eldritchrealms.veilstone_brick_wall": "Veilstone Brick Wall",
+
   "block.eldritchrealms.shadowslate": "Shadowslate",
   "block.eldritchrealms.shadowslate_stairs": "Shadowslate Stairs",
   "block.eldritchrealms.shadowslate_slab": "Shadowslate Slab",
@@ -56,7 +58,7 @@
   "block.eldritchrealms.polished_shadowslate_stairs": "Polished Shadowslate Stairs",
   "block.eldritchrealms.polished_shadowslate_slab": "Polished Shadowslate Slab",
   "block.eldritchrealms.polished_shadowslate_wall": "Polished Shadowslate Wall",
-  "block.eldritchrealms.shadowslate_bricks": "Shadowslate Brick",
+  "block.eldritchrealms.shadowslate_bricks": "Shadowslate Bricks",
   "block.eldritchrealms.shadowslate_brick_stairs": "Shadowslate Brick Stairs",
   "block.eldritchrealms.shadowslate_brick_slab": "Shadowslate Brick Slab",
   "block.eldritchrealms.shadowslate_brick_wall": "Shadowslate Brick Wall",
@@ -64,7 +66,7 @@
   "block.eldritchrealms.shadowslate_tile_stairs": "Shadowslate Tile Stairs",
   "block.eldritchrealms.shadowslate_tile_slab": "Shadowslate Tile Slab",
   "block.eldritchrealms.shadowslate_tile_wall": "Shadowslate Tile Wall",
-  "block.eldritchrealms.cracked_shadowslate_bricks": "Cracked Shadowslate Brick",
+  "block.eldritchrealms.cracked_shadowslate_bricks": "Cracked Shadowslate Bricks",
   "block.eldritchrealms.cracked_shadowslate_brick_stairs": "Cracked Shadowslate Brick Stairs",
   "block.eldritchrealms.cracked_shadowslate_brick_slab": "Cracked Shadowslate Brick Slab",
   "block.eldritchrealms.cracked_shadowslate_brick_wall": "Cracked Shadowslate Brick Wall",
@@ -72,20 +74,44 @@
   "block.eldritchrealms.cracked_shadowslate_tile_stairs": "Cracked Shadowslate Tile Stairs",
   "block.eldritchrealms.cracked_shadowslate_tile_slab": "Cracked Shadowslate Tile Slab",
   "block.eldritchrealms.cracked_shadowslate_tile_wall": "Cracked Shadowslate Tile Wall",
+
   "block.eldritchrealms.gloomarble": "Gloomarble",
+
   "block.eldritchrealms.crimson_cobble": "Crimson Cobble",
   "block.eldritchrealms.crimson_cobble_stairs": "Crimson Cobble Stairs",
   "block.eldritchrealms.crimson_cobble_slab": "Crimson Cobble Slab",
   "block.eldritchrealms.crimson_cobble_wall": "Crimson Cobble Wall",
 
+  "block.eldritchrealms.eldritch_limestone": "Eldritch Limestone",
+  "block.eldritchrealms.eldritch_limestone_pillar": "Eldritch Limestone Pillar",
+  "block.eldritchrealms.eldritch_limestone_stairs": "Eldritch Limestone Stairs",
+  "block.eldritchrealms.eldritch_limestone_slab": "Eldritch Limestone Slab",
+  "block.eldritchrealms.eldritch_limestone_wall": "Eldritch Limestone Wall",
+  "block.eldritchrealms.polished_eldritch_limestone": "Polished Eldritch Limestone",
+  "block.eldritchrealms.polished_eldritch_limestone_stairs": "Polished Eldritch Limestone Stairs",
+  "block.eldritchrealms.polished_eldritch_limestone_slab": "Polished Eldritch Limestone Slab",
+  "block.eldritchrealms.polished_eldritch_limestone_wall": "Polished Eldritch Limestone Wall",
+  "block.eldritchrealms.eldritch_limestone_bricks": "Eldritch Limestone Bricks",
+  "block.eldritchrealms.eldritch_limestone_brick_stairs": "Eldritch Limestone Brick Stairs",
+  "block.eldritchrealms.eldritch_limestone_brick_slab": "Eldritch Limestone Brick Slab",
+  "block.eldritchrealms.eldritch_limestone_brick_wall": "Eldritch Limestone Brick Wall",
+
+
+
+
   "item.eldritchrealms.dreadquartz": "Dreadquartz",
   "item.eldritchrealms.gloomarble_dust": "Gloomarble Dust",
   "itemgroup.eldritch_realms": "Eldritch Realms",
+
+
+
 
   "sounds.eldritchrealms.shadowslate_break": "Block Breaking",
   "sounds.eldritchrealms.shadowslate_place": "Block Placed",
   "sounds.eldritchrealms.shadowslate_step": "Footsteps",
   "sounds.eldritchrealms.shadowslate_bricks_place": "Block Placed",
-  "sounds.eldritchrealms.shadowslate_bricks_step": "Footsteps"
+  "sounds.eldritchrealms.shadowslate_bricks_step": "Footsteps",
+  "sounds.eldritchrealms.tuff_bricks_place": "Block Placed",
+  "sounds.eldritchrealms.tuff_bricks_step": "Footsteps"
 
 }

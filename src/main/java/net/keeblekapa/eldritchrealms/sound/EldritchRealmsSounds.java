@@ -14,9 +14,16 @@ public class EldritchRealmsSounds {
     public static final SoundEvent SHADOWSLATE_PLACE = registerSoundEvent("shadowslate_place");
     public static final SoundEvent SHADOWSLATE_STEP = registerSoundEvent("shadowslate_step");
 
+    public static final SoundEvent TUFF_BRICKS_PLACE = registerSoundEvent("tuff_bricks_place");
+    public static final SoundEvent TUFF_BRICKS_STEP = registerSoundEvent("tuff_bricks_step");
+
     public static final BlockSoundGroup SHADOWSLATE_SOUNDS = new BlockSoundGroup(1f, 1f,
             EldritchRealmsSounds.SHADOWSLATE_BREAK, EldritchRealmsSounds.SHADOWSLATE_STEP, EldritchRealmsSounds.SHADOWSLATE_PLACE,
             SoundEvents.BLOCK_DEEPSLATE_HIT, SoundEvents.BLOCK_DEEPSLATE_FALL);
+
+    public static final BlockSoundGroup TUFF_BRICK_SOUNDS = new BlockSoundGroup(1f, 1f,
+            SoundEvents.BLOCK_TUFF_BREAK, EldritchRealmsSounds.TUFF_BRICKS_STEP, EldritchRealmsSounds.TUFF_BRICKS_PLACE,
+            SoundEvents.BLOCK_TUFF_HIT, SoundEvents.BLOCK_TUFF_FALL);
 
 
     private static SoundEvent registerSoundEvent(String name) {

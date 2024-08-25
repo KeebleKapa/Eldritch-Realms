@@ -231,6 +231,41 @@ public class EldritchRealmsBlocks {
 
     // Eldritch Limestone
 
+    public static final Block ELDRITCH_LIMESTONE_PILLAR = registerBlock("eldritch_limestone_pillar",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.TUFF).strength(2.5f, 6f).sounds(EldritchRealmsSounds.TUFF_BRICK_SOUNDS)));
+
+    public static final Block ELDRITCH_LIMESTONE = registerBlock("eldritch_limestone",
+            new Block(FabricBlockSettings.copyOf(Blocks.TUFF).strength(2.5f, 6f)));
+    public static final Block ELDRITCH_LIMESTONE_STAIRS = registerBlock("eldritch_limestone_stairs",
+            new StairsBlock(EldritchRealmsBlocks.ELDRITCH_LIMESTONE.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.TUFF).strength(2.5f, 6f)));
+    public static final Block ELDRITCH_LIMESTONE_SLAB = registerBlock("eldritch_limestone_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.TUFF).strength(2.5f, 6f)));
+    public static final Block ELDRITCH_LIMESTONE_WALL = registerBlock("eldritch_limestone_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.TUFF).strength(2.5f, 6f)));
+
+    public static final Block POLISHED_ELDRITCH_LIMESTONE = registerBlock("polished_eldritch_limestone",
+            new Block(FabricBlockSettings.copyOf(Blocks.TUFF).strength(2.5f, 6f)));
+    public static final Block POLISHED_ELDRITCH_LIMESTONE_STAIRS = registerBlock("polished_eldritch_limestone_stairs",
+            new StairsBlock(EldritchRealmsBlocks.ELDRITCH_LIMESTONE.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.TUFF).strength(2.5f, 6f)));
+    public static final Block POLISHED_ELDRITCH_LIMESTONE_SLAB = registerBlock("polished_eldritch_limestone_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.TUFF).strength(2.5f, 6f)));
+    public static final Block POLISHED_ELDRITCH_LIMESTONE_WALL = registerBlock("polished_eldritch_limestone_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.TUFF).strength(2.5f, 6f)));
+
+    public static final Block ELDRITCH_LIMESTONE_BRICKS = registerBlock("eldritch_limestone_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.TUFF).strength(2.5f, 6f).sounds(EldritchRealmsSounds.TUFF_BRICK_SOUNDS)));
+    public static final Block ELDRITCH_LIMESTONE_BRICK_STAIRS = registerBlock("eldritch_limestone_brick_stairs",
+            new StairsBlock(EldritchRealmsBlocks.ELDRITCH_LIMESTONE.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.TUFF).strength(2.5f, 6f).sounds(EldritchRealmsSounds.TUFF_BRICK_SOUNDS)));
+    public static final Block ELDRITCH_LIMESTONE_BRICK_SLAB = registerBlock("eldritch_limestone_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.TUFF).strength(2.5f, 6f).sounds(EldritchRealmsSounds.TUFF_BRICK_SOUNDS)));
+    public static final Block ELDRITCH_LIMESTONE_BRICK_WALL = registerBlock("eldritch_limestone_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.TUFF).strength(2.5f, 6f).sounds(EldritchRealmsSounds.TUFF_BRICK_SOUNDS)));
+
+
+
     // Umbral Onyx
 
     // Wraithstone

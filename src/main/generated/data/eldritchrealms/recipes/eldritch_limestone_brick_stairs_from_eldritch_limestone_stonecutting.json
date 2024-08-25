@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "eldritchrealms:eldritch_limestone"
+  },
+  "result": "eldritchrealms:eldritch_limestone_brick_stairs"
+}

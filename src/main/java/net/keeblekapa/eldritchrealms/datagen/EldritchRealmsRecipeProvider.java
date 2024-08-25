@@ -479,6 +479,86 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.CRIMSON_COBBLE_WALL, EldritchRealmsBlocks.CRIMSON_COBBLE);
 
 
+        // Eldritch Limestone
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_PILLAR, 2)
+                .pattern("X")
+                .pattern("X")
+                .input('X', EldritchRealmsBlocks.ELDRITCH_LIMESTONE)
+                .criterion(hasItem(EldritchRealmsBlocks.ELDRITCH_LIMESTONE), conditionsFromItem(EldritchRealmsBlocks.ELDRITCH_LIMESTONE))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_PILLAR)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE, 4)
+                .pattern("XX")
+                .pattern("XX")
+                .input('X', EldritchRealmsBlocks.ELDRITCH_LIMESTONE)
+                .criterion(hasItem(EldritchRealmsBlocks.ELDRITCH_LIMESTONE), conditionsFromItem(EldritchRealmsBlocks.ELDRITCH_LIMESTONE))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS, 4)
+                .pattern("XX")
+                .pattern("XX")
+                .input('X', EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE)
+                .criterion(hasItem(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE), conditionsFromItem(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS)));
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_PILLAR, 4)
+                .pattern("XX")
+                .pattern("XX")
+                .input('X', EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS)
+                .criterion(hasItem(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS), conditionsFromItem(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_PILLAR) + "_from_bricks"));
+
+        createStairsRecipe(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_STAIRS, Ingredient.ofItems(EldritchRealmsBlocks.ELDRITCH_LIMESTONE))
+                .criterion(hasItem(EldritchRealmsBlocks.ELDRITCH_LIMESTONE), conditionsFromItem(EldritchRealmsBlocks.ELDRITCH_LIMESTONE))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_STAIRS)));
+        createStairsRecipe(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_STAIRS, Ingredient.ofItems(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE))
+                .criterion(hasItem(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE), conditionsFromItem(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_STAIRS)));
+        createStairsRecipe(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_STAIRS, Ingredient.ofItems(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS))
+                .criterion(hasItem(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS), conditionsFromItem(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_STAIRS)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_SLAB, Ingredient.ofItems(EldritchRealmsBlocks.ELDRITCH_LIMESTONE))
+                .criterion(hasItem(EldritchRealmsBlocks.ELDRITCH_LIMESTONE), conditionsFromItem(EldritchRealmsBlocks.ELDRITCH_LIMESTONE))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_SLAB)));
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_SLAB, Ingredient.ofItems(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE))
+                .criterion(hasItem(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE), conditionsFromItem(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_SLAB)));
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_SLAB, Ingredient.ofItems(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS))
+                .criterion(hasItem(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS), conditionsFromItem(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_SLAB)));
+
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_WALL, EldritchRealmsBlocks.ELDRITCH_LIMESTONE);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_WALL, EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_WALL, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS);
+
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_PILLAR, EldritchRealmsBlocks.ELDRITCH_LIMESTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_PILLAR, EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_PILLAR, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_STAIRS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_SLAB, EldritchRealmsBlocks.ELDRITCH_LIMESTONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_WALL, EldritchRealmsBlocks.ELDRITCH_LIMESTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE, EldritchRealmsBlocks.ELDRITCH_LIMESTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_STAIRS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_SLAB, EldritchRealmsBlocks.ELDRITCH_LIMESTONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_WALL, EldritchRealmsBlocks.ELDRITCH_LIMESTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_STAIRS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_SLAB, EldritchRealmsBlocks.ELDRITCH_LIMESTONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_WALL, EldritchRealmsBlocks.ELDRITCH_LIMESTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_STAIRS, EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_SLAB, EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_WALL, EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS, EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_STAIRS, EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_SLAB, EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_WALL, EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_STAIRS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_SLAB, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_WALL, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS);
+
     }
 
 

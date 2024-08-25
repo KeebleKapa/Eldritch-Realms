@@ -96,6 +96,21 @@ public class EldritchRealmsItemGroups {
                         entries.add(EldritchRealmsBlocks.CRIMSON_COBBLE_STAIRS);
                         entries.add(EldritchRealmsBlocks.CRIMSON_COBBLE_WALL);
 
+                        entries.add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE);
+                        entries.add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_SLAB);
+                        entries.add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_STAIRS);
+                        entries.add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_WALL);
+                        entries.add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_PILLAR);
+                        entries.add(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE);
+                        entries.add(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_SLAB);
+                        entries.add(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_STAIRS);
+                        entries.add(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_WALL);
+                        entries.add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS);
+                        entries.add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_SLAB);
+                        entries.add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_STAIRS);
+                        entries.add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_WALL);
+
+
                         entries.add(EldritchRealmsBlocks.GLOOMARBLE);
                         entries.add(EldritchRealmsItems.GLOOMARBLE_DUST);
 
