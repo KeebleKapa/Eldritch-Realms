@@ -14,10 +14,10 @@
 ## Building Blocks:
 - ✔️ Abyssal Granite
 - ✔️ Veilstone
-- 🚧 Gloomarble
-- 🚧 Shadowslate
-- 🚧 Crimson Cobble
-- 🚧 Eldritch Limestone
+- ✔️ Gloomarble
+- ✔️ Shadowslate
+- ✔️ Crimson Cobble
+- ✔️ Eldritch Limestone
 - ❌ Umbral Onyx
 - ❌ Wraithstone
 - ❌ Hauntrock
