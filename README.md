@@ -49,13 +49,13 @@
 ## Wood Types:
 - ❌ Phantom
 - ❌ Elder
-- ❌ Umbram Oak
+- 🚧 Umbram Oak
 
 ## Ground Blocks:
-- ❌ Mythral Grass
-- ❌ Shadowsoil
-- ❌ Eerie Gravel
-- ❌ Astral Sand
+- 🚧 Mythral Grass
+- 🚧 Shadowsoil
+- 🚧 Eerie Gravel
+- 🚧 Astral Sand
 
 ## Functional Blocks:
 - ❌ Nebulatic Enchanting Table ( Nebula Lapis is used for enchanting with new custom enchantments )
@@ -123,6 +123,8 @@
 - ❌ Aberrant Wight: A humanoid figure with distorted features, draining vitality with a touch and creating minions from fallen foes.
 ####
 - ❌ Eldritch Watcher: A massive, floating eye surrounded by smaller eyes, each capable of launching destructive energy beams.
+
+## The Eldritch Realm Dimension 🚧 
 
 <div align="center"><a href="https://modrinth.com/mod/eldritch-realms/version/0.1-1.20.1"><img src="https://cdn.modrinth.com/data/cached_images/7476acc4f41b0d95605f7752ed2c8c61f7fdeb53.png"></a></div>
 
