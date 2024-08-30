@@ -138,6 +138,14 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
 
                 addDrop(EldritchRealmsBlocks.GLOOMARBLE, sevenToNineDrops(EldritchRealmsBlocks.GLOOMARBLE, EldritchRealmsItems.GLOOMARBLE_DUST));
 
+                addDrop(EldritchRealmsBlocks.UMBRAM_OAK_LOG);
+                addDrop(EldritchRealmsBlocks.UMBRAM_OAK_WOOD);
+                addDrop(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_LOG);
+                addDrop(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_WOOD);
+                addDrop(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS);
+                addDrop(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES, leavesDrops(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES, EldritchRealmsBlocks.UMBRAM_OAK_LEAVES, 0.0025f)); // TODO
+
+
     }
 
     public LootTable.Builder stoneDrops(Block drop, Block block) {

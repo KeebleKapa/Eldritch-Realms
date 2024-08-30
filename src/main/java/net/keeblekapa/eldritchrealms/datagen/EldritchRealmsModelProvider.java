@@ -133,6 +133,11 @@ public class EldritchRealmsModelProvider extends FabricModelProvider {
         elbPool.wall(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_WALL);
 
 
+        blockStateModelGenerator.registerLog(EldritchRealmsBlocks.UMBRAM_OAK_LOG).log(EldritchRealmsBlocks.UMBRAM_OAK_LOG).wood(EldritchRealmsBlocks.UMBRAM_OAK_WOOD);
+        blockStateModelGenerator.registerLog(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_LOG).log(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_LOG).wood(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS);
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES);
+
 
 
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.GLOOMARBLE);

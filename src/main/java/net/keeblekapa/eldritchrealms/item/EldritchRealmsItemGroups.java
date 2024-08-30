@@ -114,8 +114,14 @@ public class EldritchRealmsItemGroups {
                         entries.add(EldritchRealmsBlocks.GLOOMARBLE);
                         entries.add(EldritchRealmsItems.GLOOMARBLE_DUST);
 
-                        // Items
                         entries.add(EldritchRealmsItems.DREADQUARTZ);
+
+                        entries.add(EldritchRealmsBlocks.UMBRAM_OAK_LOG);
+                        entries.add(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_LOG);
+                        entries.add(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS);
+                        entries.add(EldritchRealmsBlocks.UMBRAM_OAK_WOOD);
+                        entries.add(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_WOOD);
+                        entries.add(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES);
 
 
 

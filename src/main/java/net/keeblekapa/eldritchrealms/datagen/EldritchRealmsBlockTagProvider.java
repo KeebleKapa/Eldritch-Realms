@@ -6,6 +6,7 @@ import net.keeblekapa.eldritchrealms.block.EldritchRealmsBlocks;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
@@ -65,10 +66,16 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
         ;
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES)
 
         ;
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_LOG)
+                .add(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_LOG)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_WOOD)
+                .add(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_WOOD)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS)
 
         ;
 
@@ -256,6 +263,14 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_WALL)
                 .add(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_WALL)
                 .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_WALL)
+
+        ;
+
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_LOG)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_WOOD)
+                .add(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_LOG)
+                .add(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_WOOD)
 
         ;
     }

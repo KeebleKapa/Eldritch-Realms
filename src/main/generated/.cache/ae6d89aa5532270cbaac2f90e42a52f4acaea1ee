@@ -1,12 +1,13 @@
-// 1.20.1	2024-08-24T21:20:45.2370798	Eldritch Realms/Tags for minecraft:block
+// 1.20.1	2024-08-29T20:42:53.8329397	Eldritch Realms/Tags for minecraft:block
 a3d26ddad887acc9d0dadbaf600fba74deaaae69 data\minecraft\tags\blocks\mineable\pickaxe.json
-14b76bf94a5d27f3d4ca91c4833a7a02abdc006c data\minecraft\tags\blocks\needs_iron_tool.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_diamond_tool.json
 bab56d111cdbae18a10081e50e6387a2285b84fd data\minecraft\tags\blocks\stairs.json
+2298e72b6f5aed384a079449eb59249bbd7156b2 data\minecraft\tags\blocks\logs_that_burn.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\shovel.json
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\hoe.json
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\axe.json
+0316be25d9120145b0002a7f123cd186bd5a0eb0 data\minecraft\tags\blocks\mineable\hoe.json
+97ebb72c4f9630bf7d771d8a58f65fa6a9d1ef52 data\minecraft\tags\blocks\mineable\axe.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\needs_tool_level_4.json
-c3d1c8d3972d8e70c9e6a9c55e555f72ab9e4056 data\minecraft\tags\blocks\needs_stone_tool.json
-c6a641379a7914e1ba2a96d791fda7a124bd0c49 data\minecraft\tags\blocks\slabs.json
 c1a094b086b2764c86d4780ef816b20a7aa69f92 data\minecraft\tags\blocks\walls.json
+14b76bf94a5d27f3d4ca91c4833a7a02abdc006c data\minecraft\tags\blocks\needs_iron_tool.json
+c6a641379a7914e1ba2a96d791fda7a124bd0c49 data\minecraft\tags\blocks\slabs.json
+c3d1c8d3972d8e70c9e6a9c55e555f72ab9e4056 data\minecraft\tags\blocks\needs_stone_tool.json

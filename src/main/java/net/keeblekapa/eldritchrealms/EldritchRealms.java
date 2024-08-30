@@ -2,6 +2,8 @@ package net.keeblekapa.eldritchrealms;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.keeblekapa.eldritchrealms.block.EldritchRealmsBlocks;
 import net.keeblekapa.eldritchrealms.item.EldritchRealmsItemGroups;
 import net.keeblekapa.eldritchrealms.item.EldritchRealmsItems;
@@ -16,10 +18,22 @@ public class EldritchRealms implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-
 		EldritchRealmsSounds.registerSounds();
+
 		EldritchRealmsBlocks.registerBlocks();
 		EldritchRealmsItems.registerItems();
+
 		EldritchRealmsItemGroups.registerItemGroups();
+
+		StrippableBlockRegistry.register(EldritchRealmsBlocks.UMBRAM_OAK_LOG, EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_LOG);
+		StrippableBlockRegistry.register(EldritchRealmsBlocks.UMBRAM_OAK_WOOD, EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_WOOD);
+
+		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.UMBRAM_OAK_LOG, 2, 4);
+		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.UMBRAM_OAK_WOOD, 2, 4);
+		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_LOG, 2, 4);
+		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_WOOD, 2, 4);
+		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS, 4, 8);
+
+
 	}
 }

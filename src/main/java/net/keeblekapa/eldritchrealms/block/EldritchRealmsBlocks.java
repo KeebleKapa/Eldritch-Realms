@@ -332,6 +332,20 @@ public class EldritchRealmsBlocks {
     // Elder
 
     // Umbram Oak
+    public static final Block UMBRAM_OAK_LOG = registerBlock("umbram_oak_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(2.5f, 4.5f)));
+    public static final Block UMBRAM_OAK_WOOD = registerBlock("umbram_oak_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).strength(2.5f, 4.5f)));
+    public static final Block STRIPPED_UMBRAM_OAK_LOG = registerBlock("stripped_umbram_oak_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(2.5f, 4.5f)));
+    public static final Block STRIPPED_UMBRAM_OAK_WOOD = registerBlock("stripped_umbram_oak_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(2.5f, 4.5f)));
+
+    public static final Block UMBRAM_OAK_PLANKS = registerBlock("umbram_oak_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.5f, 4.5f)));
+    public static final Block UMBRAM_OAK_LEAVES = registerBlock("umbram_oak_leaves",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(2.5f, 4.5f).nonOpaque()));
+
 
 
     //--------------------------------------------------------
