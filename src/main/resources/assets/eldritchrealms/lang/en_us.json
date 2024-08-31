@@ -101,16 +101,20 @@
   "block.eldritchrealms.umbram_oak_wood": "Umbram Oak Wood",
   "block.eldritchrealms.stripped_umbram_oak_wood": "Stripped Umbram Oak Wood",
   "block.eldritchrealms.umbram_oak_planks": "Umbram Oak Planks",
+  "block.eldritchrealms.umbram_oak_stairs": "Umbram Oak Stairs",
+  "block.eldritchrealms.umbram_oak_slab": "Umbram Oak Slab",
+  "block.eldritchrealms.umbram_oak_fence": "Umbram Oak Fence",
+  "block.eldritchrealms.umbram_oak_fence_gate": "Umbram Oak Fence Gate",
+  "block.eldritchrealms.umbram_oak_door": "Umbram Oak Door",
+  "block.eldritchrealms.umbram_oak_trapdoor": "Umbram Oak Trapdoor",
+  "block.eldritchrealms.umbram_oak_pressure_plate": "Umbram Oak Pressure Plate",
+  "block.eldritchrealms.umbram_oak_button": "Umbram Oak Button",
   "block.eldritchrealms.umbram_oak_leaves": "Umbram Oak Leaves",
-
-
 
 
   "item.eldritchrealms.dreadquartz": "Dreadquartz",
   "item.eldritchrealms.gloomarble_dust": "Gloomarble Dust",
   "itemgroup.eldritch_realms": "Eldritch Realms",
-
-
 
 
   "sounds.eldritchrealms.shadowslate_break": "Block Breaking",

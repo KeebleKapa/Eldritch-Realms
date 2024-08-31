@@ -135,7 +135,13 @@ public class EldritchRealmsModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerLog(EldritchRealmsBlocks.UMBRAM_OAK_LOG).log(EldritchRealmsBlocks.UMBRAM_OAK_LOG).wood(EldritchRealmsBlocks.UMBRAM_OAK_WOOD);
         blockStateModelGenerator.registerLog(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_LOG).log(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_LOG).wood(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_WOOD);
-        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS);
+        BlockStateModelGenerator.BlockTexturePool uoPool = blockStateModelGenerator.registerCubeAllModelTexturePool(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS);
+        uoPool.stairs(EldritchRealmsBlocks.UMBRAM_OAK_STAIRS);
+        uoPool.slab(EldritchRealmsBlocks.UMBRAM_OAK_SLAB);
+        uoPool.fence(EldritchRealmsBlocks.UMBRAM_OAK_FENCE);
+        uoPool.fenceGate(EldritchRealmsBlocks.UMBRAM_OAK_FENCE_GATE);
+        uoPool.pressurePlate(EldritchRealmsBlocks.UMBRAM_OAK_PRESSURE_PLATE);
+        uoPool.button(EldritchRealmsBlocks.UMBRAM_OAK_BUTTON);
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES);
 
 

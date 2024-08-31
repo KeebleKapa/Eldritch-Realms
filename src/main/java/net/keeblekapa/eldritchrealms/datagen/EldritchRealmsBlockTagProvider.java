@@ -76,6 +76,14 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_WOOD)
                 .add(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_WOOD)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_STAIRS)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_SLAB)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_FENCE)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_FENCE_GATE)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_DOOR)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_TRAPDOOR)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_PRESSURE_PLATE)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_BUTTON)
 
         ;
 
@@ -177,6 +185,30 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.GLOOMARBLE)
         ;
 
+        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_FENCE)
+        ;
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_FENCE_GATE)
+        ;
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_PRESSURE_PLATE)
+        ;
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_BUTTONS)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_BUTTON)
+        ;
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_DOOR)
+        ;
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_TRAPDOOR)
+        ;
+
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICK_SLAB)
                 .add(EldritchRealmsBlocks.ABYSSAL_GRANITE_SLAB)
@@ -204,6 +236,8 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_SLAB)
                 .add(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_SLAB)
                 .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_SLAB)
+
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_SLAB)
         ;
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
@@ -233,6 +267,8 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_STAIRS)
                 .add(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_STAIRS)
                 .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_STAIRS)
+
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_STAIRS)
 
         ;
 

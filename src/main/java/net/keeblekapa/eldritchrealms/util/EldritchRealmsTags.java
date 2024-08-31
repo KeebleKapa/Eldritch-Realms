@@ -11,8 +11,6 @@ import net.minecraft.util.Identifier;
 public class EldritchRealmsTags {
 
     public static class Blocks {
-        public static final TagKey<Block> COBBLESTONE_BLOCKS =
-                createTag("cobblestone_blocks");
 
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(EldritchRealms.MOD_ID, name));

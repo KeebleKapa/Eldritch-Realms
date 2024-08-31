@@ -143,6 +143,14 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                 addDrop(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_LOG);
                 addDrop(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_WOOD);
                 addDrop(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS);
+                addDrop(EldritchRealmsBlocks.UMBRAM_OAK_STAIRS);
+                addDrop(EldritchRealmsBlocks.UMBRAM_OAK_SLAB, slabDrops(EldritchRealmsBlocks.UMBRAM_OAK_SLAB));
+                addDrop(EldritchRealmsBlocks.UMBRAM_OAK_BUTTON);
+                addDrop(EldritchRealmsBlocks.UMBRAM_OAK_PRESSURE_PLATE);
+                addDrop(EldritchRealmsBlocks.UMBRAM_OAK_DOOR);
+                addDrop(EldritchRealmsBlocks.UMBRAM_OAK_FENCE);
+                addDrop(EldritchRealmsBlocks.UMBRAM_OAK_FENCE_GATE);
+                addDrop(EldritchRealmsBlocks.UMBRAM_OAK_TRAPDOOR);
                 addDrop(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES, leavesDrops(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES, EldritchRealmsBlocks.UMBRAM_OAK_LEAVES, 0.0025f)); // TODO
 
 

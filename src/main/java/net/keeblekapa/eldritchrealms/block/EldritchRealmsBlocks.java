@@ -343,6 +343,26 @@ public class EldritchRealmsBlocks {
 
     public static final Block UMBRAM_OAK_PLANKS = registerBlock("umbram_oak_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.5f, 4.5f)));
+    public static final Block UMBRAM_OAK_STAIRS = registerBlock("umbram_oak_stairs",
+            new StairsBlock(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.OAK_STAIRS).strength(2.5f, 4.5f)));
+    public static final Block UMBRAM_OAK_SLAB = registerBlock("umbram_oak_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.5f, 4.5f)));
+    public static final Block UMBRAM_OAK_PRESSURE_PLATE = registerBlock("umbram_oak_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.0f, 3.5f), BlockSetType.OAK));
+    public static final Block UMBRAM_OAK_BUTTON = registerBlock("umbram_oak_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(1.5f, 2.5f),
+                    BlockSetType.OAK, 20, true));
+    public static final Block UMBRAM_OAK_DOOR = registerBlock("umbram_oak_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.5f, 4.5f), BlockSetType.OAK));
+    public static final Block UMBRAM_OAK_TRAPDOOR = registerBlock("umbram_oak_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.5f, 4.5f), BlockSetType.OAK));
+    public static final Block UMBRAM_OAK_FENCE = registerBlock("umbram_oak_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.5f, 4.5f)));
+    public static final Block UMBRAM_OAK_FENCE_GATE = registerBlock("umbram_oak_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.5f, 4.5f), WoodType.OAK));
+
     public static final Block UMBRAM_OAK_LEAVES = registerBlock("umbram_oak_leaves",
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(2.5f, 4.5f).nonOpaque()));
 

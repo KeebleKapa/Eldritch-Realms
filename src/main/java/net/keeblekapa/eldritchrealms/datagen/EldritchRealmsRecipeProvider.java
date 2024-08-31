@@ -559,6 +559,37 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_SLAB, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS, 2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_WALL, EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICKS);
 
+
+
+        // Wood
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.UMBRAM_OAK_WOOD)
+                .pattern("XX")
+                .pattern("XX")
+                .input('X', EldritchRealmsBlocks.UMBRAM_OAK_LOG)
+                .criterion(hasItem(EldritchRealmsBlocks.UMBRAM_OAK_LOG), conditionsFromItem(EldritchRealmsBlocks.UMBRAM_OAK_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.UMBRAM_OAK_WOOD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_WOOD)
+                .pattern("XX")
+                .pattern("XX")
+                .input('X', EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_LOG)
+                .criterion(hasItem(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_LOG), conditionsFromItem(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_WOOD)));
+
+        createStairsRecipe(EldritchRealmsBlocks.UMBRAM_OAK_STAIRS, Ingredient.ofItems(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS));
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.UMBRAM_OAK_SLAB, Ingredient.ofItems(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS));
+        createFenceRecipe(EldritchRealmsBlocks.UMBRAM_OAK_FENCE, Ingredient.ofItems(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS));
+        createFenceGateRecipe(EldritchRealmsBlocks.UMBRAM_OAK_FENCE, Ingredient.ofItems(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS));
+        createDoorRecipe(EldritchRealmsBlocks.UMBRAM_OAK_DOOR, Ingredient.ofItems(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS));
+        createTrapdoorRecipe(EldritchRealmsBlocks.UMBRAM_OAK_TRAPDOOR, Ingredient.ofItems(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS));
+        createPressurePlateRecipe(RecipeCategory.REDSTONE, EldritchRealmsBlocks.UMBRAM_OAK_PRESSURE_PLATE, Ingredient.ofItems(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, EldritchRealmsBlocks.UMBRAM_OAK_BUTTON, 1)
+                .input(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS)
+                .criterion(hasItem(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS), conditionsFromItem(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.UMBRAM_OAK_BUTTON)));
+
+
     }
 
 

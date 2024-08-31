@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "eldritchrealms:block/umbram_oak_slab"
+    },
+    "type=double": {
+      "model": "eldritchrealms:block/umbram_oak_planks"
+    },
+    "type=top": {
+      "model": "eldritchrealms:block/umbram_oak_slab_top"
+    }
+  }
+}

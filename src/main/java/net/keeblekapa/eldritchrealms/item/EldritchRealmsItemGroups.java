@@ -117,11 +117,20 @@ public class EldritchRealmsItemGroups {
                         entries.add(EldritchRealmsItems.DREADQUARTZ);
 
                         entries.add(EldritchRealmsBlocks.UMBRAM_OAK_LOG);
-                        entries.add(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_LOG);
-                        entries.add(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS);
                         entries.add(EldritchRealmsBlocks.UMBRAM_OAK_WOOD);
+                        entries.add(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_LOG);
                         entries.add(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_WOOD);
+                        entries.add(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS);
+                        entries.add(EldritchRealmsBlocks.UMBRAM_OAK_STAIRS);
+                        entries.add(EldritchRealmsBlocks.UMBRAM_OAK_SLAB);
+                        entries.add(EldritchRealmsBlocks.UMBRAM_OAK_FENCE);
+                        entries.add(EldritchRealmsBlocks.UMBRAM_OAK_FENCE_GATE);
+                        entries.add(EldritchRealmsBlocks.UMBRAM_OAK_DOOR);
+                        entries.add(EldritchRealmsBlocks.UMBRAM_OAK_TRAPDOOR);
+                        entries.add(EldritchRealmsBlocks.UMBRAM_OAK_PRESSURE_PLATE);
+                        entries.add(EldritchRealmsBlocks.UMBRAM_OAK_BUTTON);
                         entries.add(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES);
+
 
 
 

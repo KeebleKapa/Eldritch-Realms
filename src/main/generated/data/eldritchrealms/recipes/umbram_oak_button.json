@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "eldritchrealms:umbram_oak_planks"
+    }
+  ],
+  "result": {
+    "item": "eldritchrealms:umbram_oak_button"
+  }
+}

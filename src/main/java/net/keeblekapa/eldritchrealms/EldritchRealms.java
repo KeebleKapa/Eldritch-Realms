@@ -33,6 +33,14 @@ public class EldritchRealms implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_LOG, 2, 4);
 		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_WOOD, 2, 4);
 		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS, 4, 8);
+		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.UMBRAM_OAK_STAIRS, 4, 8);
+		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.UMBRAM_OAK_SLAB, 4, 8);
+		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.UMBRAM_OAK_FENCE, 4, 8);
+		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.UMBRAM_OAK_FENCE_GATE, 4, 8);
+		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.UMBRAM_OAK_PRESSURE_PLATE, 15, 8);
+		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.UMBRAM_OAK_DOOR, 4, 8);
+		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.UMBRAM_OAK_TRAPDOOR, 4, 8);
+		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.UMBRAM_OAK_BUTTON, 20, 8);
 
 
 	}

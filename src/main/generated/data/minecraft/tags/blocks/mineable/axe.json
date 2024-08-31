@@ -5,6 +5,14 @@
     "eldritchrealms:stripped_umbram_oak_log",
     "eldritchrealms:umbram_oak_wood",
     "eldritchrealms:stripped_umbram_oak_wood",
-    "eldritchrealms:umbram_oak_planks"
+    "eldritchrealms:umbram_oak_planks",
+    "eldritchrealms:umbram_oak_stairs",
+    "eldritchrealms:umbram_oak_slab",
+    "eldritchrealms:umbram_oak_fence",
+    "eldritchrealms:umbram_oak_fence_gate",
+    "eldritchrealms:umbram_oak_door",
+    "eldritchrealms:umbram_oak_trapdoor",
+    "eldritchrealms:umbram_oak_pressure_plate",
+    "eldritchrealms:umbram_oak_button"
   ]
 }
