@@ -32,7 +32,7 @@
 
 ## Ore/Material Blocks:
 - ❌ Nebula Lapis
-- ❌ Dreadquartz ( Similar functions to regular quartz )
+- 🚧 Dreadquartz ( Similar functions to regular quartz )
 - ❌ Eclipsium
 - ❌ Soulspark
 - ❌ Dreadium
