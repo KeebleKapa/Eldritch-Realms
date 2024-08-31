@@ -47,7 +47,7 @@
 - ❌ Enigmatic Iron ( Stronger than Diamond )
 
 ## Wood Types:
-- ❌ Phantom
+- 🚧 Phontum
 - ❌ Elder
 - 🚧 Umbram Oak
 
