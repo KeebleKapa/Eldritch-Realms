@@ -67,6 +67,7 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES)
+                .add(EldritchRealmsBlocks.PHONTUM_LEAVES)
 
         ;
 
@@ -84,6 +85,20 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_TRAPDOOR)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_PRESSURE_PLATE)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_BUTTON)
+
+                .add(EldritchRealmsBlocks.PHONTUM_LOG)
+                .add(EldritchRealmsBlocks.STRIPPED_PHONTUM_LOG)
+                .add(EldritchRealmsBlocks.PHONTUM_WOOD)
+                .add(EldritchRealmsBlocks.STRIPPED_PHONTUM_WOOD)
+                .add(EldritchRealmsBlocks.PHONTUM_PLANKS)
+                .add(EldritchRealmsBlocks.PHONTUM_STAIRS)
+                .add(EldritchRealmsBlocks.PHONTUM_SLAB)
+                .add(EldritchRealmsBlocks.PHONTUM_FENCE)
+                .add(EldritchRealmsBlocks.PHONTUM_FENCE_GATE)
+                .add(EldritchRealmsBlocks.PHONTUM_DOOR)
+                .add(EldritchRealmsBlocks.PHONTUM_TRAPDOOR)
+                .add(EldritchRealmsBlocks.PHONTUM_PRESSURE_PLATE)
+                .add(EldritchRealmsBlocks.PHONTUM_BUTTON)
 
         ;
 
@@ -187,26 +202,32 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
 
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_FENCE)
+                .add(EldritchRealmsBlocks.PHONTUM_FENCE)
         ;
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_FENCE_GATE)
+                .add(EldritchRealmsBlocks.PHONTUM_FENCE_GATE)
         ;
 
         getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_PRESSURE_PLATE)
+                .add(EldritchRealmsBlocks.PHONTUM_PRESSURE_PLATE)
         ;
 
         getOrCreateTagBuilder(BlockTags.WOODEN_BUTTONS)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_BUTTON)
+                .add(EldritchRealmsBlocks.PHONTUM_BUTTON)
         ;
 
         getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_DOOR)
+                .add(EldritchRealmsBlocks.PHONTUM_DOOR)
         ;
 
         getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_TRAPDOOR)
+                .add(EldritchRealmsBlocks.PHONTUM_TRAPDOOR)
         ;
 
         getOrCreateTagBuilder(BlockTags.SLABS)
@@ -238,6 +259,7 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_SLAB)
 
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_SLAB)
+                .add(EldritchRealmsBlocks.PHONTUM_SLAB)
         ;
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
@@ -269,6 +291,7 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_STAIRS)
 
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_STAIRS)
+                .add(EldritchRealmsBlocks.PHONTUM_STAIRS)
 
         ;
 
@@ -302,11 +325,15 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
 
         ;
 
-        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+        getOrCreateTagBuilder(BlockTags.LOGS)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_LOG)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_WOOD)
                 .add(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_LOG)
                 .add(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_WOOD)
+                .add(EldritchRealmsBlocks.PHONTUM_LOG)
+                .add(EldritchRealmsBlocks.PHONTUM_WOOD)
+                .add(EldritchRealmsBlocks.STRIPPED_PHONTUM_LOG)
+                .add(EldritchRealmsBlocks.STRIPPED_PHONTUM_WOOD)
 
         ;
     }

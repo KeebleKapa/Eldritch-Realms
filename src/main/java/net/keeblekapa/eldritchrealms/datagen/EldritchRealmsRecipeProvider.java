@@ -590,6 +590,37 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.UMBRAM_OAK_BUTTON)));
 
 
+
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.PHONTUM_WOOD)
+                .pattern("XX")
+                .pattern("XX")
+                .input('X', EldritchRealmsBlocks.PHONTUM_LOG)
+                .criterion(hasItem(EldritchRealmsBlocks.PHONTUM_LOG), conditionsFromItem(EldritchRealmsBlocks.PHONTUM_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.PHONTUM_WOOD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.STRIPPED_PHONTUM_WOOD)
+                .pattern("XX")
+                .pattern("XX")
+                .input('X', EldritchRealmsBlocks.STRIPPED_PHONTUM_LOG)
+                .criterion(hasItem(EldritchRealmsBlocks.STRIPPED_PHONTUM_LOG), conditionsFromItem(EldritchRealmsBlocks.STRIPPED_PHONTUM_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.STRIPPED_PHONTUM_WOOD)));
+
+        createStairsRecipe(EldritchRealmsBlocks.PHONTUM_STAIRS, Ingredient.ofItems(EldritchRealmsBlocks.PHONTUM_PLANKS));
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.PHONTUM_SLAB, Ingredient.ofItems(EldritchRealmsBlocks.PHONTUM_PLANKS));
+        createFenceRecipe(EldritchRealmsBlocks.PHONTUM_FENCE, Ingredient.ofItems(EldritchRealmsBlocks.PHONTUM_PLANKS));
+        createFenceGateRecipe(EldritchRealmsBlocks.PHONTUM_FENCE, Ingredient.ofItems(EldritchRealmsBlocks.PHONTUM_PLANKS));
+        createDoorRecipe(EldritchRealmsBlocks.PHONTUM_DOOR, Ingredient.ofItems(EldritchRealmsBlocks.PHONTUM_PLANKS));
+        createTrapdoorRecipe(EldritchRealmsBlocks.PHONTUM_TRAPDOOR, Ingredient.ofItems(EldritchRealmsBlocks.PHONTUM_PLANKS));
+        createPressurePlateRecipe(RecipeCategory.REDSTONE, EldritchRealmsBlocks.PHONTUM_PRESSURE_PLATE, Ingredient.ofItems(EldritchRealmsBlocks.PHONTUM_PLANKS));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, EldritchRealmsBlocks.PHONTUM_BUTTON, 1)
+                .input(EldritchRealmsBlocks.PHONTUM_PLANKS)
+                .criterion(hasItem(EldritchRealmsBlocks.PHONTUM_PLANKS), conditionsFromItem(EldritchRealmsBlocks.PHONTUM_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.PHONTUM_BUTTON)));
+
+
     }
 
 

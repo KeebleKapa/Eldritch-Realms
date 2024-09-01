@@ -131,6 +131,21 @@ public class EldritchRealmsItemGroups {
                         entries.add(EldritchRealmsBlocks.UMBRAM_OAK_BUTTON);
                         entries.add(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES);
 
+                        entries.add(EldritchRealmsBlocks.PHONTUM_LOG);
+                        entries.add(EldritchRealmsBlocks.PHONTUM_WOOD);
+                        entries.add(EldritchRealmsBlocks.STRIPPED_PHONTUM_LOG);
+                        entries.add(EldritchRealmsBlocks.STRIPPED_PHONTUM_WOOD);
+                        entries.add(EldritchRealmsBlocks.PHONTUM_PLANKS);
+                        entries.add(EldritchRealmsBlocks.PHONTUM_STAIRS);
+                        entries.add(EldritchRealmsBlocks.PHONTUM_SLAB);
+                        entries.add(EldritchRealmsBlocks.PHONTUM_FENCE);
+                        entries.add(EldritchRealmsBlocks.PHONTUM_FENCE_GATE);
+                        entries.add(EldritchRealmsBlocks.PHONTUM_DOOR);
+                        entries.add(EldritchRealmsBlocks.PHONTUM_TRAPDOOR);
+                        entries.add(EldritchRealmsBlocks.PHONTUM_PRESSURE_PLATE);
+                        entries.add(EldritchRealmsBlocks.PHONTUM_BUTTON);
+                        entries.add(EldritchRealmsBlocks.PHONTUM_LEAVES);
+
 
 
 

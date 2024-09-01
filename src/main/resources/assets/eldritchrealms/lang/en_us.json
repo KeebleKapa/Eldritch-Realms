@@ -111,6 +111,21 @@
   "block.eldritchrealms.umbram_oak_button": "Umbram Oak Button",
   "block.eldritchrealms.umbram_oak_leaves": "Umbram Oak Leaves",
 
+  "block.eldritchrealms.phontum_log": "Phontum Log",
+  "block.eldritchrealms.stripped_phontum_log": "Stripped Phontum Log",
+  "block.eldritchrealms.phontum_wood": "Umbram Oak Wood",
+  "block.eldritchrealms.stripped_phontum_wood": "Stripped Phontum Wood",
+  "block.eldritchrealms.phontum_planks": "Phontum Planks",
+  "block.eldritchrealms.phontum_stairs": "Phontum Stairs",
+  "block.eldritchrealms.phontum_slab": "Phontum Slab",
+  "block.eldritchrealms.phontum_fence": "Phontum Fence",
+  "block.eldritchrealms.phontum_fence_gate": "Phontum Fence Gate",
+  "block.eldritchrealms.phontum_door": "Phontum Door",
+  "block.eldritchrealms.phontum_trapdoor": "Phontum Trapdoor",
+  "block.eldritchrealms.phontum_pressure_plate": "Phontum Pressure Plate",
+  "block.eldritchrealms.phontum_button": "Phontum Button",
+  "block.eldritchrealms.phontum_leaves": "Phontum Leaves",
+
 
   "item.eldritchrealms.dreadquartz": "Dreadquartz",
   "item.eldritchrealms.gloomarble_dust": "Gloomarble Dust",

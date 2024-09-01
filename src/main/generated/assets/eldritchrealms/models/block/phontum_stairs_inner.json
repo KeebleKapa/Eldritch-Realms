@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "eldritchrealms:block/phontum_planks",
+    "side": "eldritchrealms:block/phontum_planks",
+    "top": "eldritchrealms:block/phontum_planks"
+  }
+}

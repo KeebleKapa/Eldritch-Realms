@@ -1,19 +1,19 @@
-// 1.20.1	2024-08-31T01:09:41.818741	Eldritch Realms/Tags for minecraft:block
-a8a74144eaa2791046d58899060e26776fbda18c data/minecraft/tags/blocks/stairs.json
+// 1.20.1	2024-09-01T04:06:45.061841	Eldritch Realms/Tags for minecraft:block
 c1a094b086b2764c86d4780ef816b20a7aa69f92 data/minecraft/tags/blocks/walls.json
-c2d9fa5b8fabff28b5bda09e327b5188a0dd7817 data/minecraft/tags/blocks/wooden_fences.json
-2298e72b6f5aed384a079449eb59249bbd7156b2 data/minecraft/tags/blocks/logs_that_burn.json
-5f3266b28136bf6dbe8424d1dfe4089f2cc61453 data/minecraft/tags/blocks/fence_gates.json
-0316be25d9120145b0002a7f123cd186bd5a0eb0 data/minecraft/tags/blocks/mineable/hoe.json
+9498a68e2c6732bbda13dfeacb9e055841b5ebae data/minecraft/tags/blocks/stairs.json
+ba7914674bd060c7b7beef33eaf5a30bbf8b96d9 data/minecraft/tags/blocks/wooden_fences.json
+ad4f86828c466daaffe347e8ba755916708d9f1d data/minecraft/tags/blocks/fence_gates.json
 14b76bf94a5d27f3d4ca91c4833a7a02abdc006c data/minecraft/tags/blocks/needs_iron_tool.json
+db70456300c383b561700df64e38120878a34d3b data/minecraft/tags/blocks/mineable/hoe.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data/minecraft/tags/blocks/needs_diamond_tool.json
-256f455f3499dfd240e8a9a93ea62495d040d81e data/minecraft/tags/blocks/wooden_trapdoors.json
+b85edacf4a3e7f1accca82f82785867aa7ed8df5 data/minecraft/tags/blocks/wooden_trapdoors.json
 a3d26ddad887acc9d0dadbaf600fba74deaaae69 data/minecraft/tags/blocks/mineable/pickaxe.json
-f8a34abb2160a4599936ef0a77cc1e7f1681265f data/minecraft/tags/blocks/wooden_pressure_plates.json
-f370902e31d0e43cc0c010e95f7fd6e6bc92c9ac data/minecraft/tags/blocks/slabs.json
-87a59dfaebea9b729cbd4f21c68fd9557e4da0aa data/minecraft/tags/blocks/wooden_doors.json
-a4f384e2046bd7eec7a5fc9f2e7fa8276135a5ca data/minecraft/tags/blocks/mineable/axe.json
-27d2db68e2f79191994e9fa5fc7c54e34060c752 data/minecraft/tags/blocks/wooden_buttons.json
+1f64b493bc9ce8345ebf1b1ddc6533b2821edbe5 data/minecraft/tags/blocks/wooden_pressure_plates.json
+dbea717822922085ba1b33b66d9125128a723ee4 data/minecraft/tags/blocks/slabs.json
+dc2e2984b361b1ec79b0487094e07f45fd2ee246 data/minecraft/tags/blocks/wooden_doors.json
+f268db8974185443e1039ea773a0bff8905df6ba data/minecraft/tags/blocks/mineable/axe.json
+672e34edb286045bc8e2e781320e5f07ae7ab4a6 data/minecraft/tags/blocks/logs.json
+720c1a520aa488c320fac0b60939e90ff0f44d7d data/minecraft/tags/blocks/wooden_buttons.json
 c3d1c8d3972d8e70c9e6a9c55e555f72ab9e4056 data/minecraft/tags/blocks/needs_stone_tool.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data/fabric/tags/blocks/needs_tool_level_4.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data/minecraft/tags/blocks/mineable/shovel.json

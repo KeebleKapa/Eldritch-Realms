@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "eldritchrealms:umbram_oak_door"
+    "eldritchrealms:umbram_oak_door",
+    "eldritchrealms:phontum_door"
   ]
 }

@@ -145,6 +145,18 @@ public class EldritchRealmsModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES);
 
 
+        blockStateModelGenerator.registerLog(EldritchRealmsBlocks.PHONTUM_LOG).log(EldritchRealmsBlocks.PHONTUM_LOG).wood(EldritchRealmsBlocks.PHONTUM_WOOD);
+        blockStateModelGenerator.registerLog(EldritchRealmsBlocks.STRIPPED_PHONTUM_LOG).log(EldritchRealmsBlocks.STRIPPED_PHONTUM_LOG).wood(EldritchRealmsBlocks.STRIPPED_PHONTUM_WOOD);
+        BlockStateModelGenerator.BlockTexturePool pPool = blockStateModelGenerator.registerCubeAllModelTexturePool(EldritchRealmsBlocks.PHONTUM_PLANKS);
+        pPool.stairs(EldritchRealmsBlocks.PHONTUM_STAIRS);
+        pPool.slab(EldritchRealmsBlocks.PHONTUM_SLAB);
+        pPool.fence(EldritchRealmsBlocks.PHONTUM_FENCE);
+        pPool.fenceGate(EldritchRealmsBlocks.PHONTUM_FENCE_GATE);
+        pPool.pressurePlate(EldritchRealmsBlocks.PHONTUM_PRESSURE_PLATE);
+        pPool.button(EldritchRealmsBlocks.PHONTUM_BUTTON);
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.PHONTUM_LEAVES);
+
+
 
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.GLOOMARBLE);
 

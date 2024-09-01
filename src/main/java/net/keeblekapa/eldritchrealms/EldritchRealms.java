@@ -28,19 +28,8 @@ public class EldritchRealms implements ModInitializer {
 		StrippableBlockRegistry.register(EldritchRealmsBlocks.UMBRAM_OAK_LOG, EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_LOG);
 		StrippableBlockRegistry.register(EldritchRealmsBlocks.UMBRAM_OAK_WOOD, EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_WOOD);
 
-		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.UMBRAM_OAK_LOG, 2, 4);
-		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.UMBRAM_OAK_WOOD, 2, 4);
-		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_LOG, 2, 4);
-		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_WOOD, 2, 4);
-		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS, 4, 8);
-		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.UMBRAM_OAK_STAIRS, 4, 8);
-		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.UMBRAM_OAK_SLAB, 4, 8);
-		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.UMBRAM_OAK_FENCE, 4, 8);
-		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.UMBRAM_OAK_FENCE_GATE, 4, 8);
-		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.UMBRAM_OAK_PRESSURE_PLATE, 15, 8);
-		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.UMBRAM_OAK_DOOR, 4, 8);
-		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.UMBRAM_OAK_TRAPDOOR, 4, 8);
-		FlammableBlockRegistry.getDefaultInstance().add(EldritchRealmsBlocks.UMBRAM_OAK_BUTTON, 20, 8);
+		StrippableBlockRegistry.register(EldritchRealmsBlocks.PHONTUM_LOG, EldritchRealmsBlocks.STRIPPED_PHONTUM_LOG);
+		StrippableBlockRegistry.register(EldritchRealmsBlocks.PHONTUM_WOOD, EldritchRealmsBlocks.STRIPPED_PHONTUM_WOOD);
 
 
 	}

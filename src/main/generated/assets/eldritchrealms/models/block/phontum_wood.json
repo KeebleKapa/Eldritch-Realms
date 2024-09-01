@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "eldritchrealms:block/phontum_log",
+    "side": "eldritchrealms:block/phontum_log"
+  }
+}

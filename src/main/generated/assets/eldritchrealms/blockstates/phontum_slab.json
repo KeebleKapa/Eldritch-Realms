@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "eldritchrealms:block/phontum_slab"
+    },
+    "type=double": {
+      "model": "eldritchrealms:block/phontum_planks"
+    },
+    "type=top": {
+      "model": "eldritchrealms:block/phontum_slab_top"
+    }
+  }
+}

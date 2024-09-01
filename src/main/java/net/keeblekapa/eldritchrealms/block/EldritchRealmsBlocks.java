@@ -328,6 +328,39 @@ public class EldritchRealmsBlocks {
     //--------------------------------------------------------
 
     // Phantom
+    public static final Block PHONTUM_LOG = registerBlock("phontum_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(2.5f, 4.5f)));
+    public static final Block PHONTUM_WOOD = registerBlock("phontum_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).strength(2.5f, 4.5f)));
+    public static final Block STRIPPED_PHONTUM_LOG = registerBlock("stripped_phontum_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(2.5f, 4.5f)));
+    public static final Block STRIPPED_PHONTUM_WOOD = registerBlock("stripped_phontum_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(2.5f, 4.5f)));
+
+    public static final Block PHONTUM_PLANKS = registerBlock("phontum_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.5f, 4.5f)));
+    public static final Block PHONTUM_STAIRS = registerBlock("phontum_stairs",
+            new StairsBlock(EldritchRealmsBlocks.PHONTUM_PLANKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.OAK_STAIRS).strength(2.5f, 4.5f)));
+    public static final Block PHONTUM_SLAB = registerBlock("phontum_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.5f, 4.5f)));
+    public static final Block PHONTUM_PRESSURE_PLATE = registerBlock("phontum_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.0f, 3.5f), BlockSetType.OAK));
+    public static final Block PHONTUM_BUTTON = registerBlock("phontum_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(1.5f, 2.5f),
+                    BlockSetType.OAK, 20, true));
+    public static final Block PHONTUM_DOOR = registerBlock("phontum_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.5f, 4.5f), BlockSetType.OAK));
+    public static final Block PHONTUM_TRAPDOOR = registerBlock("phontum_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.5f, 4.5f), BlockSetType.OAK));
+    public static final Block PHONTUM_FENCE = registerBlock("phontum_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.5f, 4.5f)));
+    public static final Block PHONTUM_FENCE_GATE = registerBlock("phontum_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.5f, 4.5f), WoodType.OAK));
+
+    public static final Block PHONTUM_LEAVES = registerBlock("phontum_leaves",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(2.5f, 4.5f).nonOpaque()));
 
     // Elder
 
