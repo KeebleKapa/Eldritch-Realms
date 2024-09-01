@@ -10,6 +10,11 @@ public class EldritchRealmsClient implements ClientModInitializer {
     public void onInitializeClient() {
 
         BlockRenderLayerMap.INSTANCE.putBlock(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EldritchRealmsBlocks.PHONTUM_LEAVES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EldritchRealmsBlocks.UMBRAM_OAK_TRAPDOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EldritchRealmsBlocks.PHONTUM_TRAPDOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EldritchRealmsBlocks.UMBRAM_OAK_DOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EldritchRealmsBlocks.PHONTUM_DOOR, RenderLayer.getCutout());
 
     }
 }

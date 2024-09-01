@@ -220,12 +220,37 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.PHONTUM_BUTTON)
         ;
 
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_FENCE)
+                .add(EldritchRealmsBlocks.PHONTUM_FENCE)
+        ;
+
+        getOrCreateTagBuilder(BlockTags.PRESSURE_PLATES)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_PRESSURE_PLATE)
+                .add(EldritchRealmsBlocks.PHONTUM_PRESSURE_PLATE)
+        ;
+
+        getOrCreateTagBuilder(BlockTags.BUTTONS)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_BUTTON)
+                .add(EldritchRealmsBlocks.PHONTUM_BUTTON)
+        ;
+
         getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_DOOR)
                 .add(EldritchRealmsBlocks.PHONTUM_DOOR)
         ;
 
         getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_TRAPDOOR)
+                .add(EldritchRealmsBlocks.PHONTUM_TRAPDOOR)
+        ;
+
+        getOrCreateTagBuilder(BlockTags.DOORS)
+                .add(EldritchRealmsBlocks.UMBRAM_OAK_DOOR)
+                .add(EldritchRealmsBlocks.PHONTUM_DOOR)
+        ;
+
+        getOrCreateTagBuilder(BlockTags.TRAPDOORS)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_TRAPDOOR)
                 .add(EldritchRealmsBlocks.PHONTUM_TRAPDOOR)
         ;

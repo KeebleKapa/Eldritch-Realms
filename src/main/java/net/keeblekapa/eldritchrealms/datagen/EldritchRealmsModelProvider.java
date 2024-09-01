@@ -142,6 +142,7 @@ public class EldritchRealmsModelProvider extends FabricModelProvider {
         uoPool.fenceGate(EldritchRealmsBlocks.UMBRAM_OAK_FENCE_GATE);
         uoPool.pressurePlate(EldritchRealmsBlocks.UMBRAM_OAK_PRESSURE_PLATE);
         uoPool.button(EldritchRealmsBlocks.UMBRAM_OAK_BUTTON);
+        blockStateModelGenerator.registerDoor(EldritchRealmsBlocks.UMBRAM_OAK_DOOR);
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES);
 
 
@@ -154,6 +155,7 @@ public class EldritchRealmsModelProvider extends FabricModelProvider {
         pPool.fenceGate(EldritchRealmsBlocks.PHONTUM_FENCE_GATE);
         pPool.pressurePlate(EldritchRealmsBlocks.PHONTUM_PRESSURE_PLATE);
         pPool.button(EldritchRealmsBlocks.PHONTUM_BUTTON);
+        blockStateModelGenerator.registerDoor(EldritchRealmsBlocks.PHONTUM_DOOR);
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.PHONTUM_LEAVES);
 
 

@@ -32,7 +32,7 @@
 
 ## Ore/Material Blocks:
 - ❌ Nebula Lapis
-- ❌ Dreadquartz ( Similar functions to regular quartz )
+- 🚧 Dreadquartz ( Similar functions to regular quartz )
 - ❌ Eclipsium
 - ❌ Soulspark
 - ❌ Dreadium
@@ -47,8 +47,8 @@
 - ❌ Enigmatic Iron ( Stronger than Diamond )
 
 ## Wood Types:
-- ❌ Phantom
-- ❌ Elder
+- 🚧 Phontum
+- 🚧 Eldem
 - 🚧 Umbram Oak
 
 ## Ground Blocks:
