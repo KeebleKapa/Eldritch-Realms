@@ -48,7 +48,7 @@
 
 ## Wood Types:
 - 🚧 Phontum
-- ❌ Elder
+- 🚧 Eldem
 - 🚧 Umbram Oak
 
 ## Ground Blocks:
