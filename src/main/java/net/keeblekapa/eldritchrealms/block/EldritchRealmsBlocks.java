@@ -362,7 +362,40 @@ public class EldritchRealmsBlocks {
     public static final Block PHONTUM_LEAVES = registerBlock("phontum_leaves",
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(2.5f, 4.5f).nonOpaque()));
 
-    // Elder
+    // Eldem
+    public static final Block ELDEM_LOG = registerBlock("eldem_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(2.5f, 4.5f)));
+    public static final Block ELDEM_WOOD = registerBlock("eldem_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).strength(2.5f, 4.5f)));
+    public static final Block STRIPPED_ELDEM_LOG = registerBlock("stripped_eldem_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(2.5f, 4.5f)));
+    public static final Block STRIPPED_ELDEM_WOOD = registerBlock("stripped_eldem_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(2.5f, 4.5f)));
+
+    public static final Block ELDEM_PLANKS = registerBlock("eldem_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.5f, 4.5f)));
+    public static final Block ELDEM_STAIRS = registerBlock("eldem_stairs",
+            new StairsBlock(EldritchRealmsBlocks.PHONTUM_PLANKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.OAK_STAIRS).strength(2.5f, 4.5f)));
+    public static final Block ELDEM_SLAB = registerBlock("eldem_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.5f, 4.5f)));
+    public static final Block ELDEM_PRESSURE_PLATE = registerBlock("eldem_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.0f, 3.5f), BlockSetType.OAK));
+    public static final Block ELDEM_BUTTON = registerBlock("eldem_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(1.5f, 2.5f),
+                    BlockSetType.OAK, 20, true));
+    public static final Block ELDEM_DOOR = registerBlock("eldem_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.5f, 4.5f), BlockSetType.OAK));
+    public static final Block ELDEM_TRAPDOOR = registerBlock("eldem_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.5f, 4.5f), BlockSetType.OAK));
+    public static final Block ELDEM_FENCE = registerBlock("eldem_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.5f, 4.5f)));
+    public static final Block ELDEM_FENCE_GATE = registerBlock("eldem_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(2.5f, 4.5f), WoodType.OAK));
+
+    public static final Block ELDEM_LEAVES = registerBlock("eldem_leaves",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(2.5f, 4.5f).nonOpaque()));
 
     // Umbram Oak
     public static final Block UMBRAM_OAK_LOG = registerBlock("umbram_oak_log",

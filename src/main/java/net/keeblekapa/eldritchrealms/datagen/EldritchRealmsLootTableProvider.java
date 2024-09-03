@@ -169,6 +169,22 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                 addDrop(EldritchRealmsBlocks.PHONTUM_LEAVES, leavesDrops(EldritchRealmsBlocks.PHONTUM_LEAVES, EldritchRealmsBlocks.PHONTUM_LEAVES, 0.0025f)); // TODO
 
 
+                addDrop(EldritchRealmsBlocks.ELDEM_LOG);
+                addDrop(EldritchRealmsBlocks.ELDEM_WOOD);
+                addDrop(EldritchRealmsBlocks.STRIPPED_ELDEM_LOG);
+                addDrop(EldritchRealmsBlocks.STRIPPED_ELDEM_WOOD);
+                addDrop(EldritchRealmsBlocks.ELDEM_PLANKS);
+                addDrop(EldritchRealmsBlocks.ELDEM_STAIRS);
+                addDrop(EldritchRealmsBlocks.ELDEM_SLAB, slabDrops(EldritchRealmsBlocks.ELDEM_SLAB));
+                addDrop(EldritchRealmsBlocks.ELDEM_BUTTON);
+                addDrop(EldritchRealmsBlocks.ELDEM_PRESSURE_PLATE);
+                addDrop(EldritchRealmsBlocks.ELDEM_DOOR, doorDrops(EldritchRealmsBlocks.ELDEM_DOOR));
+                addDrop(EldritchRealmsBlocks.ELDEM_FENCE);
+                addDrop(EldritchRealmsBlocks.ELDEM_FENCE_GATE);
+                addDrop(EldritchRealmsBlocks.ELDEM_TRAPDOOR);
+                addDrop(EldritchRealmsBlocks.ELDEM_LEAVES, leavesDrops(EldritchRealmsBlocks.ELDEM_LEAVES, EldritchRealmsBlocks.ELDEM_LEAVES, 0.0025f)); // TODO
+
+
     }
 
     public LootTable.Builder stoneDrops(Block drop, Block block) {

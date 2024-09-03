@@ -146,6 +146,18 @@ public class EldritchRealmsModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES);
 
 
+        blockStateModelGenerator.registerLog(EldritchRealmsBlocks.ELDEM_LOG).log(EldritchRealmsBlocks.ELDEM_LOG).wood(EldritchRealmsBlocks.ELDEM_WOOD);
+        blockStateModelGenerator.registerLog(EldritchRealmsBlocks.STRIPPED_ELDEM_LOG).log(EldritchRealmsBlocks.STRIPPED_ELDEM_LOG).wood(EldritchRealmsBlocks.STRIPPED_ELDEM_WOOD);
+        BlockStateModelGenerator.BlockTexturePool ePool = blockStateModelGenerator.registerCubeAllModelTexturePool(EldritchRealmsBlocks.ELDEM_PLANKS);
+        ePool.stairs(EldritchRealmsBlocks.ELDEM_STAIRS);
+        ePool.slab(EldritchRealmsBlocks.ELDEM_SLAB);
+        ePool.fence(EldritchRealmsBlocks.ELDEM_FENCE);
+        ePool.fenceGate(EldritchRealmsBlocks.ELDEM_FENCE_GATE);
+        ePool.pressurePlate(EldritchRealmsBlocks.ELDEM_PRESSURE_PLATE);
+        ePool.button(EldritchRealmsBlocks.ELDEM_BUTTON);
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.ELDEM_LEAVES);
+
+
         blockStateModelGenerator.registerLog(EldritchRealmsBlocks.PHONTUM_LOG).log(EldritchRealmsBlocks.PHONTUM_LOG).wood(EldritchRealmsBlocks.PHONTUM_WOOD);
         blockStateModelGenerator.registerLog(EldritchRealmsBlocks.STRIPPED_PHONTUM_LOG).log(EldritchRealmsBlocks.STRIPPED_PHONTUM_LOG).wood(EldritchRealmsBlocks.STRIPPED_PHONTUM_WOOD);
         BlockStateModelGenerator.BlockTexturePool pPool = blockStateModelGenerator.registerCubeAllModelTexturePool(EldritchRealmsBlocks.PHONTUM_PLANKS);

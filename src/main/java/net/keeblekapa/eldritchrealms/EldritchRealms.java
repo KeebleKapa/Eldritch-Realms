@@ -31,6 +31,9 @@ public class EldritchRealms implements ModInitializer {
 		StrippableBlockRegistry.register(EldritchRealmsBlocks.PHONTUM_LOG, EldritchRealmsBlocks.STRIPPED_PHONTUM_LOG);
 		StrippableBlockRegistry.register(EldritchRealmsBlocks.PHONTUM_WOOD, EldritchRealmsBlocks.STRIPPED_PHONTUM_WOOD);
 
+		StrippableBlockRegistry.register(EldritchRealmsBlocks.ELDEM_LOG, EldritchRealmsBlocks.STRIPPED_ELDEM_LOG);
+		StrippableBlockRegistry.register(EldritchRealmsBlocks.ELDEM_WOOD, EldritchRealmsBlocks.STRIPPED_ELDEM_WOOD);
+
 
 	}
 }

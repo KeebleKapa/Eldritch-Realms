@@ -113,7 +113,7 @@
 
   "block.eldritchrealms.phontum_log": "Phontum Log",
   "block.eldritchrealms.stripped_phontum_log": "Stripped Phontum Log",
-  "block.eldritchrealms.phontum_wood": "Umbram Oak Wood",
+  "block.eldritchrealms.phontum_wood": "Phontum Wood",
   "block.eldritchrealms.stripped_phontum_wood": "Stripped Phontum Wood",
   "block.eldritchrealms.phontum_planks": "Phontum Planks",
   "block.eldritchrealms.phontum_stairs": "Phontum Stairs",
@@ -125,6 +125,21 @@
   "block.eldritchrealms.phontum_pressure_plate": "Phontum Pressure Plate",
   "block.eldritchrealms.phontum_button": "Phontum Button",
   "block.eldritchrealms.phontum_leaves": "Phontum Leaves",
+
+  "block.eldritchrealms.eldem_log": "Eldem Log",
+  "block.eldritchrealms.stripped_eldem_log": "Stripped Eldem Log",
+  "block.eldritchrealms.eldem_wood": "Eldem Wood",
+  "block.eldritchrealms.stripped_eldem_wood": "Stripped Eldem Wood",
+  "block.eldritchrealms.eldem_planks": "Eldem Planks",
+  "block.eldritchrealms.eldem_stairs": "Eldem Stairs",
+  "block.eldritchrealms.eldem_slab": "Eldem Slab",
+  "block.eldritchrealms.eldem_fence": "Eldem Fence",
+  "block.eldritchrealms.eldem_fence_gate": "Eldem Fence Gate",
+  "block.eldritchrealms.eldem_door": "Eldem Door",
+  "block.eldritchrealms.eldem_trapdoor": "Eldem Trapdoor",
+  "block.eldritchrealms.eldem_pressure_plate": "Eldem Pressure Plate",
+  "block.eldritchrealms.eldem_button": "Eldem Button",
+  "block.eldritchrealms.eldem_leaves": "Eldem Leaves",
 
 
   "item.eldritchrealms.dreadquartz": "Dreadquartz",
