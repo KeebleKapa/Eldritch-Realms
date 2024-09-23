@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "eldritchrealms:umbram_oak_door",
-    "eldritchrealms:phontum_door"
+    "eldritchrealms:phontum_door",
+    "eldritchrealms:eldem_door"
   ]
 }

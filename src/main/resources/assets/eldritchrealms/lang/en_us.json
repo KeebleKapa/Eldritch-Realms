@@ -110,6 +110,7 @@
   "block.eldritchrealms.umbram_oak_pressure_plate": "Umbram Oak Pressure Plate",
   "block.eldritchrealms.umbram_oak_button": "Umbram Oak Button",
   "block.eldritchrealms.umbram_oak_leaves": "Umbram Oak Leaves",
+  "block.eldritchrealms.umbram_oak_sapling": "Umbram Oak Sapling",
 
   "block.eldritchrealms.phontum_log": "Phontum Log",
   "block.eldritchrealms.stripped_phontum_log": "Stripped Phontum Log",
@@ -125,6 +126,7 @@
   "block.eldritchrealms.phontum_pressure_plate": "Phontum Pressure Plate",
   "block.eldritchrealms.phontum_button": "Phontum Button",
   "block.eldritchrealms.phontum_leaves": "Phontum Leaves",
+  "block.eldritchrealms.phontum_sapling": "Phontum Sapling",
 
   "block.eldritchrealms.eldem_log": "Eldem Log",
   "block.eldritchrealms.stripped_eldem_log": "Stripped Eldem Log",
@@ -140,8 +142,16 @@
   "block.eldritchrealms.eldem_pressure_plate": "Eldem Pressure Plate",
   "block.eldritchrealms.eldem_button": "Eldem Button",
   "block.eldritchrealms.eldem_leaves": "Eldem Leaves",
+  "block.eldritchrealms.eldem_sapling": "Eldem Sapling",
 
 
+  "block.eldritchrealms.dreadquartz_ore": "Dreadquartz Ore",
+  "block.eldritchrealms.shadowslate_dreadquartz_ore": "Shadowslate Dreadquartz Ore",
+  "block.eldritchrealms.dreadquartz_block": "Dreadquartz Block",
+  "block.eldritchrealms.smooth_dreadquartz_block": "Smooth Dreadquartz Block",
+  "block.eldritchrealms.dreadquartz_pillar": "Dreadquartz Pillar",
+  "block.eldritchrealms.dreadquartz_bricks": "Dreadquartz Bricks",
+  "block.eldritchrealms.chiseled_dreadquartz": "Chiseled Dreadquartz",
   "item.eldritchrealms.dreadquartz": "Dreadquartz",
   "item.eldritchrealms.gloomarble_dust": "Gloomarble Dust",
   "itemgroup.eldritch_realms": "Eldritch Realms",

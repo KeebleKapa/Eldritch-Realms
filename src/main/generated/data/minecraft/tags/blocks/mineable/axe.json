@@ -26,6 +26,19 @@
     "eldritchrealms:phontum_door",
     "eldritchrealms:phontum_trapdoor",
     "eldritchrealms:phontum_pressure_plate",
-    "eldritchrealms:phontum_button"
+    "eldritchrealms:phontum_button",
+    "eldritchrealms:eldem_log",
+    "eldritchrealms:stripped_eldem_log",
+    "eldritchrealms:eldem_wood",
+    "eldritchrealms:stripped_eldem_wood",
+    "eldritchrealms:eldem_planks",
+    "eldritchrealms:eldem_stairs",
+    "eldritchrealms:eldem_slab",
+    "eldritchrealms:eldem_fence",
+    "eldritchrealms:eldem_fence_gate",
+    "eldritchrealms:eldem_door",
+    "eldritchrealms:eldem_trapdoor",
+    "eldritchrealms:eldem_pressure_plate",
+    "eldritchrealms:eldem_button"
   ]
 }

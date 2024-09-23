@@ -6,7 +6,6 @@ import net.keeblekapa.eldritchrealms.block.EldritchRealmsBlocks;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
@@ -45,11 +44,18 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_SLAB)
                 .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_STAIRS)
                 .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_WALL)
+
+                .add(EldritchRealmsBlocks.DREADQUARTZ_BLOCK)
+                .add(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_BLOCK)
+                .add(EldritchRealmsBlocks.DREADQUARTZ_BRICKS)
+                .add(EldritchRealmsBlocks.DREADQUARTZ_PILLAR)
+                .add(EldritchRealmsBlocks.CHISELED_DREADQUARTZ)
         ;
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(EldritchRealmsBlocks.GLOOMARBLE)
-
+                .add(EldritchRealmsBlocks.DREADQUARTZ_ORE)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE)
         ;
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
@@ -68,6 +74,7 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES)
                 .add(EldritchRealmsBlocks.PHONTUM_LEAVES)
+                .add(EldritchRealmsBlocks.ELDEM_LEAVES)
 
         ;
 
@@ -99,6 +106,20 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.PHONTUM_TRAPDOOR)
                 .add(EldritchRealmsBlocks.PHONTUM_PRESSURE_PLATE)
                 .add(EldritchRealmsBlocks.PHONTUM_BUTTON)
+
+                .add(EldritchRealmsBlocks.ELDEM_LOG)
+                .add(EldritchRealmsBlocks.STRIPPED_ELDEM_LOG)
+                .add(EldritchRealmsBlocks.ELDEM_WOOD)
+                .add(EldritchRealmsBlocks.STRIPPED_ELDEM_WOOD)
+                .add(EldritchRealmsBlocks.ELDEM_PLANKS)
+                .add(EldritchRealmsBlocks.ELDEM_STAIRS)
+                .add(EldritchRealmsBlocks.ELDEM_SLAB)
+                .add(EldritchRealmsBlocks.ELDEM_FENCE)
+                .add(EldritchRealmsBlocks.ELDEM_FENCE_GATE)
+                .add(EldritchRealmsBlocks.ELDEM_DOOR)
+                .add(EldritchRealmsBlocks.ELDEM_TRAPDOOR)
+                .add(EldritchRealmsBlocks.ELDEM_PRESSURE_PLATE)
+                .add(EldritchRealmsBlocks.ELDEM_BUTTON)
 
         ;
 
@@ -198,61 +219,80 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_WALL)
 
                 .add(EldritchRealmsBlocks.GLOOMARBLE)
+
+                .add(EldritchRealmsBlocks.DREADQUARTZ_ORE)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE)
+                .add(EldritchRealmsBlocks.DREADQUARTZ_BLOCK)
+                .add(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_BLOCK)
+                .add(EldritchRealmsBlocks.DREADQUARTZ_BRICKS)
+                .add(EldritchRealmsBlocks.DREADQUARTZ_PILLAR)
+                .add(EldritchRealmsBlocks.CHISELED_DREADQUARTZ)
         ;
 
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_FENCE)
                 .add(EldritchRealmsBlocks.PHONTUM_FENCE)
+                .add(EldritchRealmsBlocks.ELDEM_FENCE)
         ;
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_FENCE_GATE)
                 .add(EldritchRealmsBlocks.PHONTUM_FENCE_GATE)
+                .add(EldritchRealmsBlocks.ELDEM_FENCE_GATE)
         ;
 
         getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_PRESSURE_PLATE)
                 .add(EldritchRealmsBlocks.PHONTUM_PRESSURE_PLATE)
+                .add(EldritchRealmsBlocks.ELDEM_PRESSURE_PLATE)
         ;
 
         getOrCreateTagBuilder(BlockTags.WOODEN_BUTTONS)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_BUTTON)
                 .add(EldritchRealmsBlocks.PHONTUM_BUTTON)
+                .add(EldritchRealmsBlocks.ELDEM_BUTTON)
         ;
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_FENCE)
                 .add(EldritchRealmsBlocks.PHONTUM_FENCE)
+                .add(EldritchRealmsBlocks.ELDEM_FENCE)
         ;
 
         getOrCreateTagBuilder(BlockTags.PRESSURE_PLATES)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_PRESSURE_PLATE)
                 .add(EldritchRealmsBlocks.PHONTUM_PRESSURE_PLATE)
+                .add(EldritchRealmsBlocks.ELDEM_PRESSURE_PLATE)
         ;
 
         getOrCreateTagBuilder(BlockTags.BUTTONS)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_BUTTON)
                 .add(EldritchRealmsBlocks.PHONTUM_BUTTON)
+                .add(EldritchRealmsBlocks.ELDEM_BUTTON)
         ;
 
         getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_DOOR)
                 .add(EldritchRealmsBlocks.PHONTUM_DOOR)
+                .add(EldritchRealmsBlocks.ELDEM_DOOR)
         ;
 
         getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_TRAPDOOR)
                 .add(EldritchRealmsBlocks.PHONTUM_TRAPDOOR)
+                .add(EldritchRealmsBlocks.ELDEM_TRAPDOOR)
         ;
 
         getOrCreateTagBuilder(BlockTags.DOORS)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_DOOR)
                 .add(EldritchRealmsBlocks.PHONTUM_DOOR)
+                .add(EldritchRealmsBlocks.ELDEM_DOOR)
         ;
 
         getOrCreateTagBuilder(BlockTags.TRAPDOORS)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_TRAPDOOR)
                 .add(EldritchRealmsBlocks.PHONTUM_TRAPDOOR)
+                .add(EldritchRealmsBlocks.ELDEM_TRAPDOOR)
         ;
 
         getOrCreateTagBuilder(BlockTags.SLABS)
@@ -285,6 +325,7 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
 
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_SLAB)
                 .add(EldritchRealmsBlocks.PHONTUM_SLAB)
+                .add(EldritchRealmsBlocks.ELDEM_SLAB)
         ;
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
@@ -317,6 +358,7 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
 
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_STAIRS)
                 .add(EldritchRealmsBlocks.PHONTUM_STAIRS)
+                .add(EldritchRealmsBlocks.ELDEM_STAIRS)
 
         ;
 
@@ -359,6 +401,10 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.PHONTUM_WOOD)
                 .add(EldritchRealmsBlocks.STRIPPED_PHONTUM_LOG)
                 .add(EldritchRealmsBlocks.STRIPPED_PHONTUM_WOOD)
+                .add(EldritchRealmsBlocks.ELDEM_LOG)
+                .add(EldritchRealmsBlocks.ELDEM_WOOD)
+                .add(EldritchRealmsBlocks.STRIPPED_ELDEM_LOG)
+                .add(EldritchRealmsBlocks.STRIPPED_ELDEM_WOOD)
 
         ;
     }

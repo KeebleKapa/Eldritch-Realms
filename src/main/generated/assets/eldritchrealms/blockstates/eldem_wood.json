@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "eldritchrealms:block/eldem_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "eldritchrealms:block/eldem_wood"
+    },
+    "axis=z": {
+      "model": "eldritchrealms:block/eldem_wood",
+      "x": 90
+    }
+  }
+}

@@ -144,6 +144,7 @@ public class EldritchRealmsModelProvider extends FabricModelProvider {
         uoPool.button(EldritchRealmsBlocks.UMBRAM_OAK_BUTTON);
         blockStateModelGenerator.registerDoor(EldritchRealmsBlocks.UMBRAM_OAK_DOOR);
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES);
+        blockStateModelGenerator.registerTintableCross(EldritchRealmsBlocks.UMBRAM_OAK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
 
         blockStateModelGenerator.registerLog(EldritchRealmsBlocks.ELDEM_LOG).log(EldritchRealmsBlocks.ELDEM_LOG).wood(EldritchRealmsBlocks.ELDEM_WOOD);
@@ -156,6 +157,7 @@ public class EldritchRealmsModelProvider extends FabricModelProvider {
         ePool.pressurePlate(EldritchRealmsBlocks.ELDEM_PRESSURE_PLATE);
         ePool.button(EldritchRealmsBlocks.ELDEM_BUTTON);
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.ELDEM_LEAVES);
+        blockStateModelGenerator.registerTintableCross(EldritchRealmsBlocks.ELDEM_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
 
         blockStateModelGenerator.registerLog(EldritchRealmsBlocks.PHONTUM_LOG).log(EldritchRealmsBlocks.PHONTUM_LOG).wood(EldritchRealmsBlocks.PHONTUM_WOOD);
@@ -169,10 +171,20 @@ public class EldritchRealmsModelProvider extends FabricModelProvider {
         pPool.button(EldritchRealmsBlocks.PHONTUM_BUTTON);
         blockStateModelGenerator.registerDoor(EldritchRealmsBlocks.PHONTUM_DOOR);
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.PHONTUM_LEAVES);
-
+        blockStateModelGenerator.registerTintableCross(EldritchRealmsBlocks.PHONTUM_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
 
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.GLOOMARBLE);
+
+
+        BlockStateModelGenerator.BlockTexturePool sdbPool = blockStateModelGenerator.registerCubeAllModelTexturePool(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_BLOCK);
+
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.DREADQUARTZ_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.DREADQUARTZ_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.CHISELED_DREADQUARTZ);
+        blockStateModelGenerator.registerLog(EldritchRealmsBlocks.DREADQUARTZ_PILLAR);
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.DREADQUARTZ_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE);
 
 
     }

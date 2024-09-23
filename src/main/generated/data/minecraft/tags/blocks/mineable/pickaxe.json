@@ -90,6 +90,13 @@
     "eldritchrealms:eldritch_limestone_brick_slab",
     "eldritchrealms:eldritch_limestone_brick_stairs",
     "eldritchrealms:eldritch_limestone_brick_wall",
-    "eldritchrealms:gloomarble"
+    "eldritchrealms:gloomarble",
+    "eldritchrealms:dreadquartz_ore",
+    "eldritchrealms:shadowslate_dreadquartz_ore",
+    "eldritchrealms:dreadquartz_block",
+    "eldritchrealms:smooth_dreadquartz_block",
+    "eldritchrealms:dreadquartz_bricks",
+    "eldritchrealms:dreadquartz_pillar",
+    "eldritchrealms:chiseled_dreadquartz"
   ]
 }

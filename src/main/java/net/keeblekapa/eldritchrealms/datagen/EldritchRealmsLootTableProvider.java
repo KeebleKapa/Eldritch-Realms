@@ -151,7 +151,8 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                 addDrop(EldritchRealmsBlocks.UMBRAM_OAK_FENCE);
                 addDrop(EldritchRealmsBlocks.UMBRAM_OAK_FENCE_GATE);
                 addDrop(EldritchRealmsBlocks.UMBRAM_OAK_TRAPDOOR);
-                addDrop(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES, leavesDrops(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES, EldritchRealmsBlocks.UMBRAM_OAK_LEAVES, 0.0025f)); // TODO
+                addDrop(EldritchRealmsBlocks.UMBRAM_OAK_SAPLING);
+                addDrop(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES, leavesDrops(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES, EldritchRealmsBlocks.UMBRAM_OAK_SAPLING, 0.05f));
 
                 addDrop(EldritchRealmsBlocks.PHONTUM_LOG);
                 addDrop(EldritchRealmsBlocks.PHONTUM_WOOD);
@@ -166,7 +167,8 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                 addDrop(EldritchRealmsBlocks.PHONTUM_FENCE);
                 addDrop(EldritchRealmsBlocks.PHONTUM_FENCE_GATE);
                 addDrop(EldritchRealmsBlocks.PHONTUM_TRAPDOOR);
-                addDrop(EldritchRealmsBlocks.PHONTUM_LEAVES, leavesDrops(EldritchRealmsBlocks.PHONTUM_LEAVES, EldritchRealmsBlocks.PHONTUM_LEAVES, 0.0025f)); // TODO
+                addDrop(EldritchRealmsBlocks.PHONTUM_SAPLING);
+                addDrop(EldritchRealmsBlocks.PHONTUM_LEAVES, leavesDrops(EldritchRealmsBlocks.PHONTUM_LEAVES, EldritchRealmsBlocks.PHONTUM_SAPLING, 0.05f));
 
 
                 addDrop(EldritchRealmsBlocks.ELDEM_LOG);
@@ -182,7 +184,16 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                 addDrop(EldritchRealmsBlocks.ELDEM_FENCE);
                 addDrop(EldritchRealmsBlocks.ELDEM_FENCE_GATE);
                 addDrop(EldritchRealmsBlocks.ELDEM_TRAPDOOR);
-                addDrop(EldritchRealmsBlocks.ELDEM_LEAVES, leavesDrops(EldritchRealmsBlocks.ELDEM_LEAVES, EldritchRealmsBlocks.ELDEM_LEAVES, 0.0025f)); // TODO
+                addDrop(EldritchRealmsBlocks.ELDEM_SAPLING);
+                addDrop(EldritchRealmsBlocks.ELDEM_LEAVES, leavesDrops(EldritchRealmsBlocks.ELDEM_LEAVES, EldritchRealmsBlocks.ELDEM_SAPLING, 0.05f));
+
+                addDrop(EldritchRealmsBlocks.DREADQUARTZ_ORE, twoToFiveDrops(EldritchRealmsBlocks.DREADQUARTZ_ORE, EldritchRealmsItems.DREADQUARTZ));
+                addDrop(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE, twoToFiveDrops(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE, EldritchRealmsItems.DREADQUARTZ));
+                addDrop(EldritchRealmsBlocks.DREADQUARTZ_BLOCK);
+                addDrop(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_BLOCK);
+                addDrop(EldritchRealmsBlocks.DREADQUARTZ_PILLAR);
+                addDrop(EldritchRealmsBlocks.DREADQUARTZ_BRICKS);
+                addDrop(EldritchRealmsBlocks.CHISELED_DREADQUARTZ);
 
 
     }

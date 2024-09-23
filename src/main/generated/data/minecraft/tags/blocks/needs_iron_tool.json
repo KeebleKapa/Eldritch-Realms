@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "eldritchrealms:gloomarble"
+    "eldritchrealms:gloomarble",
+    "eldritchrealms:dreadquartz_ore",
+    "eldritchrealms:shadowslate_dreadquartz_ore"
   ]
 }

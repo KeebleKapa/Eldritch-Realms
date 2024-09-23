@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "eldritchrealms:block/eldem_slab"
+    },
+    "type=double": {
+      "model": "eldritchrealms:block/eldem_planks"
+    },
+    "type=top": {
+      "model": "eldritchrealms:block/eldem_slab_top"
+    }
+  }
+}

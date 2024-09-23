@@ -115,7 +115,15 @@ public class EldritchRealmsItemGroups {
                         entries.add(EldritchRealmsItems.GLOOMARBLE_DUST);
 
                         entries.add(EldritchRealmsItems.DREADQUARTZ);
+                        entries.add(EldritchRealmsBlocks.DREADQUARTZ_BLOCK);
+                        entries.add(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_BLOCK);
+                        entries.add(EldritchRealmsBlocks.DREADQUARTZ_PILLAR);
+                        entries.add(EldritchRealmsBlocks.DREADQUARTZ_BRICKS);
+                        entries.add(EldritchRealmsBlocks.CHISELED_DREADQUARTZ);
+                        entries.add(EldritchRealmsBlocks.DREADQUARTZ_ORE);
+                        entries.add(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE);
 
+                        entries.add(EldritchRealmsBlocks.UMBRAM_OAK_SAPLING);
                         entries.add(EldritchRealmsBlocks.UMBRAM_OAK_LOG);
                         entries.add(EldritchRealmsBlocks.UMBRAM_OAK_WOOD);
                         entries.add(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_LOG);
@@ -131,6 +139,7 @@ public class EldritchRealmsItemGroups {
                         entries.add(EldritchRealmsBlocks.UMBRAM_OAK_BUTTON);
                         entries.add(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES);
 
+                        entries.add(EldritchRealmsBlocks.PHONTUM_SAPLING);
                         entries.add(EldritchRealmsBlocks.PHONTUM_LOG);
                         entries.add(EldritchRealmsBlocks.PHONTUM_WOOD);
                         entries.add(EldritchRealmsBlocks.STRIPPED_PHONTUM_LOG);
@@ -145,6 +154,22 @@ public class EldritchRealmsItemGroups {
                         entries.add(EldritchRealmsBlocks.PHONTUM_PRESSURE_PLATE);
                         entries.add(EldritchRealmsBlocks.PHONTUM_BUTTON);
                         entries.add(EldritchRealmsBlocks.PHONTUM_LEAVES);
+
+                        entries.add(EldritchRealmsBlocks.ELDEM_SAPLING);
+                        entries.add(EldritchRealmsBlocks.ELDEM_LOG);
+                        entries.add(EldritchRealmsBlocks.ELDEM_WOOD);
+                        entries.add(EldritchRealmsBlocks.STRIPPED_ELDEM_LOG);
+                        entries.add(EldritchRealmsBlocks.STRIPPED_ELDEM_WOOD);
+                        entries.add(EldritchRealmsBlocks.ELDEM_PLANKS);
+                        entries.add(EldritchRealmsBlocks.ELDEM_STAIRS);
+                        entries.add(EldritchRealmsBlocks.ELDEM_SLAB);
+                        entries.add(EldritchRealmsBlocks.ELDEM_FENCE);
+                        entries.add(EldritchRealmsBlocks.ELDEM_FENCE_GATE);
+                        entries.add(EldritchRealmsBlocks.ELDEM_DOOR);
+                        entries.add(EldritchRealmsBlocks.ELDEM_TRAPDOOR);
+                        entries.add(EldritchRealmsBlocks.ELDEM_PRESSURE_PLATE);
+                        entries.add(EldritchRealmsBlocks.ELDEM_BUTTON);
+                        entries.add(EldritchRealmsBlocks.ELDEM_LEAVES);
 
 
 

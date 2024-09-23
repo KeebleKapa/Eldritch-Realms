@@ -5,9 +5,12 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.keeblekapa.eldritchrealms.block.EldritchRealmsBlocks;
+import net.keeblekapa.eldritchrealms.datagen.EldritchRealmsWorldGenerator;
 import net.keeblekapa.eldritchrealms.item.EldritchRealmsItemGroups;
 import net.keeblekapa.eldritchrealms.item.EldritchRealmsItems;
 import net.keeblekapa.eldritchrealms.sound.EldritchRealmsSounds;
+import net.keeblekapa.eldritchrealms.world.gen.EldritchRealmsWorldGeneration;
+import net.keeblekapa.eldritchrealms.world.tree.EldritchRealmsTrunkPlacerTypes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -34,6 +37,7 @@ public class EldritchRealms implements ModInitializer {
 		StrippableBlockRegistry.register(EldritchRealmsBlocks.ELDEM_LOG, EldritchRealmsBlocks.STRIPPED_ELDEM_LOG);
 		StrippableBlockRegistry.register(EldritchRealmsBlocks.ELDEM_WOOD, EldritchRealmsBlocks.STRIPPED_ELDEM_WOOD);
 
-
+		EldritchRealmsWorldGeneration.generateEldritchRealmsWorldGen();
+		EldritchRealmsTrunkPlacerTypes.register();
 	}
 }
