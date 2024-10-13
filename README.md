@@ -126,7 +126,7 @@
 
 ## The Eldritch Realm Dimension 🚧 
 
-<div align="center"><a href="https://modrinth.com/mod/eldritch-realms/version/0.1-1.20.1"><img src="https://cdn.modrinth.com/data/cached_images/7476acc4f41b0d95605f7752ed2c8c61f7fdeb53.png"></a></div>
+<div align="center"><a href="https://modrinth.com/mod/eldritch-realms/versions"><img src="https://cdn.modrinth.com/data/cached_images/7476acc4f41b0d95605f7752ed2c8c61f7fdeb53.png"></a></div>
 
 
 #
