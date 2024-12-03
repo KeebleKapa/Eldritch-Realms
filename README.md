@@ -32,7 +32,7 @@
 
 ## Ore/Material Blocks:
 - ❌ Nebula Lapis
-- 🚧 Dreadquartz ( Similar functions to regular quartz )
+- ✔️ Dreadquartz ( Similar functions to regular quartz )
 - ❌ Eclipsium
 - ❌ Soulspark
 - ❌ Dreadium
@@ -47,15 +47,14 @@
 - ❌ Enigmatic Iron ( Stronger than Diamond )
 
 ## Wood Types:
-- 🚧 Phontum
-- 🚧 Eldem
-- 🚧 Umbram Oak
+- ✔️ Phontum
+- ✔️ Eldem
+- ✔️ Umbram Oak
 
 ## Ground Blocks:
-- 🚧 Mythral Grass
-- 🚧 Shadowsoil
-- 🚧 Eerie Gravel
-- 🚧 Astral Sand
+- ✔️ Mythral Grass
+- ✔️ Eerie Gravel
+- ✔️ Astral Sand
 
 ## Functional Blocks:
 - ❌ Nebulatic Enchanting Table ( Nebula Lapis is used for enchanting with new custom enchantments )
