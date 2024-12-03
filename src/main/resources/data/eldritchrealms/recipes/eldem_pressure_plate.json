@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "## "
+  ],
+  "key": {
+    "#": {
+      "item": "eldritchrealms:eldem_planks"
+    }
+  },
+  "result": {
+    "item": "eldritchrealms:eldem_pressure_plate",
+    "count": 1
+  },
+  "show_notification": true
+}

@@ -22,6 +22,12 @@
     "eldritchrealms:crimson_cobble_wall",
     "eldritchrealms:eldritch_limestone_wall",
     "eldritchrealms:polished_eldritch_limestone_wall",
-    "eldritchrealms:eldritch_limestone_brick_wall"
+    "eldritchrealms:eldritch_limestone_brick_wall",
+    "eldritchrealms:dreadquartz_wall",
+    "eldritchrealms:dreadquartz_brick_wall",
+    "eldritchrealms:smooth_dreadquartz_wall",
+    "eldritchrealms:astral_sandstone_wall",
+    "eldritchrealms:astral_sandstone_brick_wall",
+    "eldritchrealms:smooth_astral_sandstone_wall"
   ]
 }

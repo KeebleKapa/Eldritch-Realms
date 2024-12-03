@@ -1,4 +1,9 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "eldritchrealms:marred_soil",
+    "eldritchrealms:tilled_marred_soil",
+    "eldritchrealms:mythral_grass_block",
+    "eldritchrealms:astral_sand"
+  ]
 }

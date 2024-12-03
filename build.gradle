@@ -16,6 +16,29 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+
+	// TerraBlender
+	maven { url = 'https://maven.minecraftforge.net/' }
+
+	// Custom Portal
+	maven { url = "https://maven.kyrptonaught.dev" }
+
+	// Geckolib
+	maven {
+		name = 'GeckoLib'
+		url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+		content {
+			includeGroupByRegex("software\\.bernie.*")
+			includeGroup("com.eliotlash.mclib")
+		}
+	}
+
+	// EMI
+	maven {
+		name = "TerraformersMC"
+		url = "https://maven.terraformersmc.com/"
+	}
+
 }
 
 fabricApi {
@@ -23,6 +46,22 @@ fabricApi {
 }
 
 dependencies {
+
+	// TerraBlender
+	modImplementation("com.github.glitchfiend:TerraBlender-fabric:${terrablender_version}")
+
+	// Custom Portal
+	modImplementation("net.kyrptonaught:customportalapi:${customportalapi_version}")
+	include("net.kyrptonaught:customportalapi:${customportalapi_version}")
+
+	// Geckolib
+	modImplementation("software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}")
+	implementation("com.eliotlash.mclib:mclib:20")
+
+	// EMI
+	modCompileOnly "dev.emi:emi-fabric:${emi_version}:api"
+	modLocalRuntime "dev.emi:emi-fabric:${emi_version}"
+
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"

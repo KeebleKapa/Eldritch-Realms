@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "## "
+  ],
+  "key": {
+    "#": {
+      "item": "eldritchrealms:umbram_oak_planks"
+    }
+  },
+  "result": {
+    "item": "eldritchrealms:umbram_oak_pressure_plate",
+    "count": 1
+  },
+  "show_notification": true
+}

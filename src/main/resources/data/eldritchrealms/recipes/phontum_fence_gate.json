@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#%#",
+    "#%#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "%": {
+      "item": "eldritchrealms:phontum_planks"
+    }
+  },
+  "result": {
+    "item": "eldritchrealms:phontum_fence_gate",
+    "count": 3
+  },
+  "show_notification": true
+}

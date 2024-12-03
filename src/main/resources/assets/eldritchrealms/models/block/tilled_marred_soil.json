@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_farmland",
+  "textures": {
+    "dirt": "eldritchrealms:block/marred_soil",
+    "top": "eldritchrealms:block/tilled_marred_soil"
+  }
+}

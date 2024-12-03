@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "eldritchrealms:phontum_wood"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "eldritchrealms:phontum_planks"
+  }
+}

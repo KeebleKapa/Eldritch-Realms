@@ -1,0 +1,62 @@
+{
+  "variants": {
+    "axis=x": [
+      {
+        "model": "eldritchrealms:block/dreadquartz_pillar",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "eldritchrealms:block/dreadquartz_pillar_mirrored",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "eldritchrealms:block/dreadquartz_pillar",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "eldritchrealms:block/dreadquartz_pillar_mirrored",
+        "x": 90,
+        "y": 90
+      }
+    ],
+    "axis=y": [
+      {
+        "model": "eldritchrealms:block/dreadquartz_pillar"
+      },
+      {
+        "model": "eldritchrealms:block/dreadquartz_pillar_mirrored"
+      },
+      {
+        "model": "eldritchrealms:block/dreadquartz_pillar",
+        "y": 180
+      },
+      {
+        "model": "eldritchrealms:block/dreadquartz_pillar_mirrored",
+        "y": 180
+      }
+    ],
+    "axis=z": [
+      {
+        "model": "eldritchrealms:block/dreadquartz_pillar",
+        "x": 90
+      },
+      {
+        "model": "eldritchrealms:block/dreadquartz_pillar_mirrored",
+        "x": 90
+      },
+      {
+        "model": "eldritchrealms:block/dreadquartz_pillar",
+        "x": 90,
+        "y": 180
+      },
+      {
+        "model": "eldritchrealms:block/dreadquartz_pillar_mirrored",
+        "x": 90,
+        "y": 180
+      }
+    ]
+  }
+}

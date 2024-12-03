@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "eldritchrealms:dreadquartz_block"
+  },
+  "result": "eldritchrealms:dreadquartz_pillar"
+}

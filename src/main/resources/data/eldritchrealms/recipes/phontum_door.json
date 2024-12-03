@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "## ",
+    "## ",
+    "## "
+  ],
+  "key": {
+    "#": {
+      "item": "eldritchrealms:phontum_planks"
+    }
+  },
+  "result": {
+    "item": "eldritchrealms:phontum_door",
+    "count": 3
+  },
+  "show_notification": true
+}

@@ -13,7 +13,7 @@ public class EldritchRealmsSounds {
     public static final SoundEvent TUFF_BRICKS_STEP = registerSoundEvent("tuff_bricks_step");
 
     public static final BlockSoundGroup TUFF_BRICK_SOUNDS = new BlockSoundGroup(1f, 1f,
-            SoundEvents.BLOCK_TUFF_BREAK, EldritchRealmsSounds.TUFF_BRICKS_STEP, EldritchRealmsSounds.TUFF_BRICKS_PLACE,
+            EldritchRealmsSounds.TUFF_BRICKS_PLACE, EldritchRealmsSounds.TUFF_BRICKS_STEP, EldritchRealmsSounds.TUFF_BRICKS_PLACE,
             SoundEvents.BLOCK_TUFF_HIT, SoundEvents.BLOCK_TUFF_FALL);
 
 

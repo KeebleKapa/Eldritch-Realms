@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "eldritchrealms:block/eerie_gravel"
+      },
+      {
+        "model": "eldritchrealms:block/eerie_gravel",
+        "y": 90
+      },
+      {
+        "model": "eldritchrealms:block/eerie_gravel",
+        "y": 180
+      },
+      {
+        "model": "eldritchrealms:block/eerie_gravel",
+        "y": 270
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "eldritchrealms:astral_sandstone_bricks"
+    }
+  },
+  "result": {
+    "item": "eldritchrealms:astral_sandstone_brick_slab",
+    "count": 6
+  },
+  "show_notification": true
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "eldritchrealms:block/dreadquartz_bricks",
+    "side": "eldritchrealms:block/dreadquartz_bricks",
+    "top": "eldritchrealms:block/dreadquartz_bricks"
+  }
+}

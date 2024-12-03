@@ -2,23 +2,31 @@ package net.keeblekapa.eldritchrealms.world;
 
 import net.keeblekapa.eldritchrealms.EldritchRealms;
 import net.keeblekapa.eldritchrealms.block.EldritchRealmsBlocks;
-import net.keeblekapa.eldritchrealms.world.tree.custom.UmbramOakTrunkPlacer;
+import net.keeblekapa.eldritchrealms.util.EldritchRealmsTags;
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.entry.RegistryEntryList;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.util.math.intprovider.IntProvider;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
-import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
+import net.minecraft.world.gen.foliage.*;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.treedecorator.TreeDecorator;
+import net.minecraft.world.gen.trunk.*;
 
 import java.util.List;
+import java.util.OptionalInt;
 
 public class EldritchRealmsConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> DREADQUARTZ_ORE_KEY = registryKey("dreadquartz_ore");
@@ -45,35 +53,6 @@ public class EldritchRealmsConfiguredFeatures {
         // Dreadquartz Ore Feature //
         register(context, DREADQUARTZ_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmDreadquartzOres, 12));
 
-
-        // Phontum Tree Feature //
-        register(context, PHONTUM_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
-                BlockStateProvider.of(EldritchRealmsBlocks.PHONTUM_LOG),
-                        new UmbramOakTrunkPlacer(3, 2, 4),
-
-                        BlockStateProvider.of(EldritchRealmsBlocks.PHONTUM_LEAVES),
-                        new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 4),
-                        new TwoLayersFeatureSize(2, 3, 2)).build());
-
-
-        // Eldem Tree Feature //
-        register(context, ELDEM_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
-                BlockStateProvider.of(EldritchRealmsBlocks.ELDEM_LOG),
-                        new UmbramOakTrunkPlacer(3, 2, 4),
-
-                        BlockStateProvider.of(EldritchRealmsBlocks.ELDEM_LEAVES),
-                        new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 4),
-                        new TwoLayersFeatureSize(2, 3, 2)).build());
-
-
-        // Umbram Oak Tree Feature //
-        register(context, UMBRAM_OAK_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
-                BlockStateProvider.of(EldritchRealmsBlocks.UMBRAM_OAK_LOG),
-                        new UmbramOakTrunkPlacer(1, 2, 3),
-
-                        BlockStateProvider.of(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES),
-                        new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 3),
-                        new TwoLayersFeatureSize(4, 3, 2)).build());
 
 
     }

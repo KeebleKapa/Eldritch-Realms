@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "## ",
+    "## ",
+    "## "
+  ],
+  "key": {
+    "#": {
+      "item": "eldritchrealms:eldem_planks"
+    }
+  },
+  "result": {
+    "item": "eldritchrealms:eldem_door",
+    "count": 3
+  },
+  "show_notification": true
+}

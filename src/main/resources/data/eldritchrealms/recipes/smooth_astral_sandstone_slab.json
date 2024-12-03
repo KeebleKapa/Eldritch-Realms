@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "eldritchrealms:smooth_astral_sandstone"
+    }
+  },
+  "result": {
+    "item": "eldritchrealms:smooth_astral_sandstone_slab",
+    "count": 6
+  },
+  "show_notification": true
+}

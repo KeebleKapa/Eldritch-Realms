@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "eldritchrealms:block/astral_sandstone",
+    "side": "eldritchrealms:block/astral_sandstone",
+    "top": "eldritchrealms:block/astral_sandstone"
+  }
+}

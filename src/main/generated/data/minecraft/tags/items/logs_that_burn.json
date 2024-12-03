@@ -8,6 +8,10 @@
     "eldritchrealms:phontum_log",
     "eldritchrealms:phontum_wood",
     "eldritchrealms:stripped_phontum_log",
-    "eldritchrealms:stripped_phontum_wood"
+    "eldritchrealms:stripped_phontum_wood",
+    "eldritchrealms:eldem_log",
+    "eldritchrealms:eldem_wood",
+    "eldritchrealms:stripped_eldem_log",
+    "eldritchrealms:stripped_eldem_wood"
   ]
 }

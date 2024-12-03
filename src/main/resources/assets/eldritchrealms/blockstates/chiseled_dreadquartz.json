@@ -1,0 +1,62 @@
+{
+  "variants": {
+    "axis=x": [
+      {
+        "model": "eldritchrealms:block/chiseled_dreadquartz",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "eldritchrealms:block/chiseled_dreadquartz_mirrored",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "eldritchrealms:block/chiseled_dreadquartz",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "eldritchrealms:block/chiseled_dreadquartz_mirrored",
+        "x": 90,
+        "y": 90
+      }
+    ],
+    "axis=y": [
+      {
+        "model": "eldritchrealms:block/chiseled_dreadquartz"
+      },
+      {
+        "model": "eldritchrealms:block/chiseled_dreadquartz_mirrored"
+      },
+      {
+        "model": "eldritchrealms:block/chiseled_dreadquartz",
+        "y": 180
+      },
+      {
+        "model": "eldritchrealms:block/chiseled_dreadquartz_mirrored",
+        "y": 180
+      }
+    ],
+    "axis=z": [
+      {
+        "model": "eldritchrealms:block/chiseled_dreadquartz",
+        "x": 90
+      },
+      {
+        "model": "eldritchrealms:block/chiseled_dreadquartz_mirrored",
+        "x": 90
+      },
+      {
+        "model": "eldritchrealms:block/chiseled_dreadquartz",
+        "x": 90,
+        "y": 180
+      },
+      {
+        "model": "eldritchrealms:block/chiseled_dreadquartz_mirrored",
+        "x": 90,
+        "y": 180
+      }
+    ]
+  }
+}

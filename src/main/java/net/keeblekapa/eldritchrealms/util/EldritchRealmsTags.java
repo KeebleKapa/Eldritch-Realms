@@ -10,7 +10,17 @@ import net.minecraft.util.Identifier;
 
 public class EldritchRealmsTags {
 
+
     public static class Blocks {
+
+        public static final TagKey<Block> ELDRITCH_PLANTS_CAN_PLACE_ON =
+                createTag("eldritch_plants_can_place_on");
+
+        public static final TagKey<Block> ELDRITCH_CROPS_CAN_PLACE_ON =
+                createTag("eldritch_crops_can_place_on");
+
+
+
 
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(EldritchRealms.MOD_ID, name));

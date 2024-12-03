@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "eldritchrealms:umbram_oak_planks"
+    }
+  },
+  "result": {
+    "item": "eldritchrealms:umbram_oak_slab",
+    "count": 6
+  },
+  "show_notification": true
+}

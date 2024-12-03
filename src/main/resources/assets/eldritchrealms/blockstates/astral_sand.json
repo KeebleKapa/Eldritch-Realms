@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "eldritchrealms:block/astral_sand"
+      },
+      {
+        "model": "eldritchrealms:block/astral_sand",
+        "y": 90
+      },
+      {
+        "model": "eldritchrealms:block/astral_sand",
+        "y": 180
+      },
+      {
+        "model": "eldritchrealms:block/astral_sand",
+        "y": 270
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "eldritchrealms:block/astral_sandstone_slab"
+    },
+    "type=double": {
+      "model": "eldritchrealms:block/astral_sandstone"
+    },
+    "type=top": {
+      "model": "eldritchrealms:block/astral_sandstone_slab_top"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "eldritchrealms:dreadquartz_block"
+    }
+  },
+  "result": {
+    "item": "eldritchrealms:dreadquartz_slab",
+    "count": 6
+  },
+  "show_notification": true
+}

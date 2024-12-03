@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "eldritchrealms:block/dreadquartz_slab"
+    },
+    "type=double": {
+      "model": "eldritchrealms:block/dreadquartz"
+    },
+    "type=top": {
+      "model": "eldritchrealms:block/dreadquartz_slab_top"
+    }
+  }
+}

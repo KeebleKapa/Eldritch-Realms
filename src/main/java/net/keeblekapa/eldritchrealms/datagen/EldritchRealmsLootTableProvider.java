@@ -3,18 +3,32 @@ package net.keeblekapa.eldritchrealms.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.keeblekapa.eldritchrealms.block.EldritchRealmsBlocks;
+import net.keeblekapa.eldritchrealms.block.custom.AlkWheatCropBlock;
 import net.keeblekapa.eldritchrealms.item.EldritchRealmsItems;
 import net.minecraft.block.Block;
+import net.minecraft.block.TallPlantBlock;
+import net.minecraft.block.enums.DoubleBlockHalf;
 import net.minecraft.data.server.loottable.BlockLootTableGenerator;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
+import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
+import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
+import net.minecraft.loot.condition.LocationCheckLootCondition;
+import net.minecraft.loot.condition.LootCondition;
+import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
 import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
+import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.predicate.BlockPredicate;
+import net.minecraft.predicate.StatePredicate;
+import net.minecraft.predicate.entity.LocationPredicate;
+import net.minecraft.util.math.BlockPos;
 
 public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvider {
     public EldritchRealmsLootTableProvider(FabricDataOutput dataOutput) {
@@ -66,7 +80,7 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                 addDrop(EldritchRealmsBlocks.MOSSY_POLISHED_ABYSSAL_GRANITE_SLAB, slabDrops(EldritchRealmsBlocks.MOSSY_POLISHED_ABYSSAL_GRANITE_SLAB));
 
 
-                addDrop(EldritchRealmsBlocks.VEILSTONE, stoneDrops(EldritchRealmsBlocks.VEILSTONE, EldritchRealmsBlocks.COBBLED_VEILSTONE));
+                addDrop(EldritchRealmsBlocks.VEILSTONE, silkTouchDrop(EldritchRealmsBlocks.VEILSTONE, EldritchRealmsBlocks.COBBLED_VEILSTONE));
                 addDrop(EldritchRealmsBlocks.VEILSTONE_SLAB);
                 addDrop(EldritchRealmsBlocks.VEILSTONE_STAIRS);
                 addDrop(EldritchRealmsBlocks.VEILSTONE_WALL);
@@ -169,6 +183,7 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                 addDrop(EldritchRealmsBlocks.PHONTUM_TRAPDOOR);
                 addDrop(EldritchRealmsBlocks.PHONTUM_SAPLING);
                 addDrop(EldritchRealmsBlocks.PHONTUM_LEAVES, leavesDrops(EldritchRealmsBlocks.PHONTUM_LEAVES, EldritchRealmsBlocks.PHONTUM_SAPLING, 0.05f));
+                addDrop(EldritchRealmsBlocks.FLOWERING_PHONTUM_LEAVES, leavesDrops(EldritchRealmsBlocks.FLOWERING_PHONTUM_LEAVES, EldritchRealmsBlocks.PHONTUM_SAPLING, 0.05f));
 
 
                 addDrop(EldritchRealmsBlocks.ELDEM_LOG);
@@ -190,21 +205,43 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                 addDrop(EldritchRealmsBlocks.DREADQUARTZ_ORE, twoToFiveDrops(EldritchRealmsBlocks.DREADQUARTZ_ORE, EldritchRealmsItems.DREADQUARTZ));
                 addDrop(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE, twoToFiveDrops(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE, EldritchRealmsItems.DREADQUARTZ));
                 addDrop(EldritchRealmsBlocks.DREADQUARTZ_BLOCK);
-                addDrop(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_BLOCK);
-                addDrop(EldritchRealmsBlocks.DREADQUARTZ_PILLAR);
+                addDrop(EldritchRealmsBlocks.DREADQUARTZ_STAIRS);
+                addDrop(EldritchRealmsBlocks.DREADQUARTZ_SLAB, slabDrops(EldritchRealmsBlocks.DREADQUARTZ_SLAB));
+                addDrop(EldritchRealmsBlocks.DREADQUARTZ_WALL);
                 addDrop(EldritchRealmsBlocks.DREADQUARTZ_BRICKS);
+                addDrop(EldritchRealmsBlocks.DREADQUARTZ_BRICK_STAIRS);
+                addDrop(EldritchRealmsBlocks.DREADQUARTZ_BRICK_SLAB, slabDrops(EldritchRealmsBlocks.DREADQUARTZ_BRICK_SLAB));
+                addDrop(EldritchRealmsBlocks.DREADQUARTZ_BRICK_WALL);
+                addDrop(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ);
+                addDrop(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_STAIRS);
+                addDrop(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_SLAB, slabDrops(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_SLAB));
+                addDrop(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_WALL);
+                addDrop(EldritchRealmsBlocks.DREADQUARTZ_PILLAR);
                 addDrop(EldritchRealmsBlocks.CHISELED_DREADQUARTZ);
+
+                addDrop(EldritchRealmsBlocks.MYTHRAL_GRASS_BLOCK, silkTouchDrop(EldritchRealmsBlocks.MYTHRAL_GRASS_BLOCK, EldritchRealmsBlocks.MARRED_SOIL));
+                addDrop(EldritchRealmsBlocks.MARRED_SOIL);
+                addDrop(EldritchRealmsBlocks.TILLED_MARRED_SOIL, drops(EldritchRealmsBlocks.MARRED_SOIL));
+                addDrop(EldritchRealmsBlocks.MYTHRAL_GRASS, mythralGrassDrops(EldritchRealmsBlocks.MYTHRAL_GRASS));
+                addDrop(EldritchRealmsBlocks.TALL_MYTHRAL_GRASS, tallMythralGrassDrops(EldritchRealmsBlocks.TALL_MYTHRAL_GRASS, EldritchRealmsBlocks.TALL_MYTHRAL_GRASS));
+
+                addDrop(EldritchRealmsBlocks.SABLEBELL);
+                addDrop(EldritchRealmsBlocks.PHONTUM_PETALS, flowerbedDrops(EldritchRealmsBlocks.PHONTUM_PETALS));
+
+                BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(EldritchRealmsBlocks.ALK_WHEAT).properties(StatePredicate.Builder.create()
+                        .exactMatch(AlkWheatCropBlock.AGE, 7));
+                addDrop(EldritchRealmsBlocks.ALK_WHEAT, cropDrops(EldritchRealmsBlocks.ALK_WHEAT, EldritchRealmsItems.ALK_WHEAT, EldritchRealmsItems.ALK_WHEAT_SEEDS, builder));
 
 
     }
 
-    public LootTable.Builder stoneDrops(Block drop, Block block) {
+    public LootTable.Builder silkTouchDrop(Block drop, Block block) {
         return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder) this.applyExplosionDecay(drop,
                 ((LeafEntry.Builder)
                         ItemEntry.builder(block)
                                 .apply(SetCountLootFunction
-                                        .builder(UniformLootNumberProvider
-                                                .create(1.0f, 1.0f))))));
+                                        .builder(ConstantLootNumberProvider
+                                                .create(1.0f))))));
     }
 
     public LootTable.Builder oneToThreeDrops(Block drop, Item item) {
@@ -256,4 +293,79 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                                                 .create(1.0f, 10.0f))))
                         .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))));
     }
+
+    public LootTable.Builder mythralGrassDrops(Block dropWithShears) {
+        return dropsWithShears(
+                dropWithShears,
+                (LootPoolEntry.Builder<?>)this.applyExplosionDecay(
+                        dropWithShears,
+                        ItemEntry.builder(EldritchRealmsItems.ALK_WHEAT_SEEDS)
+                                .conditionally(RandomChanceLootCondition.builder(0.125F))
+                                .apply(ApplyBonusLootFunction.uniformBonusCount(Enchantments.FORTUNE, 2))
+                )
+        );
+    }
+    public LootTable.Builder tallMythralGrassDrops(Block tallGrass, Block grass) {
+        LootPoolEntry.Builder<?> builder = ItemEntry.builder(grass)
+                .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(2.0F)))
+                .conditionally(WITH_SHEARS)
+                .alternatively(
+                        ((LeafEntry.Builder)this.addSurvivesExplosionCondition(tallGrass, ItemEntry.builder(EldritchRealmsItems.ALK_WHEAT_SEEDS)))
+                                .conditionally(RandomChanceLootCondition.builder(0.125F))
+                );
+        return LootTable.builder()
+                .pool(
+                        LootPool.builder()
+                                .with(builder)
+                                .conditionally(
+                                        BlockStatePropertyLootCondition.builder(tallGrass).properties(StatePredicate.Builder.create().exactMatch(TallPlantBlock.HALF, DoubleBlockHalf.LOWER))
+                                )
+                                .conditionally(
+                                        LocationCheckLootCondition.builder(
+                                                LocationPredicate.Builder.create()
+                                                        .block(
+                                                                BlockPredicate.Builder.create()
+                                                                        .blocks(tallGrass)
+                                                                        .state(StatePredicate.Builder.create().exactMatch(TallPlantBlock.HALF, DoubleBlockHalf.UPPER).build())
+                                                                        .build()
+                                                        ),
+                                                new BlockPos(0, 1, 0)
+                                        )
+                                )
+                )
+                .pool(
+                        LootPool.builder()
+                                .with(builder)
+                                .conditionally(
+                                        BlockStatePropertyLootCondition.builder(tallGrass).properties(StatePredicate.Builder.create().exactMatch(TallPlantBlock.HALF, DoubleBlockHalf.UPPER))
+                                )
+                                .conditionally(
+                                        LocationCheckLootCondition.builder(
+                                                LocationPredicate.Builder.create()
+                                                        .block(
+                                                                BlockPredicate.Builder.create()
+                                                                        .blocks(tallGrass)
+                                                                        .state(StatePredicate.Builder.create().exactMatch(TallPlantBlock.HALF, DoubleBlockHalf.LOWER).build())
+                                                                        .build()
+                                                        ),
+                                                new BlockPos(0, -1, 0)
+                                        )
+                                )
+                );
+    }
+
+    public LootTable.Builder eldritchCropDrops(Block crop, Item product, Item seeds, LootCondition.Builder condition) {
+        return this.applyExplosionDecay(
+                crop,
+                LootTable.builder()
+                        .pool(LootPool.builder().with(ItemEntry.builder(product).conditionally(condition).alternatively(ItemEntry.builder(seeds))))
+                        .pool(
+                                LootPool.builder()
+                                        .conditionally(condition)
+                                        .with(ItemEntry.builder(seeds).apply(ApplyBonusLootFunction.binomialWithBonusCount(Enchantments.FORTUNE, 0.5714286F, 3)))
+                        )
+        );
+    }
+
+
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "eldritchrealms:block/alk_wheat_stage7"
+  }
+}

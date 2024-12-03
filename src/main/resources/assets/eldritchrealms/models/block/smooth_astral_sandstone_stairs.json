@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "eldritchrealms:block/astral_sandstone_top",
+    "side": "eldritchrealms:block/astral_sandstone_top",
+    "top": "eldritchrealms:block/astral_sandstone_top"
+  }
+}

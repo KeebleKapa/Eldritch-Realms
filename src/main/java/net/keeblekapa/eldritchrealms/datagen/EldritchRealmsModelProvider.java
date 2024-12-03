@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.keeblekapa.eldritchrealms.EldritchRealms;
 import net.keeblekapa.eldritchrealms.block.EldritchRealmsBlocks;
+import net.keeblekapa.eldritchrealms.block.custom.AlkWheatCropBlock;
 import net.keeblekapa.eldritchrealms.item.EldritchRealmsItems;
 import net.minecraft.block.PillarBlock;
 import net.minecraft.data.client.*;
@@ -171,20 +172,29 @@ public class EldritchRealmsModelProvider extends FabricModelProvider {
         pPool.button(EldritchRealmsBlocks.PHONTUM_BUTTON);
         blockStateModelGenerator.registerDoor(EldritchRealmsBlocks.PHONTUM_DOOR);
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.PHONTUM_LEAVES);
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.FLOWERING_PHONTUM_LEAVES);
         blockStateModelGenerator.registerTintableCross(EldritchRealmsBlocks.PHONTUM_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
 
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.GLOOMARBLE);
 
 
-        BlockStateModelGenerator.BlockTexturePool sdbPool = blockStateModelGenerator.registerCubeAllModelTexturePool(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool sdPool = blockStateModelGenerator.registerCubeAllModelTexturePool(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ);
+        sdPool.stairs(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_STAIRS);
+        sdPool.slab(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_SLAB);
+        sdPool.wall(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_WALL);
 
-        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.DREADQUARTZ_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.DREADQUARTZ_BRICKS);
-        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.CHISELED_DREADQUARTZ);
-        blockStateModelGenerator.registerLog(EldritchRealmsBlocks.DREADQUARTZ_PILLAR);
+        BlockStateModelGenerator.BlockTexturePool dbPool = blockStateModelGenerator.registerCubeAllModelTexturePool(EldritchRealmsBlocks.DREADQUARTZ_BRICKS);
+        dbPool.stairs(EldritchRealmsBlocks.DREADQUARTZ_BRICK_STAIRS);
+        dbPool.slab(EldritchRealmsBlocks.DREADQUARTZ_BRICK_SLAB);
+        dbPool.wall(EldritchRealmsBlocks.DREADQUARTZ_BRICK_WALL);
+
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.DREADQUARTZ_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE);
+
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.MARRED_SOIL);
+
+        blockStateModelGenerator.registerCrop(EldritchRealmsBlocks.ALK_WHEAT, AlkWheatCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
 
 
     }

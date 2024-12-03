@@ -13,4 +13,5 @@ public class UmbramOakSaplingGenerator extends SaplingGenerator {
     protected RegistryKey<ConfiguredFeature<?, ?>> getTreeFeature(Random random, boolean bees) {
         return EldritchRealmsConfiguredFeatures.UMBRAM_OAK_KEY;
     }
+
 }

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "eldritchrealms:smooth_astral_sandstone"
+  },
+  "result": "eldritchrealms:smooth_astral_sandstone_wall"
+}

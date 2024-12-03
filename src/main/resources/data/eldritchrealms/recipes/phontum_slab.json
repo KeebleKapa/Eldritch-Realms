@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "eldritchrealms:phontum_planks"
+    }
+  },
+  "result": {
+    "item": "eldritchrealms:phontum_slab",
+    "count": 6
+  },
+  "show_notification": true
+}

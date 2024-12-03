@@ -3,6 +3,9 @@ package net.keeblekapa.eldritchrealms.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.keeblekapa.eldritchrealms.block.EldritchRealmsBlocks;
+import net.keeblekapa.eldritchrealms.util.EldritchRealmsTags;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
@@ -46,7 +49,7 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.CRACKED_SHADOWSLATE_TILE_WALL)
 
                 .add(EldritchRealmsBlocks.DREADQUARTZ_BLOCK)
-                .add(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_BLOCK)
+                .add(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ)
                 .add(EldritchRealmsBlocks.DREADQUARTZ_BRICKS)
                 .add(EldritchRealmsBlocks.DREADQUARTZ_PILLAR)
                 .add(EldritchRealmsBlocks.CHISELED_DREADQUARTZ)
@@ -68,12 +71,16 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
         ;
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
-
+                .add(EldritchRealmsBlocks.MARRED_SOIL)
+                .add(EldritchRealmsBlocks.TILLED_MARRED_SOIL)
+                .add(EldritchRealmsBlocks.MYTHRAL_GRASS_BLOCK)
+                .add(EldritchRealmsBlocks.ASTRAL_SAND)
         ;
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES)
                 .add(EldritchRealmsBlocks.PHONTUM_LEAVES)
+                .add(EldritchRealmsBlocks.FLOWERING_PHONTUM_LEAVES)
                 .add(EldritchRealmsBlocks.ELDEM_LEAVES)
 
         ;
@@ -223,10 +230,23 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.DREADQUARTZ_ORE)
                 .add(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE)
                 .add(EldritchRealmsBlocks.DREADQUARTZ_BLOCK)
-                .add(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_BLOCK)
+                .add(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ)
                 .add(EldritchRealmsBlocks.DREADQUARTZ_BRICKS)
                 .add(EldritchRealmsBlocks.DREADQUARTZ_PILLAR)
                 .add(EldritchRealmsBlocks.CHISELED_DREADQUARTZ)
+
+                .add(EldritchRealmsBlocks.ASTRAL_SANDSTONE)
+                .add(EldritchRealmsBlocks.ASTRAL_SANDSTONE_STAIRS)
+                .add(EldritchRealmsBlocks.ASTRAL_SANDSTONE_SLAB)
+                .add(EldritchRealmsBlocks.ASTRAL_SANDSTONE_WALL)
+                .add(EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICKS)
+                .add(EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICK_STAIRS)
+                .add(EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICK_SLAB)
+                .add(EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICK_WALL)
+                .add(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE)
+                .add(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE_STAIRS)
+                .add(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE_SLAB)
+                .add(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE_WALL)
         ;
 
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
@@ -326,6 +346,10 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_SLAB)
                 .add(EldritchRealmsBlocks.PHONTUM_SLAB)
                 .add(EldritchRealmsBlocks.ELDEM_SLAB)
+
+                .add(EldritchRealmsBlocks.ASTRAL_SANDSTONE_SLAB)
+                .add(EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICK_SLAB)
+                .add(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE_SLAB)
         ;
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
@@ -360,6 +384,9 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.PHONTUM_STAIRS)
                 .add(EldritchRealmsBlocks.ELDEM_STAIRS)
 
+                .add(EldritchRealmsBlocks.ASTRAL_SANDSTONE_STAIRS)
+                .add(EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICK_STAIRS)
+                .add(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE_STAIRS)
         ;
 
         getOrCreateTagBuilder(BlockTags.WALLS)
@@ -390,6 +417,14 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.POLISHED_ELDRITCH_LIMESTONE_WALL)
                 .add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_WALL)
 
+                .add(EldritchRealmsBlocks.DREADQUARTZ_WALL)
+                .add(EldritchRealmsBlocks.DREADQUARTZ_BRICK_WALL)
+                .add(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ_WALL)
+
+                .add(EldritchRealmsBlocks.ASTRAL_SANDSTONE_WALL)
+                .add(EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICK_WALL)
+                .add(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE_WALL)
+
         ;
 
         getOrCreateTagBuilder(BlockTags.LOGS)
@@ -407,5 +442,15 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.STRIPPED_ELDEM_WOOD)
 
         ;
+
+        getOrCreateTagBuilder(EldritchRealmsTags.Blocks.ELDRITCH_PLANTS_CAN_PLACE_ON)
+                .add(EldritchRealmsBlocks.MYTHRAL_GRASS_BLOCK)
+                .add(EldritchRealmsBlocks.MARRED_SOIL)
+        ;
+
+        getOrCreateTagBuilder(EldritchRealmsTags.Blocks.ELDRITCH_CROPS_CAN_PLACE_ON)
+                .add(EldritchRealmsBlocks.TILLED_MARRED_SOIL)
+        ;
+
     }
 }

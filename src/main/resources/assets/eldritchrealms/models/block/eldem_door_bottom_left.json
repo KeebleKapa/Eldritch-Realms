@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left",
+  "textures": {
+    "bottom": "eldritchrealms:block/eldem_door_bottom",
+    "top": "eldritchrealms:block/eldem_door_top"
+  }
+}

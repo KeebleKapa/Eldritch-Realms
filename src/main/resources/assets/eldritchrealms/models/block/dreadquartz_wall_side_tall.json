@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side_tall",
+  "textures": {
+    "wall": "eldritchrealms:block/dreadquartz_block_side"
+  }
+}

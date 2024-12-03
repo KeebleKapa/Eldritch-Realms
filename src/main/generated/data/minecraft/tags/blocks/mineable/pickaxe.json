@@ -94,9 +94,21 @@
     "eldritchrealms:dreadquartz_ore",
     "eldritchrealms:shadowslate_dreadquartz_ore",
     "eldritchrealms:dreadquartz_block",
-    "eldritchrealms:smooth_dreadquartz_block",
+    "eldritchrealms:smooth_dreadquartz",
     "eldritchrealms:dreadquartz_bricks",
     "eldritchrealms:dreadquartz_pillar",
-    "eldritchrealms:chiseled_dreadquartz"
+    "eldritchrealms:chiseled_dreadquartz",
+    "eldritchrealms:astral_sandstone",
+    "eldritchrealms:astral_sandstone_stairs",
+    "eldritchrealms:astral_sandstone_slab",
+    "eldritchrealms:astral_sandstone_wall",
+    "eldritchrealms:astral_sandstone_bricks",
+    "eldritchrealms:astral_sandstone_brick_stairs",
+    "eldritchrealms:astral_sandstone_brick_slab",
+    "eldritchrealms:astral_sandstone_brick_wall",
+    "eldritchrealms:smooth_astral_sandstone",
+    "eldritchrealms:smooth_astral_sandstone_stairs",
+    "eldritchrealms:smooth_astral_sandstone_slab",
+    "eldritchrealms:smooth_astral_sandstone_wall"
   ]
 }

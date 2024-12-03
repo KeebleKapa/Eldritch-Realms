@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "eldritchrealms:block/smooth_dreadquartz",
+    "side": "eldritchrealms:block/smooth_dreadquartz",
+    "top": "eldritchrealms:block/smooth_dreadquartz"
+  }
+}

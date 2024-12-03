@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 2.0,
+  "group": "dreadquartz_ore_smelting",
+  "ingredient": {
+    "item": "eldritchrealms:dreadquartz_ore"
+  },
+  "result": "eldritchrealms:dreadquartz"
+}

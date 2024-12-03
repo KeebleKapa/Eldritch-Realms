@@ -4,6 +4,8 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.keeblekapa.eldritchrealms.EldritchRealms;
+import net.keeblekapa.eldritchrealms.block.EldritchRealmsBlocks;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
@@ -13,12 +15,23 @@ import net.minecraft.util.Identifier;
 
 public class EldritchRealmsItems {
 
+    // Food
+    public static final Item ALK_WHEAT_SEEDS = registerItem("alk_wheat_seeds", new AliasedBlockItem(EldritchRealmsBlocks.ALK_WHEAT, new FabricItemSettings()));
+    public static final Item ALK_WHEAT = registerItem("alk_wheat", new Item(new FabricItemSettings()));
+
+
+
     // Materials
     public static final Item DREADQUARTZ = registerItem("dreadquartz", new Item(new FabricItemSettings()));
 
     public static final Item GLOOMARBLE_DUST = registerItem("gloomarble_dust", new Item(new FabricItemSettings()));
 
+
+
     // Tools
+
+
+
 
 
     private static Item registerItem(String name, Item item) {

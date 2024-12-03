@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/poppy",
+  "textures": {
+    "cross": "eldritchrealms:block/sablebell"
+  }
+}

@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.keeblekapa.eldritchrealms.datagen.*;
 import net.keeblekapa.eldritchrealms.world.EldritchRealmsConfiguredFeatures;
 import net.keeblekapa.eldritchrealms.world.EldritchRealmsPlacedFeatures;
+import net.keeblekapa.eldritchrealms.world.biome.EldritchRealmsBiomes;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 

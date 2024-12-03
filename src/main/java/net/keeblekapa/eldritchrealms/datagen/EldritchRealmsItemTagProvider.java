@@ -24,12 +24,17 @@ public class EldritchRealmsItemTagProvider extends FabricTagProvider.ItemTagProv
                 .add(EldritchRealmsBlocks.PHONTUM_LOG.asItem())
                 .add(EldritchRealmsBlocks.PHONTUM_WOOD.asItem())
                 .add(EldritchRealmsBlocks.STRIPPED_PHONTUM_LOG.asItem())
-                .add(EldritchRealmsBlocks.STRIPPED_PHONTUM_WOOD.asItem());
+                .add(EldritchRealmsBlocks.STRIPPED_PHONTUM_WOOD.asItem())
+                .add(EldritchRealmsBlocks.ELDEM_LOG.asItem())
+                .add(EldritchRealmsBlocks.ELDEM_WOOD.asItem())
+                .add(EldritchRealmsBlocks.STRIPPED_ELDEM_LOG.asItem())
+                .add(EldritchRealmsBlocks.STRIPPED_ELDEM_WOOD.asItem());
 
 
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_PLANKS.asItem())
-                .add(EldritchRealmsBlocks.PHONTUM_PLANKS.asItem());
+                .add(EldritchRealmsBlocks.PHONTUM_PLANKS.asItem())
+                .add(EldritchRealmsBlocks.ELDEM_PLANKS.asItem());
 
     }
 }

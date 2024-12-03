@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#%#",
+    "#%#"
+  ],
+  "key": {
+    "#": {
+      "item": "eldritchrealms:eldem_planks"
+    },
+    "%": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "eldritchrealms:eldem_fence",
+    "count": 3
+  },
+  "show_notification": true
+}

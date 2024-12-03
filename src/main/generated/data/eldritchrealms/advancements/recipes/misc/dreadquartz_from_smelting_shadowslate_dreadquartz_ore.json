@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_shadowslate_dreadquartz_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eldritchrealms:shadowslate_dreadquartz_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:dreadquartz_from_smelting_shadowslate_dreadquartz_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_shadowslate_dreadquartz_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:dreadquartz_from_smelting_shadowslate_dreadquartz_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}
