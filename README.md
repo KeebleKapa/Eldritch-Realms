@@ -21,19 +21,19 @@
 - ❌ Umbral Onyx
 - ❌ Wraithstone
 - ❌ Hauntrock
-- ❌ Ebon Obsidian
+- 🚧 Ebon Obsidian
 - ❌ Mystic Marble
 - ❌ Netherweave
 - ❌ Twilight Shale
 - ❌ Ghostly Gabbro
-- ❌ Enigma Basalt
+- 🚧 Enigma Basalt
 - ❌ Silent Sandstone
 - ❌ Cryptic Cher
 
 ## Ore/Material Blocks:
-- ❌ Nebula Lapis
+- 🚧 Nebula Lapis
 - ✔️ Dreadquartz ( Similar functions to regular quartz )
-- ❌ Eclipsium
+- 🚧 Eclipsium
 - ❌ Soulspark
 - ❌ Dreadium
 - ❌ Etherealite ( Stronger than Phantomite )
