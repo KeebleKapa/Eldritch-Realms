@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.keeblekapa.eldritchrealms.block.EldritchRealmsBlocks;
+import net.keeblekapa.eldritchrealms.block.entity.EldritchrealmsBlockEntities;
 import net.keeblekapa.eldritchrealms.datagen.EldritchRealmsWorldGenerator;
 import net.keeblekapa.eldritchrealms.item.EldritchRealmsItemGroups;
 import net.keeblekapa.eldritchrealms.item.EldritchRealmsItems;
@@ -24,6 +25,7 @@ public class EldritchRealms implements ModInitializer {
 		EldritchRealmsSounds.registerSounds();
 
 		EldritchRealmsBlocks.registerBlocks();
+		EldritchrealmsBlockEntities.registerBlockEntities();
 		EldritchRealmsItems.registerItems();
 
 		EldritchRealmsItemGroups.registerItemGroups();

@@ -307,6 +307,10 @@ public class EldritchRealmsBlocks {
     // Hauntrock
 
     // Ebon Obsidian
+    public static final Block EBON_OBSIDIAN = registerBlock("ebon_obsidian",
+            new Block(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).strength(75.0F, 2400.0F).luminance(4)));
+    public static final Block GLISTENING_EBON_OBSIDIAN = registerBlock("glistening_ebon_obsidian",
+            new Block(FabricBlockSettings.copyOf(Blocks.CRYING_OBSIDIAN).strength(75.0F, 2400.0F)));
 
     // Mystic Marble
 
@@ -912,7 +916,7 @@ public class EldritchRealmsBlocks {
 
     // Nebulatic Enchanting Table
     public static final Block NEBULATIC_ENCHANTING_TABLE = registerBlock("nebulatic_enchanting_table",
-            new NebulaticEnchantingTableBlock(FabricBlockSettings.copyOf(Blocks.ENCHANTING_TABLE).luminance(8)));
+            new EnchantingTableBlock(FabricBlockSettings.copyOf(Blocks.ENCHANTING_TABLE).luminance(8)));
 
     // Ebonic Smithing Table
 
