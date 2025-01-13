@@ -9,12 +9,16 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 
 public class EldritchRealmsSounds {
+
+    public static final SoundEvent ELDRITCH_REALMS_DIMENSION_AMBIENCE = registerSoundEvent("eldritch_realms_dimension_ambience");
+
     public static final SoundEvent TUFF_BRICKS_PLACE = registerSoundEvent("tuff_bricks_place");
     public static final SoundEvent TUFF_BRICKS_STEP = registerSoundEvent("tuff_bricks_step");
 
     public static final BlockSoundGroup TUFF_BRICK_SOUNDS = new BlockSoundGroup(1f, 1f,
             EldritchRealmsSounds.TUFF_BRICKS_PLACE, EldritchRealmsSounds.TUFF_BRICKS_STEP, EldritchRealmsSounds.TUFF_BRICKS_PLACE,
             SoundEvents.BLOCK_TUFF_HIT, SoundEvents.BLOCK_TUFF_FALL);
+
 
 
     private static SoundEvent registerSoundEvent(String name) {

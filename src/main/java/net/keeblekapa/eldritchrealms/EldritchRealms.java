@@ -43,3 +43,4 @@ public class EldritchRealms implements ModInitializer {
 		EldritchRealmsTrunkPlacerTypes.register();
 	}
 }
+asd

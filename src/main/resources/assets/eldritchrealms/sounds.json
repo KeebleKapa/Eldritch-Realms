@@ -1,4 +1,26 @@
 {
+  "eldritch_realms_dimension_ambience": {
+    "subtitle": "sounds.eldritchrealms.dimension_ambience",
+    "sounds": [
+    "eldritchrealms:eldritch_realms_dimension_ambience1",
+    "eldritchrealms:eldritch_realms_dimension_ambience2",
+    "eldritchrealms:eldritch_realms_dimension_ambience3",
+    "eldritchrealms:eldritch_realms_dimension_ambience4",
+    "eldritchrealms:eldritch_realms_dimension_ambience5",
+    "eldritchrealms:eldritch_realms_dimension_ambience6",
+    "eldritchrealms:eldritch_realms_dimension_ambience7",
+    "eldritchrealms:eldritch_realms_dimension_ambience8",
+    "eldritchrealms:eldritch_realms_dimension_ambience9",
+    "eldritchrealms:eldritch_realms_dimension_ambience10",
+    "eldritchrealms:eldritch_realms_dimension_ambience11",
+    "eldritchrealms:eldritch_realms_dimension_ambience12",
+    "eldritchrealms:eldritch_realms_dimension_ambience13",
+    "eldritchrealms:eldritch_realms_dimension_ambience14",
+    "eldritchrealms:eldritch_realms_dimension_ambience15",
+    "eldritchrealms:eldritch_realms_dimension_ambience16",
+    ]
+  },
+
   "tuff_bricks_place": {
     "subtitle": "sounds.eldritchrealms.tuff_bricks_place",
     "sounds": [
