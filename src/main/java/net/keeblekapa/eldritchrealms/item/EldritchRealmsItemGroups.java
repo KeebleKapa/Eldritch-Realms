@@ -200,20 +200,37 @@ public class EldritchRealmsItemGroups {
 
                     }).build());
 
-    public static final ItemGroup ELDRITCH_REALMS_TOOLS = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(EldritchRealms.MOD_ID, "eldritch_realms_tools"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.eldritch_realms_tools"))
-                    .icon(() -> new ItemStack(EldritchRealmsItems.DREADQUARTZ)).entries((displayContext, entries) -> {
-
-
-                    }).build());
-
     public static final ItemGroup ELDRITCH_REALMS_ITEMS = Registry.register(Registries.ITEM_GROUP,
             new Identifier(EldritchRealms.MOD_ID, "eldritch_realms_items"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.eldritch_realms_items"))
                     .icon(() -> new ItemStack(EldritchRealmsItems.DREADQUARTZ)).entries((displayContext, entries) -> {
                         entries.add(EldritchRealmsItems.GLOOMARBLE_DUST);
                         entries.add(EldritchRealmsItems.DREADQUARTZ);
+
+                    }).build());
+
+    public static final ItemGroup ELDRITCH_REALMS_TOOLS = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(EldritchRealms.MOD_ID, "eldritch_realms_tools"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.eldritch_realms_tools"))
+                    .icon(() -> new ItemStack(EldritchRealmsItems.SHADOWSTEEL_PICKAXE)).entries((displayContext, entries) -> {
+                        entries.add(EldritchRealmsItems.SHADOWSTEEL_PICKAXE);
+                        entries.add(EldritchRealmsItems.SHADOWSTEEL_AXE);
+                        entries.add(EldritchRealmsItems.SHADOWSTEEL_SHOVEL);
+                        entries.add(EldritchRealmsItems.SHADOWSTEEL_HOE);
+
+
+                    }).build());
+
+    public static final ItemGroup ELDRITCH_REALMS_COMBAT = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(EldritchRealms.MOD_ID, "eldritch_realms_combat"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.eldritch_realms_combat"))
+                    .icon(() -> new ItemStack(EldritchRealmsItems.SHADOWSTEEL_SWORD)).entries((displayContext, entries) -> {
+                        entries.add(EldritchRealmsItems.SHADOWSTEEL_SWORD);
+                        entries.add(EldritchRealmsItems.SHADOWSTEEL_AXE);
+                        entries.add(EldritchRealmsItems.SHADOWSTEEL_HELMET);
+                        entries.add(EldritchRealmsItems.SHADOWSTEEL_CHESTPLATE);
+                        entries.add(EldritchRealmsItems.SHADOWSTEEL_LEGGINGS);
+                        entries.add(EldritchRealmsItems.SHADOWSTEEL_BOOTS);
 
                     }).build());
 
@@ -226,6 +243,8 @@ public class EldritchRealmsItemGroups {
                         entries.add(EldritchRealmsBlocks.TILLED_MARRED_SOIL);
                         entries.add(EldritchRealmsBlocks.MYTHRAL_GRASS);
                         entries.add(EldritchRealmsBlocks.TALL_MYTHRAL_GRASS);
+                        entries.add(EldritchRealmsBlocks.EBON_OBSIDIAN);
+                        entries.add(EldritchRealmsBlocks.GLISTENING_EBON_OBSIDIAN);
                         entries.add(EldritchRealmsItems.ALK_WHEAT_SEEDS);
                         entries.add(EldritchRealmsItems.ALK_WHEAT);
                         entries.add(EldritchRealmsBlocks.UMBRAM_OAK_LEAVES);

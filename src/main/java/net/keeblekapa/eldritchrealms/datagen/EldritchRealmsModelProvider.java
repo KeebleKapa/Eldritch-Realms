@@ -2,13 +2,11 @@ package net.keeblekapa.eldritchrealms.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.keeblekapa.eldritchrealms.EldritchRealms;
 import net.keeblekapa.eldritchrealms.block.EldritchRealmsBlocks;
 import net.keeblekapa.eldritchrealms.block.custom.AlkWheatCropBlock;
 import net.keeblekapa.eldritchrealms.item.EldritchRealmsItems;
-import net.minecraft.block.PillarBlock;
 import net.minecraft.data.client.*;
-import net.minecraft.util.Identifier;
+import net.minecraft.item.ArmorItem;
 
 public class EldritchRealmsModelProvider extends FabricModelProvider {
     public EldritchRealmsModelProvider(FabricDataOutput output) {
@@ -199,9 +197,24 @@ public class EldritchRealmsModelProvider extends FabricModelProvider {
 
     }
 
+
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(EldritchRealmsItems.DREADQUARTZ, Models.GENERATED);
         itemModelGenerator.register(EldritchRealmsItems.GLOOMARBLE_DUST, Models.GENERATED);
+
+
+        itemModelGenerator.register(EldritchRealmsItems.SHADOWSTEEL_INGOT, Models.GENERATED);
+        itemModelGenerator.register(EldritchRealmsItems.SHADOWSTEEL_NUGGET, Models.GENERATED);
+        itemModelGenerator.register(EldritchRealmsItems.SHADOWSTEEL_DUST, Models.GENERATED);
+        itemModelGenerator.register(EldritchRealmsItems.SHADOWSTEEL_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(EldritchRealmsItems.SHADOWSTEEL_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(EldritchRealmsItems.SHADOWSTEEL_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(EldritchRealmsItems.SHADOWSTEEL_AXE, Models.HANDHELD);
+        itemModelGenerator.register(EldritchRealmsItems.SHADOWSTEEL_HOE, Models.HANDHELD);
+        itemModelGenerator.registerArmor(((ArmorItem) EldritchRealmsItems.SHADOWSTEEL_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) EldritchRealmsItems.SHADOWSTEEL_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) EldritchRealmsItems.SHADOWSTEEL_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) EldritchRealmsItems.SHADOWSTEEL_BOOTS));
     }
 }

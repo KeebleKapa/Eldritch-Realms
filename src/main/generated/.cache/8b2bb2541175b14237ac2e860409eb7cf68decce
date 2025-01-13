@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-01T15:52:20.7090347	Eldritch Realms/Block Loot Tables
+// 1.20.1	2025-01-13T00:28:11.8196114	Eldritch Realms/Block Loot Tables
 2486c2117b69d3f23457a4b7fedaff1235792b8f data\eldritchrealms\loot_tables\blocks\eldritch_limestone_brick_stairs.json
 779864d630596109e2ea18a525b6499dde767e4b data\eldritchrealms\loot_tables\blocks\mossy_abyssal_granite_slab.json
 4e40459d494d43b4783811c5549b0bf592c6170b data\eldritchrealms\loot_tables\blocks\crimson_cobble_stairs.json
@@ -44,8 +44,8 @@ a4df0ec2f5e44a7c247f9909a7dd12cc012d065c data\eldritchrealms\loot_tables\blocks\
 c1ce5d2bb1c45d6e46e5f9afb90952a2f8fa8c45 data\eldritchrealms\loot_tables\blocks\cracked_shadowslate_tiles.json
 3656eebb9dfc1316bbe1c300e8a307b3e0cc27cf data\eldritchrealms\loot_tables\blocks\umbram_oak_leaves.json
 3c74cbbe46fbed7d9d0095f6299e82d9e9991a30 data\eldritchrealms\loot_tables\blocks\cracked_mossy_abyssal_granite_brick_wall.json
-c02ddd0b26356d44367ee8e392499068e28084bb data\eldritchrealms\loot_tables\blocks\phontum_planks.json
 d4c5bba3f1d7c468009b3450f4df456cdad24ffc data\eldritchrealms\loot_tables\blocks\shadowslate_bricks.json
+c02ddd0b26356d44367ee8e392499068e28084bb data\eldritchrealms\loot_tables\blocks\phontum_planks.json
 4641c847eba11e0109baa14edd1bf59fa4572277 data\eldritchrealms\loot_tables\blocks\polished_shadowslate_wall.json
 f76f64a4319414e00383d52482fd24fdd38e62ec data\eldritchrealms\loot_tables\blocks\stripped_phontum_log.json
 a13d08a8597a995f8af3865277df1b0a504d27aa data\eldritchrealms\loot_tables\blocks\veilstone_brick_wall.json

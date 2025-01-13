@@ -192,9 +192,23 @@
 
   "item.eldritchrealms.gloomarble_dust": "Gloomarble Dust",
 
+  "item.eldritchrealms.shadowsteel_ingot": "Shadowsteel Ingot",
+  "item.eldritchrealms.shadowsteel_nugget": "Shadowsteel Nugget",
+  "item.eldritchrealms.shadowsteel_dust": "Shadowsteel Dust",
+  "item.eldritchrealms.shadowsteel_sword": "Shadowsteel Sword",
+  "item.eldritchrealms.shadowsteel_shovel": "Shadowsteel Shovel",
+  "item.eldritchrealms.shadowsteel_pickaxe": "Shadowsteel Pickaxe",
+  "item.eldritchrealms.shadowsteel_axe": "Shadowsteel Axe",
+  "item.eldritchrealms.shadowsteel_hoe": "Shadowsteel Hoe",
+  "item.eldritchrealms.shadowsteel_helmet": "Shadowsteel Helmet",
+  "item.eldritchrealms.shadowsteel_chestplate": "Shadowsteel Chestplate",
+  "item.eldritchrealms.shadowsteel_leggings": "Shadowsteel Leggings",
+  "item.eldritchrealms.shadowsteel_boots": "Shadowsteel Boots",
+
   "itemgroup.eldritch_realms_blocks": "Eldritch Realms Blocks",
   "itemgroup.eldritch_realms_items": "Eldritch Realms Items",
   "itemgroup.eldritch_realms_tools": "Eldritch Realms Tools",
+  "itemgroup.eldritch_realms_combat": "Eldritch Realms Combat",
   "itemgroup.eldritch_realms_nature_stuff": "Eldritch Realms Nature Stuff",
 
   "sounds.eldritchrealms.tuff_bricks_place": "Block Placed",

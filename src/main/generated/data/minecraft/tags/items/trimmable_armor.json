@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "eldritchrealms:shadowsteel_helmet",
+    "eldritchrealms:shadowsteel_chestplate",
+    "eldritchrealms:shadowsteel_leggings",
+    "eldritchrealms:shadowsteel_boots"
+  ]
+}
