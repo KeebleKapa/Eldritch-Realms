@@ -2,11 +2,9 @@ package net.keeblekapa.eldritchrealms;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.keeblekapa.eldritchrealms.block.EldritchRealmsBlocks;
 import net.keeblekapa.eldritchrealms.block.entity.EldritchrealmsBlockEntities;
-import net.keeblekapa.eldritchrealms.datagen.EldritchRealmsWorldGenerator;
 import net.keeblekapa.eldritchrealms.item.EldritchRealmsItemGroups;
 import net.keeblekapa.eldritchrealms.item.EldritchRealmsItems;
 import net.keeblekapa.eldritchrealms.sound.EldritchRealmsSounds;
@@ -43,4 +41,3 @@ public class EldritchRealms implements ModInitializer {
 		EldritchRealmsTrunkPlacerTypes.register();
 	}
 }
-asd
