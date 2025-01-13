@@ -21,19 +21,19 @@
 - ❌ Umbral Onyx
 - ❌ Wraithstone
 - ❌ Hauntrock
-- ❌ Ebon Obsidian
+- 🚧 Ebon Obsidian
 - ❌ Mystic Marble
 - ❌ Netherweave
 - ❌ Twilight Shale
 - ❌ Ghostly Gabbro
-- ❌ Enigma Basalt
+- 🚧 Enigma Basalt
 - ❌ Silent Sandstone
 - ❌ Cryptic Cher
 
 ## Ore/Material Blocks:
-- ❌ Nebula Lapis
-- 🚧 Dreadquartz ( Similar functions to regular quartz )
-- ❌ Eclipsium
+- 🚧 Nebula Lapis
+- ✔️ Dreadquartz ( Similar functions to regular quartz )
+- 🚧 Eclipsium
 - ❌ Soulspark
 - ❌ Dreadium
 - ❌ Etherealite ( Stronger than Phantomite )
@@ -47,15 +47,14 @@
 - ❌ Enigmatic Iron ( Stronger than Diamond )
 
 ## Wood Types:
-- 🚧 Phontum
-- 🚧 Eldem
-- 🚧 Umbram Oak
+- ✔️ Phontum
+- ✔️ Eldem
+- ✔️ Umbram Oak
 
 ## Ground Blocks:
-- 🚧 Mythral Grass
-- 🚧 Shadowsoil
-- 🚧 Eerie Gravel
-- 🚧 Astral Sand
+- ✔️ Mythral Grass
+- ✔️ Eerie Gravel
+- ✔️ Astral Sand
 
 ## Functional Blocks:
 - ❌ Nebulatic Enchanting Table ( Nebula Lapis is used for enchanting with new custom enchantments )
@@ -126,7 +125,7 @@
 
 ## The Eldritch Realm Dimension 🚧 
 
-<div align="center"><a href="https://modrinth.com/mod/eldritch-realms/version/0.1-1.20.1"><img src="https://cdn.modrinth.com/data/cached_images/7476acc4f41b0d95605f7752ed2c8c61f7fdeb53.png"></a></div>
+<div align="center"><a href="https://modrinth.com/mod/eldritch-realms/versions"><img src="https://cdn.modrinth.com/data/cached_images/7476acc4f41b0d95605f7752ed2c8c61f7fdeb53.png"></a></div>
 
 
 #
