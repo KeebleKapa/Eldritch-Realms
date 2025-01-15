@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 3.0,
+  "group": "shadowsteel_nugget_from_shadowslate_ore_blasting",
+  "ingredient": {
+    "item": "eldritchrealms:shadowslate_shadowsteel_ore"
+  },
+  "result": "eldritchrealms:shadowsteel_nugget"
+}

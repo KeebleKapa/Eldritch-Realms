@@ -4,8 +4,6 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.keeblekapa.eldritchrealms.block.EldritchRealmsBlocks;
 import net.keeblekapa.eldritchrealms.util.EldritchRealmsTags;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
@@ -53,21 +51,28 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.DREADQUARTZ_BRICKS)
                 .add(EldritchRealmsBlocks.DREADQUARTZ_PILLAR)
                 .add(EldritchRealmsBlocks.CHISELED_DREADQUARTZ)
+
+                .add(EldritchRealmsBlocks.GLOOMARBLE)
         ;
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-                .add(EldritchRealmsBlocks.GLOOMARBLE)
-                .add(EldritchRealmsBlocks.DREADQUARTZ_ORE)
+                .add(EldritchRealmsBlocks.VEILSTONE_DREADQUARTZ_ORE)
                 .add(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE)
+
+
         ;
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
+
+                .add(EldritchRealmsBlocks.SHADOWSTEEL_BLOCK)
 
         ;
 
         // Needs Netherite Tool
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
 
+                .add(EldritchRealmsBlocks.VEILSTONE_SHADOWSTEEL_ORE)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_SHADOWSTEEL_ORE)
         ;
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
@@ -86,6 +91,7 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
         ;
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_LOG)
                 .add(EldritchRealmsBlocks.STRIPPED_UMBRAM_OAK_LOG)
                 .add(EldritchRealmsBlocks.UMBRAM_OAK_WOOD)
@@ -131,6 +137,12 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
         ;
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+
+                .add(EldritchRealmsBlocks.SHADOWSTEEL_BLOCK)
+                .add(EldritchRealmsBlocks.VEILSTONE_SHADOWSTEEL_ORE)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_SHADOWSTEEL_ORE)
+
+
                 .add(EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICKS)
                 .add(EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICK_STAIRS)
                 .add(EldritchRealmsBlocks.ABYSSAL_GRANITE_BRICK_SLAB)
@@ -227,7 +239,7 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
 
                 .add(EldritchRealmsBlocks.GLOOMARBLE)
 
-                .add(EldritchRealmsBlocks.DREADQUARTZ_ORE)
+                .add(EldritchRealmsBlocks.VEILSTONE_DREADQUARTZ_ORE)
                 .add(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE)
                 .add(EldritchRealmsBlocks.DREADQUARTZ_BLOCK)
                 .add(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ)

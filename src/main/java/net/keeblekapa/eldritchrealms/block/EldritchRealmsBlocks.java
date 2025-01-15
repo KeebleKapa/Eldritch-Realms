@@ -1,11 +1,9 @@
 package net.keeblekapa.eldritchrealms.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.keeblekapa.eldritchrealms.EldritchRealms;
 import net.keeblekapa.eldritchrealms.block.custom.AlkWheatCropBlock;
-import net.keeblekapa.eldritchrealms.block.custom.NebulaticEnchantingTableBlock;
 import net.keeblekapa.eldritchrealms.sound.EldritchRealmsSounds;
 import net.keeblekapa.eldritchrealms.util.EldritchRealmsTags;
 import net.keeblekapa.eldritchrealms.world.tree.EldemSaplingGenerator;
@@ -22,9 +20,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
-import net.minecraft.registry.tag.TagKey;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
@@ -35,7 +31,6 @@ import net.minecraft.util.ItemScatterer;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.GameRules;
@@ -43,8 +38,6 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 import net.minecraft.world.event.GameEvent;
 import org.jetbrains.annotations.Nullable;
-
-import static net.minecraft.block.FarmlandBlock.setToDirt;
 
 public class EldritchRealmsBlocks {
 
@@ -335,7 +328,7 @@ public class EldritchRealmsBlocks {
     // Nebula Lapis
 
     // Dreadquartz
-    public static final Block DREADQUARTZ_ORE = registerBlock("dreadquartz_ore",
+    public static final Block VEILSTONE_DREADQUARTZ_ORE = registerBlock("veilstone_dreadquartz_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(EldritchRealmsBlocks.VEILSTONE).strength(3f, 7f), UniformIntProvider.create(0, 4)));
 
     public static final Block SHADOWSLATE_DREADQUARTZ_ORE = registerBlock("shadowslate_dreadquartz_ore",
@@ -394,6 +387,13 @@ public class EldritchRealmsBlocks {
     // Phantomite (Stronger than Shadowsteel)
 
     // Shadowsteel (Stronger than Netherite)
+    public static final Block VEILSTONE_SHADOWSTEEL_ORE = registerBlock("veilstone_shadowsteel_ore",
+            new Block(FabricBlockSettings.copyOf(EldritchRealmsBlocks.VEILSTONE).strength(3f, 7f)));
+    public static final Block SHADOWSLATE_SHADOWSTEEL_ORE = registerBlock("shadowslate_shadowsteel_ore",
+            new Block(FabricBlockSettings.copyOf(EldritchRealmsBlocks.SHADOWSLATE).strength(4.75f, 11f)));
+
+    public static final Block SHADOWSTEEL_BLOCK = registerBlock("shadowsteel_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)));
 
     // Voidstone
 
@@ -601,7 +601,7 @@ public class EldritchRealmsBlocks {
 
     // Mythral Grass
     public static final Block MYTHRAL_GRASS_BLOCK = registerBlock("mythral_grass_block",
-            new GrassBlock(FabricBlockSettings.copyOf(Blocks.GRASS_BLOCK).strength(1.5f)) {
+            new Block(FabricBlockSettings.copyOf(Blocks.GRASS_BLOCK).strength(1.5f)) {
                 private BlockState getRandomFlower(Random random) {
                     Block[] flowers = new Block[]{
                             Blocks.AIR,
@@ -610,6 +610,16 @@ public class EldritchRealmsBlocks {
                     };
 
                     return flowers[random.nextInt(flowers.length)].getDefaultState();
+                }
+
+                @Override
+                public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+                        // Check if there's a solid block directly above
+                        BlockState blockAbove = world.getBlockState(pos.up());
+                        if (blockAbove.isSolidBlock(world, pos.up())) {
+                            // Replace with Marred Soil after a random tick
+                            world.setBlockState(pos, EldritchRealmsBlocks.MARRED_SOIL.getDefaultState(), 3);
+                        }
                 }
 
                 @Override
@@ -820,6 +830,13 @@ public class EldritchRealmsBlocks {
 
                 @Override
                 public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+                    // Check if there's a solid block directly above
+                    BlockState blockAbove = world.getBlockState(pos.up());
+                    if (blockAbove.isSolidBlock(world, pos.up())) {
+                        // Do nothing if a solid block is above
+                        return;
+                    }
+
                     // Check if any adjacent block is a Mythral Grass Block
                     for (Direction direction : Direction.values()) {
                         BlockState adjacentState = world.getBlockState(pos.offset(direction));

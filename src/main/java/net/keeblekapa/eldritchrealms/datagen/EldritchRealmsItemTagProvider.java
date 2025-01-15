@@ -41,6 +41,25 @@ public class EldritchRealmsItemTagProvider extends FabricTagProvider.ItemTagProv
 
         ;
 
+        getOrCreateTagBuilder(ItemTags.SWORDS)
+                .add(EldritchRealmsItems.SHADOWSTEEL_SWORD)
+        ;
+        getOrCreateTagBuilder(ItemTags.SHOVELS)
+                .add(EldritchRealmsItems.SHADOWSTEEL_SHOVEL)
+
+        ;
+        getOrCreateTagBuilder(ItemTags.PICKAXES)
+                .add(EldritchRealmsItems.SHADOWSTEEL_PICKAXE)
+
+        ;
+        getOrCreateTagBuilder(ItemTags.AXES)
+                .add(EldritchRealmsItems.SHADOWSTEEL_AXE)
+
+        ;
+        getOrCreateTagBuilder(ItemTags.HOES)
+                .add(EldritchRealmsItems.SHADOWSTEEL_HOE)
+
+        ;
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(EldritchRealmsItems.SHADOWSTEEL_HELMET, EldritchRealmsItems.SHADOWSTEEL_CHESTPLATE, EldritchRealmsItems.SHADOWSTEEL_LEGGINGS, EldritchRealmsItems.SHADOWSTEEL_BOOTS)
 

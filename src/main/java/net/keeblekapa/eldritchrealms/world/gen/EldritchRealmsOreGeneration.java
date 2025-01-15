@@ -10,5 +10,8 @@ public class EldritchRealmsOreGeneration {
     public static void generateOres() {
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
                 GenerationStep.Feature.UNDERGROUND_ORES, EldritchRealmsPlacedFeatures.DREADQUARTZ_ORE_PLACED_KEY);
+
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
+                GenerationStep.Feature.UNDERGROUND_ORES, EldritchRealmsPlacedFeatures.SHADOWSTEEL_ORE_PLACED_KEY);
     }
 }

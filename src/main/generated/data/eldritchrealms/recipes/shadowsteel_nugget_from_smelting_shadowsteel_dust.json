@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 3.0,
+  "group": "shadowsteel_nugget_smelting",
+  "ingredient": {
+    "item": "eldritchrealms:shadowsteel_dust"
+  },
+  "result": "eldritchrealms:shadowsteel_nugget"
+}

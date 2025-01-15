@@ -172,7 +172,7 @@
   "block.eldritchrealms.eldem_sapling": "Eldem Sapling",
 
 
-  "block.eldritchrealms.dreadquartz_ore": "Dreadquartz Ore",
+  "block.eldritchrealms.veilstone_dreadquartz_ore": "Veilstone Dreadquartz Ore",
   "block.eldritchrealms.shadowslate_dreadquartz_ore": "Shadowslate Dreadquartz Ore",
   "block.eldritchrealms.dreadquartz_block": "Dreadquartz Block",
   "block.eldritchrealms.dreadquartz_stairs": "Dreadquartz Stairs",
@@ -191,9 +191,18 @@
   "item.eldritchrealms.dreadquartz": "Dreadquartz",
 
   "item.eldritchrealms.gloomarble_dust": "Gloomarble Dust",
+  "item.eldritchrealms.nebula_lapis": "Nebula Lapis",
 
+  "block.eldritchrealms.ebon_obsidian": "Ebon Obsidian",
+  "block.eldritchrealms.glistening_ebon_obsidian": "Glistening Ebon Obsidian",
+  "block.eldritchrealms.nebulatic_enchanting_table": "Nebulatic Enchanting Table",
+
+  "block.eldritchrealms.veilstone_shadowsteel_ore": "Veilstone Shadowsteel Ore",
+  "block.eldritchrealms.shadowslate_shadowsteel_ore": "Shadowslate Shadowsteel Ore",
+  "block.eldritchrealms.shadowsteel_block": "Shadowsteel Block",
   "item.eldritchrealms.shadowsteel_ingot": "Shadowsteel Ingot",
   "item.eldritchrealms.shadowsteel_nugget": "Shadowsteel Nugget",
+  "item.eldritchrealms.shadowsteel_clump": "Clump of Shadowsteel",
   "item.eldritchrealms.shadowsteel_dust": "Shadowsteel Dust",
   "item.eldritchrealms.shadowsteel_sword": "Shadowsteel Sword",
   "item.eldritchrealms.shadowsteel_shovel": "Shadowsteel Shovel",
@@ -205,11 +214,11 @@
   "item.eldritchrealms.shadowsteel_leggings": "Shadowsteel Leggings",
   "item.eldritchrealms.shadowsteel_boots": "Shadowsteel Boots",
 
-  "itemgroup.eldritch_realms_blocks": "Eldritch Realms Blocks",
-  "itemgroup.eldritch_realms_items": "Eldritch Realms Items",
+  "itemgroup.eldritch_realms_building_blocks": "Eldritch Realms Building Blocks",
+  "itemgroup.eldritch_realms_ingredients": "Eldritch Realms Ingredients",
   "itemgroup.eldritch_realms_tools": "Eldritch Realms Tools",
   "itemgroup.eldritch_realms_combat": "Eldritch Realms Combat",
-  "itemgroup.eldritch_realms_nature_stuff": "Eldritch Realms Nature Stuff",
+  "itemgroup.eldritch_realms_natural_blocks": "Eldritch Realms Natural Blocks",
 
   "sounds.eldritchrealms.tuff_bricks_place": "Block Placed",
   "sounds.eldritchrealms.tuff_bricks_step": "Footsteps"

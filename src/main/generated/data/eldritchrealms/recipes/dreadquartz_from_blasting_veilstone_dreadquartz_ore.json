@@ -5,7 +5,7 @@
   "experience": 2.0,
   "group": "dreadquartz_ore_blasting",
   "ingredient": {
-    "item": "eldritchrealms:dreadquartz_ore"
+    "item": "eldritchrealms:veilstone_dreadquartz_ore"
   },
   "result": "eldritchrealms:dreadquartz"
 }

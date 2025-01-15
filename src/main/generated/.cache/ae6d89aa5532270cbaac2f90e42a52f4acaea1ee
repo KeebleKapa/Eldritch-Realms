@@ -1,10 +1,10 @@
-// 1.20.1	2025-01-13T00:28:11.8088101	Eldritch Realms/Tags for minecraft:block
-5c945dd3850de4b5e94392fa51dd7c7ea14c114a data\minecraft\tags\blocks\mineable\pickaxe.json
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_diamond_tool.json
+// 1.20.1	2025-01-14T23:49:30.0847955	Eldritch Realms/Tags for minecraft:block
+fd739ae5a2283922e61dd003953b635e9b7a4625 data\minecraft\tags\blocks\mineable\pickaxe.json
+04ebdd112dbba53e0cff29de56799357d9008713 data\minecraft\tags\blocks\needs_diamond_tool.json
 e70bf748f8bfc0243c1b1266fa645e2f1dae1f75 data\minecraft\tags\blocks\stairs.json
 9512de97c6031da9a436c0ab672e66d2390add24 data\minecraft\tags\blocks\trapdoors.json
 a097ca662f87c674dad60ce43aca84ff0753fd88 data\eldritchrealms\tags\blocks\eldritch_plants_can_place_on.json
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\needs_tool_level_4.json
+bfad3a2a6b596371e14fe6fc6321df2fe1e9de9c data\fabric\tags\blocks\needs_tool_level_4.json
 f88c5f56bab597f757cc88dbba302bfa01ad391a data\minecraft\tags\blocks\fence_gates.json
 b53fc3526e54ff58d593dbe31ced5e1491c257cf data\minecraft\tags\blocks\wooden_buttons.json
 9512de97c6031da9a436c0ab672e66d2390add24 data\minecraft\tags\blocks\wooden_trapdoors.json
@@ -16,11 +16,11 @@ b76a5e3064bb4e9331dc1e892cab2075fc2bd939 data\minecraft\tags\blocks\slabs.json
 1ce816169dffd67c8e41ce1069568a6e25744f5f data\minecraft\tags\blocks\logs.json
 172e96faf09cbf11ba1d7443cde4bd5d8aa90b8b data\minecraft\tags\blocks\wooden_fences.json
 f1724a5098e7b2762835f8d8c85e9f1508ed7368 data\minecraft\tags\blocks\mineable\shovel.json
-e542c9a3667e35f0353964f2ea32c6e5387e8961 data\minecraft\tags\blocks\mineable\axe.json
 9af5d018d67572211da984c9b517127beda9c36a data\minecraft\tags\blocks\mineable\hoe.json
+e542c9a3667e35f0353964f2ea32c6e5387e8961 data\minecraft\tags\blocks\mineable\axe.json
 beb4b608c83812726a95b857625eb205d1071d5d data\minecraft\tags\blocks\walls.json
 813bc0e80161690326a6ee7452217548c1f6cbb2 data\minecraft\tags\blocks\pressure_plates.json
-f7f3a63fcfa2538ffa3f6d62ccf3b1bdceca7477 data\minecraft\tags\blocks\needs_iron_tool.json
+a8a0ee7f0fe1d1f06eab1c887db2c53efb4d571e data\minecraft\tags\blocks\needs_iron_tool.json
 172e96faf09cbf11ba1d7443cde4bd5d8aa90b8b data\minecraft\tags\blocks\fences.json
 b274e5f594f7caccba63002ba390e709e35e675a data\minecraft\tags\blocks\doors.json
-97f48d5c12b51f3a6473767ef2c76aa85b083503 data\minecraft\tags\blocks\needs_stone_tool.json
+199692d7f74e5255d057f6f4e41ab1dd4b56bc4a data\minecraft\tags\blocks\needs_stone_tool.json

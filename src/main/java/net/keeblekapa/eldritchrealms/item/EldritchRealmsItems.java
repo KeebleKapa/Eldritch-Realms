@@ -29,9 +29,12 @@ public class EldritchRealmsItems {
 
     public static final Item GLOOMARBLE_DUST = registerItem("gloomarble_dust", new Item(new FabricItemSettings()));
 
+    public static final Item NEBULA_LAPIS = registerItem("nebula_lapis", new Item(new FabricItemSettings()));
+
     // Shadowsteel
     public static final Item SHADOWSTEEL_INGOT = registerItem("shadowsteel_ingot", new Item(new FabricItemSettings()));
     public static final Item SHADOWSTEEL_NUGGET = registerItem("shadowsteel_nugget", new Item(new FabricItemSettings()));
+    public static final Item SHADOWSTEEL_CLUMP = registerItem("shadowsteel_clump", new Item(new FabricItemSettings()));
     public static final Item SHADOWSTEEL_DUST = registerItem("shadowsteel_dust", new Item(new FabricItemSettings()));
 
     // Extrotium
@@ -50,6 +53,9 @@ public class EldritchRealmsItems {
     public static final Item SHADOWSTEEL_PICKAXE = registerItem("shadowsteel_pickaxe", new PickaxeItem(EldritchRealmsToolMaterials.SHADOWSTEEL, 1, -2.8f, new FabricItemSettings()));
     public static final Item SHADOWSTEEL_AXE = registerItem("shadowsteel_axe", new AxeItem(EldritchRealmsToolMaterials.SHADOWSTEEL, 5.0f, -3.0f, new FabricItemSettings()));
     public static final Item SHADOWSTEEL_HOE = registerItem("shadowsteel_hoe", new HoeItem(EldritchRealmsToolMaterials.SHADOWSTEEL, -4, 0.0f, new FabricItemSettings()));
+
+
+    public static final Item REINFORCED_IRON_ROD = registerItem("reinforced_iron_rod", new Item(new FabricItemSettings()));
 
 
 

@@ -1,4 +1,7 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "eldritchrealms:veilstone_shadowsteel_ore",
+    "eldritchrealms:shadowslate_shadowsteel_ore"
+  ]
 }

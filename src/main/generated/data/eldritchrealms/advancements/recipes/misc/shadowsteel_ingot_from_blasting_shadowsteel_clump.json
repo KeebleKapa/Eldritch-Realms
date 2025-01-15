@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dreadquartz_ore": {
+    "has_shadowsteel_clump": {
       "conditions": {
         "items": [
           {
             "items": [
-              "eldritchrealms:dreadquartz_ore"
+              "eldritchrealms:shadowsteel_clump"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:dreadquartz_from_smelting_dreadquartz_ore"
+        "recipe": "minecraft:shadowsteel_ingot_from_blasting_shadowsteel_clump"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_dreadquartz_ore",
+      "has_shadowsteel_clump",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:dreadquartz_from_smelting_dreadquartz_ore"
+      "minecraft:shadowsteel_ingot_from_blasting_shadowsteel_clump"
     ]
   },
   "sends_telemetry_event": false

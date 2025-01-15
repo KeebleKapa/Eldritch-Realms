@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "helmet",
+  "key": {
+    "#": {
+      "item": "eldritchrealms:shadowsteel_ingot"
+    }
+  },
+  "pattern": [
+    "###",
+    "# #"
+  ],
+  "result": {
+    "item": "eldritchrealms:shadowsteel_helmet"
+  },
+  "show_notification": true
+}

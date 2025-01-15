@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "hoe",
+  "key": {
+    "#": {
+      "item": "eldritchrealms:shadowsteel_ingot"
+    },
+    "$": {
+      "item": "eldritchrealms:reinforced_iron_rod"
+    }
+  },
+  "pattern": [
+    "##",
+    "$ ",
+    "$ "
+  ],
+  "result": {
+    "item": "eldritchrealms:shadowsteel_hoe"
+  },
+  "show_notification": true
+}

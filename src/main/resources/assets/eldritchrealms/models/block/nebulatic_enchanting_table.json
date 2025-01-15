@@ -1,6 +1,5 @@
 {
 	"parent": "block/block",
-	"ambientocclusion": false,
 	"textures": {
 		"0": "eldritchrealms:block/nebulatic_enchanting_table_bottom",
 		"1": "eldritchrealms:block/nebulatic_enchanting_table_side",

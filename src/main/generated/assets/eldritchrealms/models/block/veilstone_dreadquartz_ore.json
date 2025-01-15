@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "eldritchrealms:block/dreadquartz_ore"
+    "all": "eldritchrealms:block/veilstone_dreadquartz_ore"
   }
 }

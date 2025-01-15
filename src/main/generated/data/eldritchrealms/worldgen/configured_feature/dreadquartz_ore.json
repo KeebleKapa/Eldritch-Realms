@@ -6,7 +6,7 @@
     "targets": [
       {
         "state": {
-          "Name": "eldritchrealms:dreadquartz_ore"
+          "Name": "eldritchrealms:veilstone_dreadquartz_ore"
         },
         "target": {
           "block": "eldritchrealms:veilstone",
@@ -24,7 +24,7 @@
       },
       {
         "state": {
-          "Name": "eldritchrealms:dreadquartz_ore"
+          "Name": "eldritchrealms:veilstone_dreadquartz_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",

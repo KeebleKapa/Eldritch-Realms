@@ -1,3 +1,5 @@
-// 1.20.1	2025-01-13T00:28:11.811633	Eldritch Realms/World Gen
+// 1.20.1	2025-01-14T23:49:30.0857435	Eldritch Realms/World Gen
+5013b17f751d2640235d870a19be9d6a58994e6c data\eldritchrealms\worldgen\placed_feature\shadowsteel_ore_placed.json
+577776a97a6e7bb779e76d3c99c57910ed57e55b data\eldritchrealms\worldgen\configured_feature\shadowsteel_ore.json
 9134cd47bd69858e1f3bb0c14ba0b2c753754364 data\eldritchrealms\worldgen\placed_feature\dreadquartz_ore_placed.json
-3a44f9b25c8ef27e65c5da1b84da8e4b3400fc11 data\eldritchrealms\worldgen\configured_feature\dreadquartz_ore.json
+f5c6c08a786fa292ad6c6d18488124a13b2a4bae data\eldritchrealms\worldgen\configured_feature\dreadquartz_ore.json

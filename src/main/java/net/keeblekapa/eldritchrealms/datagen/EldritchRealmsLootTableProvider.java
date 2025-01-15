@@ -11,7 +11,6 @@ import net.minecraft.block.enums.DoubleBlockHalf;
 import net.minecraft.data.server.loottable.BlockLootTableGenerator;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
@@ -202,7 +201,7 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                 addDrop(EldritchRealmsBlocks.ELDEM_SAPLING);
                 addDrop(EldritchRealmsBlocks.ELDEM_LEAVES, leavesDrops(EldritchRealmsBlocks.ELDEM_LEAVES, EldritchRealmsBlocks.ELDEM_SAPLING, 0.05f));
 
-                addDrop(EldritchRealmsBlocks.DREADQUARTZ_ORE, twoToFiveDrops(EldritchRealmsBlocks.DREADQUARTZ_ORE, EldritchRealmsItems.DREADQUARTZ));
+                addDrop(EldritchRealmsBlocks.VEILSTONE_DREADQUARTZ_ORE, twoToFiveDrops(EldritchRealmsBlocks.VEILSTONE_DREADQUARTZ_ORE, EldritchRealmsItems.DREADQUARTZ));
                 addDrop(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE, twoToFiveDrops(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE, EldritchRealmsItems.DREADQUARTZ));
                 addDrop(EldritchRealmsBlocks.DREADQUARTZ_BLOCK);
                 addDrop(EldritchRealmsBlocks.DREADQUARTZ_STAIRS);
@@ -233,6 +232,11 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                 addDrop(EldritchRealmsBlocks.ALK_WHEAT, cropDrops(EldritchRealmsBlocks.ALK_WHEAT, EldritchRealmsItems.ALK_WHEAT, EldritchRealmsItems.ALK_WHEAT_SEEDS, builder));
 
 
+                addDrop(EldritchRealmsBlocks.VEILSTONE_SHADOWSTEEL_ORE, oneToTwoDrops(EldritchRealmsBlocks.VEILSTONE_SHADOWSTEEL_ORE, EldritchRealmsItems.SHADOWSTEEL_DUST));
+                addDrop(EldritchRealmsBlocks.SHADOWSLATE_SHADOWSTEEL_ORE, oneToTwoDrops(EldritchRealmsBlocks.SHADOWSLATE_SHADOWSTEEL_ORE, EldritchRealmsItems.SHADOWSTEEL_DUST));
+                addDrop(EldritchRealmsBlocks.SHADOWSTEEL_BLOCK);
+
+
     }
 
     public LootTable.Builder silkTouchDrop(Block drop, Block block) {
@@ -242,6 +246,15 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                                 .apply(SetCountLootFunction
                                         .builder(ConstantLootNumberProvider
                                                 .create(1.0f))))));
+    }
+
+    public LootTable.Builder oneToTwoDrops(Block drop, Item item) {
+        return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder) this.applyExplosionDecay(drop,
+                ((LeafEntry.Builder)
+                        ItemEntry.builder(item)
+                                .apply(SetCountLootFunction
+                                        .builder(UniformLootNumberProvider
+                                                .create(1.0f, 2.0f))))));
     }
 
     public LootTable.Builder oneToThreeDrops(Block drop, Item item) {

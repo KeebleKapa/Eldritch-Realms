@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:shadowsteel_nugget_from_smelting_veilstone_shadowsteel_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_veilstone_shadowsteel_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "eldritchrealms:veilstone_shadowsteel_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_veilstone_shadowsteel_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:shadowsteel_nugget_from_smelting_veilstone_shadowsteel_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

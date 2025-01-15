@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eldritchrealms:shadowsteel_nugget"
+    },
+    {
+      "item": "eldritchrealms:shadowsteel_nugget"
+    },
+    {
+      "item": "eldritchrealms:shadowsteel_nugget"
+    },
+    {
+      "item": "eldritchrealms:shadowsteel_nugget"
+    },
+    {
+      "item": "eldritchrealms:shadowsteel_nugget"
+    },
+    {
+      "item": "eldritchrealms:shadowsteel_nugget"
+    },
+    {
+      "item": "eldritchrealms:shadowsteel_nugget"
+    },
+    {
+      "item": "eldritchrealms:shadowsteel_nugget"
+    },
+    {
+      "item": "eldritchrealms:shadowsteel_nugget"
+    }
+  ],
+  "result": {
+    "item": "eldritchrealms:shadowsteel_clump"
+  }
+}

@@ -187,12 +187,22 @@ public class EldritchRealmsModelProvider extends FabricModelProvider {
         dbPool.slab(EldritchRealmsBlocks.DREADQUARTZ_BRICK_SLAB);
         dbPool.wall(EldritchRealmsBlocks.DREADQUARTZ_BRICK_WALL);
 
-        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.DREADQUARTZ_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.VEILSTONE_DREADQUARTZ_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE);
 
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.MARRED_SOIL);
 
+
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.EBON_OBSIDIAN);
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.GLISTENING_EBON_OBSIDIAN);
+
         blockStateModelGenerator.registerCrop(EldritchRealmsBlocks.ALK_WHEAT, AlkWheatCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
+
+
+
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.SHADOWSTEEL_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.VEILSTONE_SHADOWSTEEL_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.SHADOWSLATE_SHADOWSTEEL_ORE);
 
 
     }
@@ -202,10 +212,15 @@ public class EldritchRealmsModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(EldritchRealmsItems.DREADQUARTZ, Models.GENERATED);
         itemModelGenerator.register(EldritchRealmsItems.GLOOMARBLE_DUST, Models.GENERATED);
+        itemModelGenerator.register(EldritchRealmsItems.NEBULA_LAPIS, Models.GENERATED);
+
+
+        itemModelGenerator.register(EldritchRealmsItems.REINFORCED_IRON_ROD, Models.GENERATED);
 
 
         itemModelGenerator.register(EldritchRealmsItems.SHADOWSTEEL_INGOT, Models.GENERATED);
         itemModelGenerator.register(EldritchRealmsItems.SHADOWSTEEL_NUGGET, Models.GENERATED);
+        itemModelGenerator.register(EldritchRealmsItems.SHADOWSTEEL_CLUMP, Models.GENERATED);
         itemModelGenerator.register(EldritchRealmsItems.SHADOWSTEEL_DUST, Models.GENERATED);
         itemModelGenerator.register(EldritchRealmsItems.SHADOWSTEEL_SWORD, Models.HANDHELD);
         itemModelGenerator.register(EldritchRealmsItems.SHADOWSTEEL_SHOVEL, Models.HANDHELD);

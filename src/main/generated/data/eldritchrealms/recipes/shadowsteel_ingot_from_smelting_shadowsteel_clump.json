@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 3.0,
+  "group": "shadowsteel_ingot_smelting",
+  "ingredient": {
+    "item": "eldritchrealms:shadowsteel_clump"
+  },
+  "result": "eldritchrealms:shadowsteel_ingot"
+}
