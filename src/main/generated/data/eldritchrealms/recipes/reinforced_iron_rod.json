@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "%": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "#",
+    "%",
+    "%"
+  ],
+  "result": {
+    "count": 2,
+    "item": "eldritchrealms:reinforced_iron_rod"
+  },
+  "show_notification": true
+}

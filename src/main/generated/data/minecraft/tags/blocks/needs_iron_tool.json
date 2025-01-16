@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "eldritchrealms:veilstone_dreadquartz_ore",
-    "eldritchrealms:shadowslate_dreadquartz_ore"
+    "eldritchrealms:shadowslate_dreadquartz_ore",
+    "eldritchrealms:nebulatic_lapis_block"
   ]
 }

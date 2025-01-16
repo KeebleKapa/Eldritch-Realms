@@ -326,6 +326,14 @@ public class EldritchRealmsBlocks {
     //--------------------------------------------------------
 
     // Nebula Lapis
+    public static final Block VEILSTONE_NEBULATIC_LAPIS_ORE = registerBlock("veilstone_nebulatic_lapis_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(EldritchRealmsBlocks.VEILSTONE).strength(3f, 7f), UniformIntProvider.create(2, 7)));
+    public static final Block SHADOWSLATE_NEBULATIC_LAPIS_ORE = registerBlock("shadowslate_nebulatic_lapis_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(EldritchRealmsBlocks.SHADOWSLATE).strength(4.75f, 11f), UniformIntProvider.create(2, 7)));
+
+    public static final Block NEBULATIC_LAPIS_BLOCK = registerBlock("nebulatic_lapis_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.LAPIS_BLOCK).strength(4f)));
+
 
     // Dreadquartz
     public static final Block VEILSTONE_DREADQUARTZ_ORE = registerBlock("veilstone_dreadquartz_ore",

@@ -204,6 +204,10 @@ public class EldritchRealmsModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.VEILSTONE_SHADOWSTEEL_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.SHADOWSLATE_SHADOWSTEEL_ORE);
 
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.NEBULATIC_LAPIS_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.VEILSTONE_NEBULATIC_LAPIS_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(EldritchRealmsBlocks.SHADOWSLATE_NEBULATIC_LAPIS_ORE);
+
 
     }
 
@@ -212,7 +216,7 @@ public class EldritchRealmsModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(EldritchRealmsItems.DREADQUARTZ, Models.GENERATED);
         itemModelGenerator.register(EldritchRealmsItems.GLOOMARBLE_DUST, Models.GENERATED);
-        itemModelGenerator.register(EldritchRealmsItems.NEBULA_LAPIS, Models.GENERATED);
+        itemModelGenerator.register(EldritchRealmsItems.NEBULATIC_LAPIS, Models.GENERATED);
 
 
         itemModelGenerator.register(EldritchRealmsItems.REINFORCED_IRON_ROD, Models.GENERATED);

@@ -191,7 +191,13 @@
   "item.eldritchrealms.dreadquartz": "Dreadquartz",
 
   "item.eldritchrealms.gloomarble_dust": "Gloomarble Dust",
-  "item.eldritchrealms.nebula_lapis": "Nebula Lapis",
+  "item.eldritchrealms.reinforced_iron_rod": "Reinforced Iron Rod",
+
+
+  "item.eldritchrealms.nebulatic_lapis": "Nebulatic Lapis",
+  "block.eldritchrealms.nebulatic_lapis_block": "Block of Nebulatic Lapis",
+  "block.eldritchrealms.veilstone_nebulatic_lapis_ore": "Veilstone Nebulatic Lapis Ore",
+  "block.eldritchrealms.shadowslate_nebulatic_lapis_ore": "Shadowslate Nebulatic Lapis Ore",
 
   "block.eldritchrealms.ebon_obsidian": "Ebon Obsidian",
   "block.eldritchrealms.glistening_ebon_obsidian": "Glistening Ebon Obsidian",

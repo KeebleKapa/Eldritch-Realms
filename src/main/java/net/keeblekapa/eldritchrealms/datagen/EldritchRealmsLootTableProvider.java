@@ -224,6 +224,23 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                 addDrop(EldritchRealmsBlocks.MYTHRAL_GRASS, mythralGrassDrops(EldritchRealmsBlocks.MYTHRAL_GRASS));
                 addDrop(EldritchRealmsBlocks.TALL_MYTHRAL_GRASS, tallMythralGrassDrops(EldritchRealmsBlocks.TALL_MYTHRAL_GRASS, EldritchRealmsBlocks.TALL_MYTHRAL_GRASS));
 
+                addDrop(EldritchRealmsBlocks.EERIE_GRAVEL);
+
+                addDrop(EldritchRealmsBlocks.ASTRAL_SAND);
+                addDrop(EldritchRealmsBlocks.ASTRAL_SANDSTONE);
+                addDrop(EldritchRealmsBlocks.ASTRAL_SANDSTONE_SLAB, slabDrops(EldritchRealmsBlocks.ASTRAL_SANDSTONE_SLAB));
+                addDrop(EldritchRealmsBlocks.ASTRAL_SANDSTONE_STAIRS);
+                addDrop(EldritchRealmsBlocks.ASTRAL_SANDSTONE_WALL);
+                addDrop(EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICKS);
+                addDrop(EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICK_SLAB, slabDrops(EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICK_SLAB));
+                addDrop(EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICK_STAIRS);
+                addDrop(EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICK_WALL);
+                addDrop(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE);
+                addDrop(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE_SLAB, slabDrops(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE_SLAB));
+                addDrop(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE_STAIRS);
+                addDrop(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE_WALL);
+
+
                 addDrop(EldritchRealmsBlocks.SABLEBELL);
                 addDrop(EldritchRealmsBlocks.PHONTUM_PETALS, flowerbedDrops(EldritchRealmsBlocks.PHONTUM_PETALS));
 
@@ -232,9 +249,15 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                 addDrop(EldritchRealmsBlocks.ALK_WHEAT, cropDrops(EldritchRealmsBlocks.ALK_WHEAT, EldritchRealmsItems.ALK_WHEAT, EldritchRealmsItems.ALK_WHEAT_SEEDS, builder));
 
 
-                addDrop(EldritchRealmsBlocks.VEILSTONE_SHADOWSTEEL_ORE, oneToTwoDrops(EldritchRealmsBlocks.VEILSTONE_SHADOWSTEEL_ORE, EldritchRealmsItems.SHADOWSTEEL_DUST));
-                addDrop(EldritchRealmsBlocks.SHADOWSLATE_SHADOWSTEEL_ORE, oneToTwoDrops(EldritchRealmsBlocks.SHADOWSLATE_SHADOWSTEEL_ORE, EldritchRealmsItems.SHADOWSTEEL_DUST));
+                addDrop(EldritchRealmsBlocks.VEILSTONE_SHADOWSTEEL_ORE, oneToTwoDropsNoSilkTouch(EldritchRealmsBlocks.VEILSTONE_SHADOWSTEEL_ORE, EldritchRealmsItems.SHADOWSTEEL_DUST));
+                addDrop(EldritchRealmsBlocks.SHADOWSLATE_SHADOWSTEEL_ORE, oneToTwoDropsNoSilkTouch(EldritchRealmsBlocks.SHADOWSLATE_SHADOWSTEEL_ORE, EldritchRealmsItems.SHADOWSTEEL_DUST));
                 addDrop(EldritchRealmsBlocks.SHADOWSTEEL_BLOCK);
+
+
+                addDrop(EldritchRealmsBlocks.NEBULATIC_LAPIS_BLOCK);
+                addDrop(EldritchRealmsBlocks.VEILSTONE_NEBULATIC_LAPIS_ORE, twoToFiveDrops(EldritchRealmsBlocks.VEILSTONE_NEBULATIC_LAPIS_ORE, EldritchRealmsItems.NEBULATIC_LAPIS));
+                addDrop(EldritchRealmsBlocks.SHADOWSLATE_NEBULATIC_LAPIS_ORE, twoToFiveDrops(EldritchRealmsBlocks.SHADOWSLATE_NEBULATIC_LAPIS_ORE, EldritchRealmsItems.NEBULATIC_LAPIS));
+                addDrop(EldritchRealmsBlocks.NEBULATIC_ENCHANTING_TABLE);
 
 
     }
@@ -248,7 +271,7 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                                                 .create(1.0f))))));
     }
 
-    public LootTable.Builder oneToTwoDrops(Block drop, Item item) {
+    public LootTable.Builder oneToTwoDropsNoSilkTouch(Block drop, Item item) {
         return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder) this.applyExplosionDecay(drop,
                 ((LeafEntry.Builder)
                         ItemEntry.builder(item)

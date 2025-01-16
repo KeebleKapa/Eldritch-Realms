@@ -161,7 +161,6 @@ public class EldritchRealmsItemGroups {
                         entries.add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_WALL);
 
 
-                        entries.add(EldritchRealmsBlocks.GLOOMARBLE);
 
 
 
@@ -195,7 +194,9 @@ public class EldritchRealmsItemGroups {
                         entries.add(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE_SLAB);
                         entries.add(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE_WALL);
 
+                        entries.add(EldritchRealmsBlocks.GLOOMARBLE);
                         entries.add(EldritchRealmsBlocks.SHADOWSTEEL_BLOCK);
+                        entries.add(EldritchRealmsBlocks.NEBULATIC_LAPIS_BLOCK);
 
 
 
@@ -211,6 +212,7 @@ public class EldritchRealmsItemGroups {
                     .icon(() -> new ItemStack(EldritchRealmsItems.DREADQUARTZ)).entries((displayContext, entries) -> {
                         entries.add(EldritchRealmsItems.SHADOWSTEEL_CLUMP);
                         entries.add(EldritchRealmsItems.DREADQUARTZ);
+                        entries.add(EldritchRealmsItems.NEBULATIC_LAPIS);
                         entries.add(EldritchRealmsItems.SHADOWSTEEL_NUGGET);
                         entries.add(EldritchRealmsItems.SHADOWSTEEL_INGOT);
                         entries.add(EldritchRealmsItems.SHADOWSTEEL_DUST);
@@ -261,6 +263,8 @@ public class EldritchRealmsItemGroups {
                         entries.add(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE);
                         entries.add(EldritchRealmsBlocks.VEILSTONE_SHADOWSTEEL_ORE);
                         entries.add(EldritchRealmsBlocks.SHADOWSLATE_SHADOWSTEEL_ORE);
+                        entries.add(EldritchRealmsBlocks.VEILSTONE_NEBULATIC_LAPIS_ORE);
+                        entries.add(EldritchRealmsBlocks.SHADOWSLATE_NEBULATIC_LAPIS_ORE);
                         entries.add(EldritchRealmsBlocks.UMBRAM_OAK_LOG);
                         entries.add(EldritchRealmsBlocks.PHONTUM_LOG);
                         entries.add(EldritchRealmsBlocks.ELDEM_LOG);

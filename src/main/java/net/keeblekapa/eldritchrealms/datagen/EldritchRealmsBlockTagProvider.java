@@ -58,6 +58,7 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(EldritchRealmsBlocks.VEILSTONE_DREADQUARTZ_ORE)
                 .add(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE)
+                .add(EldritchRealmsBlocks.NEBULATIC_LAPIS_BLOCK)
 
 
         ;
@@ -65,6 +66,8 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
 
                 .add(EldritchRealmsBlocks.SHADOWSTEEL_BLOCK)
+                .add(EldritchRealmsBlocks.VEILSTONE_NEBULATIC_LAPIS_ORE)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_NEBULATIC_LAPIS_ORE)
 
         ;
 
@@ -137,6 +140,10 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
         ;
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+
+                .add(EldritchRealmsBlocks.NEBULATIC_LAPIS_BLOCK)
+                .add(EldritchRealmsBlocks.VEILSTONE_NEBULATIC_LAPIS_ORE)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_NEBULATIC_LAPIS_ORE)
 
                 .add(EldritchRealmsBlocks.SHADOWSTEEL_BLOCK)
                 .add(EldritchRealmsBlocks.VEILSTONE_SHADOWSTEEL_ORE)

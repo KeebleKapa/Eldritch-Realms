@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "eldritchrealms:item/nebula_lapis"
+    "layer0": "eldritchrealms:item/nebulatic_lapis"
   }
 }

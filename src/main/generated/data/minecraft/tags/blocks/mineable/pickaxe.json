@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "eldritchrealms:nebulatic_lapis_block",
+    "eldritchrealms:veilstone_nebulatic_lapis_ore",
+    "eldritchrealms:shadowslate_nebulatic_lapis_ore",
     "eldritchrealms:shadowsteel_block",
     "eldritchrealms:veilstone_shadowsteel_ore",
     "eldritchrealms:shadowslate_shadowsteel_ore",

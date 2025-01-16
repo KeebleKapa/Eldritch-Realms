@@ -10,7 +10,7 @@ import net.minecraft.sound.SoundEvents;
 import java.util.function.Supplier;
 
 public enum EldritchRealmsArmorMaterials implements ArmorMaterial {
-        SHADOWSTEEL("shadowsteel", 42, new int[] {4, 7, 9, 4}, 18,
+        SHADOWSTEEL("shadowsteel", 42, new int[] {11, 16, 15, 13}, 18,
                 SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2f, 0.5f, () -> Ingredient.ofItems(EldritchRealmsItems.SHADOWSTEEL_INGOT));
 
 

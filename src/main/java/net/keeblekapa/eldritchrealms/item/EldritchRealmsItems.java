@@ -29,7 +29,7 @@ public class EldritchRealmsItems {
 
     public static final Item GLOOMARBLE_DUST = registerItem("gloomarble_dust", new Item(new FabricItemSettings()));
 
-    public static final Item NEBULA_LAPIS = registerItem("nebula_lapis", new Item(new FabricItemSettings()));
+    public static final Item NEBULATIC_LAPIS = registerItem("nebulatic_lapis", new Item(new FabricItemSettings()));
 
     // Shadowsteel
     public static final Item SHADOWSTEEL_INGOT = registerItem("shadowsteel_ingot", new Item(new FabricItemSettings()));
