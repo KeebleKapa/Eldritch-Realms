@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "eldritchrealms:block/smooth_enigma_basalt_slab"
+    },
+    "type=double": {
+      "model": "eldritchrealms:block/smooth_enigma_basalt"
+    },
+    "type=top": {
+      "model": "eldritchrealms:block/smooth_enigma_basalt_slab_top"
+    }
+  }
+}

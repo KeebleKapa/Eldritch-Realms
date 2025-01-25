@@ -1,0 +1,10 @@
+{
+  "variants":{
+    "half=lower": {
+      "model": "eldritchrealms:block/tall_virelume_grass_bottom"
+    },
+    "half=upper": {
+      "model": "eldritchrealms:block/tall_virelume_grass_top"
+    }
+  }
+}

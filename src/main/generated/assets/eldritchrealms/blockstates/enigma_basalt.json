@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "eldritchrealms:block/enigma_basalt",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "eldritchrealms:block/enigma_basalt"
+    },
+    "axis=z": {
+      "model": "eldritchrealms:block/enigma_basalt",
+      "x": 90
+    }
+  }
+}

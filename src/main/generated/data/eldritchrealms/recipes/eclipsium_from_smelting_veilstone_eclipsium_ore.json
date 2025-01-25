@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 3.0,
+  "group": "eclipsium_from_veilstone_smelting",
+  "ingredient": {
+    "item": "eldritchrealms:veilstone_eclipsium_ore"
+  },
+  "result": "eldritchrealms:eclipsium"
+}

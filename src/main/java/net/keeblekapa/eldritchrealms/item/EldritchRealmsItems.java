@@ -27,6 +27,8 @@ public class EldritchRealmsItems {
      **/
     public static final Item DREADQUARTZ = registerItem("dreadquartz", new Item(new FabricItemSettings()));
 
+    public static final Item ECLIPSIUM = registerItem("eclipsium", new Item(new FabricItemSettings()));
+
     public static final Item GLOOMARBLE_DUST = registerItem("gloomarble_dust", new Item(new FabricItemSettings()));
 
     public static final Item NEBULATIC_LAPIS = registerItem("nebulatic_lapis", new Item(new FabricItemSettings()));

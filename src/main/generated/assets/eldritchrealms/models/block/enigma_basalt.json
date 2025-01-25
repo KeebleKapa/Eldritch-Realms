@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "eldritchrealms:block/enigma_basalt_top",
+    "side": "eldritchrealms:block/enigma_basalt_side"
+  }
+}

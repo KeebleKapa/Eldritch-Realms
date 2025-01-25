@@ -18,6 +18,8 @@ import java.util.List;
 public class EldritchRealmsConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> DREADQUARTZ_ORE_KEY = registryKey("dreadquartz_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> SHADOWSTEEL_ORE_KEY = registryKey("shadowsteel_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> NEBULATIC_LAPIS_ORE_KEY = registryKey("nebulatic_lapis_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ECLIPSIUM_ORE_KEY = registryKey("eclipsium_ore");
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> PHONTUM_KEY = registryKey("phontum");
     public static final RegistryKey<ConfiguredFeature<?, ?>> ELDEM_KEY = registryKey("eldem");
@@ -44,9 +46,23 @@ public class EldritchRealmsConfiguredFeatures {
                         OreFeatureConfig.createTarget(stoneReplaceable, EldritchRealmsBlocks.VEILSTONE_SHADOWSTEEL_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplaceable, EldritchRealmsBlocks.SHADOWSLATE_SHADOWSTEEL_ORE.getDefaultState()));
 
+        List<OreFeatureConfig.Target> eldritchRealmNebulaticLapisOres =
+                List.of(OreFeatureConfig.createTarget(veilstoneReplaceable, EldritchRealmsBlocks.VEILSTONE_NEBULATIC_LAPIS_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(shadowslateReplaceable, EldritchRealmsBlocks.SHADOWSLATE_NEBULATIC_LAPIS_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(stoneReplaceable, EldritchRealmsBlocks.VEILSTONE_NEBULATIC_LAPIS_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceable, EldritchRealmsBlocks.SHADOWSLATE_NEBULATIC_LAPIS_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> eldritchRealmEclipsiumOres =
+                List.of(OreFeatureConfig.createTarget(veilstoneReplaceable, EldritchRealmsBlocks.VEILSTONE_ECLIPSIUM_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(shadowslateReplaceable, EldritchRealmsBlocks.SHADOWSLATE_ECLIPSIUM_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(stoneReplaceable, EldritchRealmsBlocks.VEILSTONE_ECLIPSIUM_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceable, EldritchRealmsBlocks.SHADOWSLATE_ECLIPSIUM_ORE.getDefaultState()));
+
         // Dreadquartz Ore Feature //
         register(context, DREADQUARTZ_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmDreadquartzOres, 12));
         register(context, SHADOWSTEEL_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmShadowsteelOres, 5));
+        register(context, NEBULATIC_LAPIS_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmNebulaticLapisOres, 7));
+        register(context, ECLIPSIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(eldritchRealmEclipsiumOres, 7));
 
 
 

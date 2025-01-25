@@ -30,6 +30,16 @@
     "eldritchrealms:dreadquartz_bricks",
     "eldritchrealms:dreadquartz_pillar",
     "eldritchrealms:chiseled_dreadquartz",
-    "eldritchrealms:gloomarble"
+    "eldritchrealms:gloomarble",
+    "eldritchrealms:enigma_basalt",
+    "eldritchrealms:polished_enigma_basalt",
+    "eldritchrealms:smooth_enigma_basalt",
+    "eldritchrealms:smooth_enigma_basalt_stairs",
+    "eldritchrealms:smooth_enigma_basalt_slab",
+    "eldritchrealms:smooth_enigma_basalt_wall",
+    "eldritchrealms:smooth_enigma_basalt_bricks",
+    "eldritchrealms:smooth_enigma_basalt_brick_stairs",
+    "eldritchrealms:smooth_enigma_basalt_brick_slab",
+    "eldritchrealms:smooth_enigma_basalt_brick_wall"
   ]
 }

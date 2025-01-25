@@ -78,10 +78,16 @@
   "block.eldritchrealms.gloomarble": "Gloomarble",
 
   "block.eldritchrealms.mythral_grass_block": "Mythral Grass Block",
+  "block.eldritchrealms.virelume_grass_block": "Virelume Grass Block",
+  "block.eldritchrealms.nocturb_grass_block": "Nocturb Grass Block",
   "block.eldritchrealms.marred_soil": "Marred Soil",
   "block.eldritchrealms.tilled_marred_soil": "Tilled Marred Soil",
   "block.eldritchrealms.mythral_grass": "Mythral Grass",
   "block.eldritchrealms.tall_mythral_grass": "Tall Mythral Grass",
+  "block.eldritchrealms.virelume_grass": "Virelume Grass",
+  "block.eldritchrealms.tall_virelume_grass": "Tall Virelume Grass",
+  "block.eldritchrealms.nocturb_grass": "Nocturb Grass",
+  "block.eldritchrealms.tall_nocturb_grass": "Tall Nocturb Grass",
   "block.eldritchrealms.sablebell": "Sablebell",
   "item.eldritchrealms.alk_wheat": "Alk Wheat",
   "item.eldritchrealms.alk_wheat_seeds": "Alk Wheat Seeds",
@@ -192,6 +198,16 @@
 
   "item.eldritchrealms.gloomarble_dust": "Gloomarble Dust",
   "item.eldritchrealms.reinforced_iron_rod": "Reinforced Iron Rod",
+  "block.eldritchrealms.enigma_basalt": "Enigma Basalt",
+  "block.eldritchrealms.polished_enigma_basalt": "Polished Enigma Basalt",
+  "block.eldritchrealms.smooth_enigma_basalt": "Smooth Enigma Basalt",
+  "block.eldritchrealms.smooth_enigma_basalt_stairs": "Smooth Enigma Basalt Stairs",
+  "block.eldritchrealms.smooth_enigma_basalt_slab": "Smooth Enigma Basalt Slab",
+  "block.eldritchrealms.smooth_enigma_basalt_wall": "Smooth Enigma Basalt Wall",
+  "block.eldritchrealms.smooth_enigma_basalt_bricks": "Smooth Enigma Basalt Bricks",
+  "block.eldritchrealms.smooth_enigma_basalt_brick_stairs": "Smooth Enigma Basalt Brick Stairs",
+  "block.eldritchrealms.smooth_enigma_basalt_brick_slab": "Smooth Enigma Basalt Brick Slab",
+  "block.eldritchrealms.smooth_enigma_basalt_brick_wall": "Smooth Enigma Basalt Brick Wall",
 
 
   "item.eldritchrealms.nebulatic_lapis": "Nebulatic Lapis",
@@ -202,6 +218,13 @@
   "block.eldritchrealms.ebon_obsidian": "Ebon Obsidian",
   "block.eldritchrealms.glistening_ebon_obsidian": "Glistening Ebon Obsidian",
   "block.eldritchrealms.nebulatic_enchanting_table": "Nebulatic Enchanting Table",
+
+
+  "block.eldritchrealms.veilstone_eclipsium_ore": "Veilstone Eclipsium Ore",
+  "block.eldritchrealms.shadowslate_eclipsium_ore": "Shadowslate Eclipsium Ore",
+  "block.eldritchrealms.eclipsium_block": "Eclipsium Block",
+  "item.eldritchrealms.eclipsium": "Eclipsium",
+
 
   "block.eldritchrealms.veilstone_shadowsteel_ore": "Veilstone Shadowsteel Ore",
   "block.eldritchrealms.shadowslate_shadowsteel_ore": "Shadowslate Shadowsteel Ore",
@@ -219,6 +242,8 @@
   "item.eldritchrealms.shadowsteel_chestplate": "Shadowsteel Chestplate",
   "item.eldritchrealms.shadowsteel_leggings": "Shadowsteel Leggings",
   "item.eldritchrealms.shadowsteel_boots": "Shadowsteel Boots",
+
+
 
   "itemgroup.eldritch_realms_building_blocks": "Eldritch Realms Building Blocks",
   "itemgroup.eldritch_realms_ingredients": "Eldritch Realms Ingredients",

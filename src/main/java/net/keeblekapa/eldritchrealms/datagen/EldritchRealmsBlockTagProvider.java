@@ -53,12 +53,29 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.CHISELED_DREADQUARTZ)
 
                 .add(EldritchRealmsBlocks.GLOOMARBLE)
+
+                .add(EldritchRealmsBlocks.ENIGMA_BASALT)
+                .add(EldritchRealmsBlocks.POLISHED_ENIGMA_BASALT)
+                .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT)
+                .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_STAIRS)
+                .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_SLAB)
+                .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_WALL)
+                .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICKS)
+                .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_STAIRS)
+                .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_SLAB)
+                .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_WALL)
+
+
         ;
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(EldritchRealmsBlocks.VEILSTONE_DREADQUARTZ_ORE)
                 .add(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE)
                 .add(EldritchRealmsBlocks.NEBULATIC_LAPIS_BLOCK)
+
+                .add(EldritchRealmsBlocks.ECLIPSIUM_BLOCK)
+                .add(EldritchRealmsBlocks.VEILSTONE_ECLIPSIUM_ORE)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_ECLIPSIUM_ORE)
 
 
         ;
@@ -140,6 +157,21 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
         ;
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+
+                .add(EldritchRealmsBlocks.ECLIPSIUM_BLOCK)
+                .add(EldritchRealmsBlocks.VEILSTONE_ECLIPSIUM_ORE)
+                .add(EldritchRealmsBlocks.SHADOWSLATE_ECLIPSIUM_ORE)
+
+                .add(EldritchRealmsBlocks.ENIGMA_BASALT)
+                .add(EldritchRealmsBlocks.POLISHED_ENIGMA_BASALT)
+                .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT)
+                .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_STAIRS)
+                .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_SLAB)
+                .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_WALL)
+                .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICKS)
+                .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_STAIRS)
+                .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_SLAB)
+                .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_WALL)
 
                 .add(EldritchRealmsBlocks.NEBULATIC_LAPIS_BLOCK)
                 .add(EldritchRealmsBlocks.VEILSTONE_NEBULATIC_LAPIS_ORE)
@@ -369,6 +401,9 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.ASTRAL_SANDSTONE_SLAB)
                 .add(EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICK_SLAB)
                 .add(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE_SLAB)
+
+                .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_SLAB)
+                .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_SLAB)
         ;
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
@@ -406,6 +441,9 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.ASTRAL_SANDSTONE_STAIRS)
                 .add(EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICK_STAIRS)
                 .add(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE_STAIRS)
+
+                .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_STAIRS)
+                .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_STAIRS)
         ;
 
         getOrCreateTagBuilder(BlockTags.WALLS)
@@ -444,6 +482,9 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
                 .add(EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICK_WALL)
                 .add(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE_WALL)
 
+                .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_WALL)
+                .add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_WALL)
+
         ;
 
         getOrCreateTagBuilder(BlockTags.LOGS)
@@ -462,14 +503,18 @@ public class EldritchRealmsBlockTagProvider extends FabricTagProvider.BlockTagPr
 
         ;
 
-        getOrCreateTagBuilder(EldritchRealmsTags.Blocks.ELDRITCH_PLANTS_CAN_PLACE_ON)
+        getOrCreateTagBuilder(EldritchRealmsTags.Blocks.ELDRITCH_TOP_GROUND_BLOCKS)
                 .add(EldritchRealmsBlocks.MYTHRAL_GRASS_BLOCK)
+                .add(EldritchRealmsBlocks.VIRELUME_GRASS_BLOCK)
+                .add(EldritchRealmsBlocks.NOCTURB_GRASS_BLOCK)
                 .add(EldritchRealmsBlocks.MARRED_SOIL)
         ;
 
         getOrCreateTagBuilder(EldritchRealmsTags.Blocks.ELDRITCH_CROPS_CAN_PLACE_ON)
                 .add(EldritchRealmsBlocks.TILLED_MARRED_SOIL)
         ;
+
+
 
     }
 }

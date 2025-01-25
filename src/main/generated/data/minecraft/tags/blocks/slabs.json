@@ -28,6 +28,8 @@
     "eldritchrealms:eldem_slab",
     "eldritchrealms:astral_sandstone_slab",
     "eldritchrealms:astral_sandstone_brick_slab",
-    "eldritchrealms:smooth_astral_sandstone_slab"
+    "eldritchrealms:smooth_astral_sandstone_slab",
+    "eldritchrealms:smooth_enigma_basalt_slab",
+    "eldritchrealms:smooth_enigma_basalt_brick_slab"
   ]
 }

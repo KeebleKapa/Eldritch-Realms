@@ -13,7 +13,7 @@ public class EldritchRealmsTags {
 
     public static class Blocks {
 
-        public static final TagKey<Block> ELDRITCH_PLANTS_CAN_PLACE_ON =
+        public static final TagKey<Block> ELDRITCH_TOP_GROUND_BLOCKS =
                 createTag("eldritch_plants_can_place_on");
 
         public static final TagKey<Block> ELDRITCH_CROPS_CAN_PLACE_ON =

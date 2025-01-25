@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/grass",
+  "textures": {
+    "cross": "eldritchrealms:block/virelume_short_grass"
+  }
+}

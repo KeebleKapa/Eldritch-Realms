@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 1.5,
+  "group": "nebulatic_lapis_from_shadowslate_blasting",
+  "ingredient": {
+    "item": "eldritchrealms:shadowslate_nebulatic_lapis_ore"
+  },
+  "result": "eldritchrealms:nebulatic_lapis"
+}

@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.keeblekapa.eldritchrealms.block.EldritchRealmsBlocks;
 import net.keeblekapa.eldritchrealms.item.EldritchRealmsItems;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
@@ -827,16 +828,9 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
 
         offerCompactingRecipe(exporter, RecipeCategory.MISC, EldritchRealmsItems.SHADOWSTEEL_CLUMP, EldritchRealmsItems.SHADOWSTEEL_NUGGET);
 
-        createSwordWithIronRodRecipe(exporter, EldritchRealmsItems.SHADOWSTEEL_SWORD, EldritchRealmsItems.SHADOWSTEEL_INGOT);
-        createPickaxeWithIronRodRecipe(exporter, EldritchRealmsItems.SHADOWSTEEL_PICKAXE, EldritchRealmsItems.SHADOWSTEEL_INGOT);
-        createAxeWithIronRodRecipe(exporter, EldritchRealmsItems.SHADOWSTEEL_AXE, EldritchRealmsItems.SHADOWSTEEL_INGOT);
-        createShovelWithIronRodRecipe(exporter, EldritchRealmsItems.SHADOWSTEEL_SHOVEL, EldritchRealmsItems.SHADOWSTEEL_INGOT);
-        createHoeWithIronRodRecipe(exporter, EldritchRealmsItems.SHADOWSTEEL_HOE, EldritchRealmsItems.SHADOWSTEEL_INGOT);
-
-        createHelmetRecipe(exporter, EldritchRealmsItems.SHADOWSTEEL_HELMET, EldritchRealmsItems.SHADOWSTEEL_INGOT);
-        createChestplateRecipe(exporter, EldritchRealmsItems.SHADOWSTEEL_CHESTPLATE, EldritchRealmsItems.SHADOWSTEEL_INGOT);
-        createLeggingsRecipe(exporter, EldritchRealmsItems.SHADOWSTEEL_LEGGINGS, EldritchRealmsItems.SHADOWSTEEL_INGOT);
-        createBootsRecipe(exporter, EldritchRealmsItems.SHADOWSTEEL_BOOTS, EldritchRealmsItems.SHADOWSTEEL_INGOT);
+        offerFullEquipmentRecipePack(exporter, EldritchRealmsItems.SHADOWSTEEL_INGOT, EldritchRealmsItems.REINFORCED_IRON_ROD, EldritchRealmsItems.SHADOWSTEEL_SWORD,
+                EldritchRealmsItems.SHADOWSTEEL_PICKAXE, EldritchRealmsItems.SHADOWSTEEL_AXE, EldritchRealmsItems.SHADOWSTEEL_SHOVEL, EldritchRealmsItems.SHADOWSTEEL_HOE,
+                EldritchRealmsItems.SHADOWSTEEL_HELMET, EldritchRealmsItems.SHADOWSTEEL_CHESTPLATE, EldritchRealmsItems.SHADOWSTEEL_LEGGINGS, EldritchRealmsItems.SHADOWSTEEL_BOOTS);
 
 
         //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -862,15 +856,154 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
         //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, EldritchRealmsItems.NEBULATIC_LAPIS, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.NEBULATIC_LAPIS_BLOCK);
+        offerSmelting(exporter, List.of(EldritchRealmsBlocks.VEILSTONE_NEBULATIC_LAPIS_ORE), RecipeCategory.MISC, EldritchRealmsItems.NEBULATIC_LAPIS, 1.5f, 300, "nebulatic_lapis_from_veilstone_smelting");
+        offerBlasting(exporter, List.of(EldritchRealmsBlocks.VEILSTONE_NEBULATIC_LAPIS_ORE), RecipeCategory.MISC, EldritchRealmsItems.NEBULATIC_LAPIS, 1.5f, 150, "nebulatic_lapis_from_veilstone_blasting");
+        offerSmelting(exporter, List.of(EldritchRealmsBlocks.SHADOWSLATE_NEBULATIC_LAPIS_ORE), RecipeCategory.MISC, EldritchRealmsItems.NEBULATIC_LAPIS, 1.5f, 300, "nebulatic_lapis_from_shadowslate_smelting");
+        offerBlasting(exporter, List.of(EldritchRealmsBlocks.SHADOWSLATE_NEBULATIC_LAPIS_ORE), RecipeCategory.MISC, EldritchRealmsItems.NEBULATIC_LAPIS, 1.5f, 150, "nebulatic_lapis_from_shadowslate_blasting");
+
+
+
+        //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.POLISHED_ENIGMA_BASALT, 4)
+                        .pattern("##")
+                        .pattern("##")
+                        .input('#', EldritchRealmsBlocks.ENIGMA_BASALT)
+                        .criterion(hasItem(EldritchRealmsBlocks.ENIGMA_BASALT), conditionsFromItem(EldritchRealmsBlocks.ENIGMA_BASALT))
+                        .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsBlocks.POLISHED_ENIGMA_BASALT)));
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICKS, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_STAIRS, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_SLAB, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_WALL, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT);
+
+        offerSmelting(exporter, List.of(EldritchRealmsBlocks.POLISHED_ENIGMA_BASALT), RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT, 0.1f, 200, "smooth_enigma_basalt_from_polished_smelting");
+        offerBlasting(exporter, List.of(EldritchRealmsBlocks.POLISHED_ENIGMA_BASALT), RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT, 0.1f, 200, "smooth_enigma_basalt_from_polished_blasting");
+        createStoneBlockRecipePack(exporter, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_STAIRS, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_SLAB, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_WALL);
+        createStoneBlockRecipePack(exporter, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICKS, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_STAIRS, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_SLAB, EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_WALL);
+
+
+        //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, EldritchRealmsBlocks.SHADOWSTEEL_BLOCK)
+                        .pattern("###")
+                        .pattern("###")
+                        .pattern("###")
+                        .input('#', EldritchRealmsItems.SHADOWSTEEL_INGOT)
+                        .criterion(hasItem(EldritchRealmsItems.SHADOWSTEEL_INGOT), conditionsFromItem(EldritchRealmsItems.SHADOWSTEEL_INGOT))
+                        .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, EldritchRealmsItems.SHADOWSTEEL_INGOT, 9)
+                .input(EldritchRealmsBlocks.SHADOWSTEEL_BLOCK)
+                .criterion(hasItem(EldritchRealmsBlocks.SHADOWSTEEL_BLOCK), conditionsFromItem(EldritchRealmsBlocks.SHADOWSTEEL_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(EldritchRealmsItems.SHADOWSTEEL_INGOT)));
+
+        //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        offerSmelting(exporter, List.of(EldritchRealmsBlocks.VEILSTONE_ECLIPSIUM_ORE), RecipeCategory.MISC, EldritchRealmsItems.ECLIPSIUM, 3f, 300, "eclipsium_from_veilstone_smelting");
+        offerBlasting(exporter, List.of(EldritchRealmsBlocks.VEILSTONE_ECLIPSIUM_ORE), RecipeCategory.MISC, EldritchRealmsItems.ECLIPSIUM, 3f, 150, "eclipsium_from_veilstone_blasting");
+        offerSmelting(exporter, List.of(EldritchRealmsBlocks.SHADOWSLATE_ECLIPSIUM_ORE), RecipeCategory.MISC, EldritchRealmsItems.ECLIPSIUM, 3f, 300, "eclipsium_from_shadowslate_smelting");
+        offerBlasting(exporter, List.of(EldritchRealmsBlocks.SHADOWSLATE_ECLIPSIUM_ORE), RecipeCategory.MISC, EldritchRealmsItems.ECLIPSIUM, 3f, 150, "eclipsium_from_shadowslate_blasting");
 
 
 
     }
 
-    public static void createSwordRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+    private static void createStoneBlockRecipePack(Consumer<RecipeJsonProvider> exporter, ItemConvertible mainBlock, ItemConvertible stairsBlock, ItemConvertible slabBlock, ItemConvertible wallBlock) {
+        createStairsRecipe(stairsBlock, Ingredient.ofItems(mainBlock));
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, slabBlock, Ingredient.ofItems(mainBlock));
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, wallBlock, mainBlock);
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, stairsBlock, mainBlock);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, slabBlock, mainBlock, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, wallBlock, mainBlock);
+    }
+
+    private static void offerFullEquipmentRecipePack(Consumer<RecipeJsonProvider> exporter, ItemConvertible equipmentMaterial, ItemConvertible stickItem, ItemConvertible swordItem,
+                                                        ItemConvertible pickaxeItem, ItemConvertible axeItem, ItemConvertible shovelItem, ItemConvertible hoeItem, ItemConvertible helmetItem,
+                                                            ItemConvertible chestplateItem, ItemConvertible leggingsItem, ItemConvertible bootsItem) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, swordItem, 1)
+                .input('#', equipmentMaterial)
+                .input('$', stickItem)
+                .pattern("#")
+                .pattern("#")
+                .pattern("$")
+                .group("sword")
+                .criterion(hasItem(equipmentMaterial), conditionsFromItem(equipmentMaterial))
+                .offerTo(exporter, convertBetween(swordItem, equipmentMaterial));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, pickaxeItem, 1)
+                .input('#', equipmentMaterial)
+                .input('$', stickItem)
+                .pattern("###")
+                .pattern(" $ ")
+                .pattern(" $ ")
+                .group("pickaxe")
+                .criterion(hasItem(equipmentMaterial), conditionsFromItem(equipmentMaterial))
+                .offerTo(exporter, convertBetween(pickaxeItem, equipmentMaterial));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, axeItem, 1)
+                .input('#', equipmentMaterial)
+                .input('$', stickItem)
+                .pattern("##")
+                .pattern("#$")
+                .pattern(" $")
+                .group("axe")
+                .criterion(hasItem(equipmentMaterial), conditionsFromItem(equipmentMaterial))
+                .offerTo(exporter, convertBetween(axeItem, equipmentMaterial));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, shovelItem, 1)
+                .input('#', equipmentMaterial)
+                .input('$', stickItem)
+                .pattern("#")
+                .pattern("$")
+                .pattern("$")
+                .group("shovel")
+                .criterion(hasItem(equipmentMaterial), conditionsFromItem(equipmentMaterial))
+                .offerTo(exporter, convertBetween(shovelItem, equipmentMaterial));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, hoeItem, 1)
+                .input('#', equipmentMaterial)
+                .input('$', stickItem)
+                .pattern("##")
+                .pattern("$ ")
+                .pattern("$ ")
+                .group("hoe")
+                .criterion(hasItem(equipmentMaterial), conditionsFromItem(equipmentMaterial))
+                .offerTo(exporter, convertBetween(hoeItem, equipmentMaterial));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, helmetItem, 1)
+                .input('#', equipmentMaterial)
+                .pattern("###")
+                .pattern("# #")
+                .group("helmet")
+                .criterion(hasItem(equipmentMaterial), conditionsFromItem(equipmentMaterial))
+                .offerTo(exporter, convertBetween(helmetItem, equipmentMaterial));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, chestplateItem, 1)
+                .input('#', equipmentMaterial)
+                .pattern("# #")
+                .pattern("###")
+                .pattern("###")
+                .group("chestplate")
+                .criterion(hasItem(equipmentMaterial), conditionsFromItem(equipmentMaterial))
+                .offerTo(exporter, convertBetween(chestplateItem, equipmentMaterial));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, leggingsItem, 1)
+                .input('#', equipmentMaterial)
+                .pattern("###")
+                .pattern("# #")
+                .pattern("# #")
+                .group("leggings")
+                .criterion(hasItem(equipmentMaterial), conditionsFromItem(equipmentMaterial))
+                .offerTo(exporter, convertBetween(leggingsItem, equipmentMaterial));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, bootsItem, 1)
+                .input('#', equipmentMaterial)
+                .pattern("# #")
+                .pattern("# #")
+                .group("boots")
+                .criterion(hasItem(equipmentMaterial), conditionsFromItem(equipmentMaterial))
+                .offerTo(exporter, convertBetween(bootsItem, equipmentMaterial));
+    }
+
+    private static void createSwordRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible stickItem, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, output, 1)
                 .input('#', input)
-                .input('$', Items.STICK)
+                .input('$', stickItem)
                 .pattern("#")
                 .pattern("#")
                 .pattern("$")
@@ -879,10 +1012,10 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, convertBetween(output, input));
     }
 
-    public static void createPickaxeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+    private static void createPickaxeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible stickItem, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, output, 1)
                 .input('#', input)
-                .input('$', Items.STICK)
+                .input('$', stickItem)
                 .pattern("###")
                 .pattern(" $ ")
                 .pattern(" $ ")
@@ -891,10 +1024,10 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, convertBetween(output, input));
     }
 
-    public static void createAxeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+    private static void createAxeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible stickItem, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, output, 1)
                 .input('#', input)
-                .input('$', Items.STICK)
+                .input('$', stickItem)
                 .pattern("##")
                 .pattern("#$")
                 .pattern(" $")
@@ -903,10 +1036,10 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, convertBetween(output, input));
     }
 
-    public static void createShovelRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+    private static void createShovelRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible stickItem, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, output, 1)
                 .input('#', input)
-                .input('$', Items.STICK)
+                .input('$', stickItem)
                 .pattern("#")
                 .pattern("$")
                 .pattern("$")
@@ -915,10 +1048,10 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, convertBetween(output, input));
     }
 
-    public static void createHoeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+    private static void createHoeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible stickItem, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, output, 1)
                 .input('#', input)
-                .input('$', Items.STICK)
+                .input('$', stickItem)
                 .pattern("##")
                 .pattern("$ ")
                 .pattern("$ ")
@@ -927,7 +1060,7 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, convertBetween(output, input));
     }
 
-    public static void createSwordWithIronRodRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+    private static void createSwordWithIronRodRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, output, 1)
                 .input('#', input)
                 .input('$', EldritchRealmsItems.REINFORCED_IRON_ROD)
@@ -940,7 +1073,7 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, convertBetween(output, input));
     }
 
-    public static void createPickaxeWithIronRodRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+    private static void createPickaxeWithIronRodRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, output, 1)
                 .input('#', input)
                 .input('$', EldritchRealmsItems.REINFORCED_IRON_ROD)
@@ -953,7 +1086,7 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, convertBetween(output, input));
     }
 
-    public static void createAxeWithIronRodRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+    private static void createAxeWithIronRodRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, output, 1)
                 .input('#', input)
                 .input('$', EldritchRealmsItems.REINFORCED_IRON_ROD)
@@ -966,7 +1099,7 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, convertBetween(output, input));
     }
 
-    public static void createShovelWithIronRodRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+    private static void createShovelWithIronRodRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, output, 1)
                 .input('#', input)
                 .input('$', EldritchRealmsItems.REINFORCED_IRON_ROD)
@@ -979,7 +1112,7 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, convertBetween(output, input));
     }
 
-    public static void createHoeWithIronRodRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+    private static void createHoeWithIronRodRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, output, 1)
                 .input('#', input)
                 .input('$', EldritchRealmsItems.REINFORCED_IRON_ROD)
@@ -993,7 +1126,7 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
     }
 
 
-    public static void createHelmetRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+    private static void createHelmetRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, output, 1)
                 .input('#', input)
                 .pattern("###")
@@ -1003,7 +1136,7 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, convertBetween(output, input));
     }
 
-    public static void createChestplateRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+    private static void createChestplateRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, output, 1)
                 .input('#', input)
                 .pattern("# #")
@@ -1014,7 +1147,7 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, convertBetween(output, input));
     }
 
-    public static void createLeggingsRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+    private static void createLeggingsRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, output, 1)
                 .input('#', input)
                 .pattern("###")
@@ -1025,7 +1158,7 @@ public class EldritchRealmsRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, convertBetween(output, input));
     }
 
-    public static void createBootsRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+    private static void createBootsRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, output, 1)
                 .input('#', input)
                 .pattern("# #")

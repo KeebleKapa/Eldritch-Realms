@@ -30,6 +30,10 @@ public class EldritchRealmsClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(EldritchRealmsBlocks.TILLED_MARRED_SOIL, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(EldritchRealmsBlocks.MYTHRAL_GRASS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(EldritchRealmsBlocks.TALL_MYTHRAL_GRASS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EldritchRealmsBlocks.VIRELUME_GRASS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EldritchRealmsBlocks.TALL_VIRELUME_GRASS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EldritchRealmsBlocks.NOCTURB_GRASS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EldritchRealmsBlocks.TALL_NOCTURB_GRASS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(EldritchRealmsBlocks.SABLEBELL, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(EldritchRealmsBlocks.ALK_WHEAT, RenderLayer.getCutout());
 

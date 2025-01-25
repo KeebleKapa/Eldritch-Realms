@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 1.5,
+  "group": "nebulatic_lapis_from_shadowslate_smelting",
+  "ingredient": {
+    "item": "eldritchrealms:shadowslate_nebulatic_lapis_ore"
+  },
+  "result": "eldritchrealms:nebulatic_lapis"
+}

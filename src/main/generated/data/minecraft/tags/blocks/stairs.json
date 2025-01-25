@@ -28,6 +28,8 @@
     "eldritchrealms:eldem_stairs",
     "eldritchrealms:astral_sandstone_stairs",
     "eldritchrealms:astral_sandstone_brick_stairs",
-    "eldritchrealms:smooth_astral_sandstone_stairs"
+    "eldritchrealms:smooth_astral_sandstone_stairs",
+    "eldritchrealms:smooth_enigma_basalt_stairs",
+    "eldritchrealms:smooth_enigma_basalt_brick_stairs"
   ]
 }

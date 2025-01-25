@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 3.0,
+  "group": "eclipsium_from_veilstone_blasting",
+  "ingredient": {
+    "item": "eldritchrealms:veilstone_eclipsium_ore"
+  },
+  "result": "eldritchrealms:eclipsium"
+}

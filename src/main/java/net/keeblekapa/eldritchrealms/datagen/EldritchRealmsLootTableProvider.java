@@ -221,8 +221,18 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                 addDrop(EldritchRealmsBlocks.MYTHRAL_GRASS_BLOCK, silkTouchDrop(EldritchRealmsBlocks.MYTHRAL_GRASS_BLOCK, EldritchRealmsBlocks.MARRED_SOIL));
                 addDrop(EldritchRealmsBlocks.MARRED_SOIL);
                 addDrop(EldritchRealmsBlocks.TILLED_MARRED_SOIL, drops(EldritchRealmsBlocks.MARRED_SOIL));
-                addDrop(EldritchRealmsBlocks.MYTHRAL_GRASS, mythralGrassDrops(EldritchRealmsBlocks.MYTHRAL_GRASS));
-                addDrop(EldritchRealmsBlocks.TALL_MYTHRAL_GRASS, tallMythralGrassDrops(EldritchRealmsBlocks.TALL_MYTHRAL_GRASS, EldritchRealmsBlocks.TALL_MYTHRAL_GRASS));
+                addDrop(EldritchRealmsBlocks.MYTHRAL_GRASS, eldritchGrassDrops(EldritchRealmsBlocks.MYTHRAL_GRASS));
+                addDrop(EldritchRealmsBlocks.TALL_MYTHRAL_GRASS, tallEldritchGrassDrops(EldritchRealmsBlocks.TALL_MYTHRAL_GRASS, EldritchRealmsBlocks.TALL_MYTHRAL_GRASS));
+
+                addDrop(EldritchRealmsBlocks.NOCTURB_GRASS_BLOCK, silkTouchDrop(EldritchRealmsBlocks.NOCTURB_GRASS_BLOCK, EldritchRealmsBlocks.MARRED_SOIL));
+                addDrop(EldritchRealmsBlocks.MARRED_SOIL);
+                addDrop(EldritchRealmsBlocks.NOCTURB_GRASS, eldritchGrassDrops(EldritchRealmsBlocks.NOCTURB_GRASS));
+                addDrop(EldritchRealmsBlocks.TALL_NOCTURB_GRASS, tallEldritchGrassDrops(EldritchRealmsBlocks.TALL_NOCTURB_GRASS, EldritchRealmsBlocks.TALL_NOCTURB_GRASS));
+
+                addDrop(EldritchRealmsBlocks.VIRELUME_GRASS_BLOCK, silkTouchDrop(EldritchRealmsBlocks.VIRELUME_GRASS_BLOCK, EldritchRealmsBlocks.MARRED_SOIL));
+                addDrop(EldritchRealmsBlocks.MARRED_SOIL);
+                addDrop(EldritchRealmsBlocks.VIRELUME_GRASS, eldritchGrassDrops(EldritchRealmsBlocks.VIRELUME_GRASS));
+                addDrop(EldritchRealmsBlocks.TALL_VIRELUME_GRASS, tallEldritchGrassDrops(EldritchRealmsBlocks.TALL_VIRELUME_GRASS, EldritchRealmsBlocks.TALL_VIRELUME_GRASS));
 
                 addDrop(EldritchRealmsBlocks.EERIE_GRAVEL);
 
@@ -259,6 +269,20 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                 addDrop(EldritchRealmsBlocks.SHADOWSLATE_NEBULATIC_LAPIS_ORE, twoToFiveDrops(EldritchRealmsBlocks.SHADOWSLATE_NEBULATIC_LAPIS_ORE, EldritchRealmsItems.NEBULATIC_LAPIS));
                 addDrop(EldritchRealmsBlocks.NEBULATIC_ENCHANTING_TABLE);
 
+                addDrop(EldritchRealmsBlocks.ENIGMA_BASALT);
+                addDrop(EldritchRealmsBlocks.POLISHED_ENIGMA_BASALT);
+                addDrop(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT);
+                addDrop(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_STAIRS);
+                addDrop(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_SLAB, slabDrops(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_SLAB));
+                addDrop(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_WALL);
+                addDrop(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICKS);
+                addDrop(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_STAIRS);
+                addDrop(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_SLAB, slabDrops(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_SLAB));
+                addDrop(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_WALL);
+
+                addDrop(EldritchRealmsBlocks.VEILSTONE_ECLIPSIUM_ORE, silkTouchItemDrop(EldritchRealmsBlocks.VEILSTONE_ECLIPSIUM_ORE, EldritchRealmsItems.ECLIPSIUM));
+                addDrop(EldritchRealmsBlocks.SHADOWSLATE_ECLIPSIUM_ORE, silkTouchItemDrop(EldritchRealmsBlocks.SHADOWSLATE_ECLIPSIUM_ORE, EldritchRealmsItems.ECLIPSIUM));
+                addDrop(EldritchRealmsBlocks.ECLIPSIUM_BLOCK);
 
     }
 
@@ -266,6 +290,15 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
         return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder) this.applyExplosionDecay(drop,
                 ((LeafEntry.Builder)
                         ItemEntry.builder(block)
+                                .apply(SetCountLootFunction
+                                        .builder(ConstantLootNumberProvider
+                                                .create(1.0f))))));
+    }
+
+    public LootTable.Builder silkTouchItemDrop(Block drop, Item item) {
+        return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder) this.applyExplosionDecay(drop,
+                ((LeafEntry.Builder)
+                        ItemEntry.builder(item)
                                 .apply(SetCountLootFunction
                                         .builder(ConstantLootNumberProvider
                                                 .create(1.0f))))));
@@ -330,7 +363,7 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                         .apply(ApplyBonusLootFunction.oreDrops(Enchantments.FORTUNE))));
     }
 
-    public LootTable.Builder mythralGrassDrops(Block dropWithShears) {
+    public LootTable.Builder eldritchGrassDrops(Block dropWithShears) {
         return dropsWithShears(
                 dropWithShears,
                 (LootPoolEntry.Builder<?>)this.applyExplosionDecay(
@@ -341,7 +374,7 @@ public class EldritchRealmsLootTableProvider extends FabricBlockLootTableProvide
                 )
         );
     }
-    public LootTable.Builder tallMythralGrassDrops(Block tallGrass, Block grass) {
+    public LootTable.Builder tallEldritchGrassDrops(Block tallGrass, Block grass) {
         LootPoolEntry.Builder<?> builder = ItemEntry.builder(grass)
                 .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(2.0F)))
                 .conditionally(WITH_SHEARS)

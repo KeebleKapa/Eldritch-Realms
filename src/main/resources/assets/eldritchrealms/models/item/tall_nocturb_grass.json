@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "eldritchrealms:block/tall_nocturb_grass_top"
+  }
+}

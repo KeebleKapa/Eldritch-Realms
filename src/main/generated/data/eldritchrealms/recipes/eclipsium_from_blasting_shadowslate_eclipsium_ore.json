@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 3.0,
+  "group": "eclipsium_from_shadowslate_blasting",
+  "ingredient": {
+    "item": "eldritchrealms:shadowslate_eclipsium_ore"
+  },
+  "result": "eldritchrealms:eclipsium"
+}

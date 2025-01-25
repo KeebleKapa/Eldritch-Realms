@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "eldritchrealms:block/tall_virelume_grass_bottom"
+  }
+}

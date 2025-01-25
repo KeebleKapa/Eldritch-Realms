@@ -13,5 +13,11 @@ public class EldritchRealmsOreGeneration {
 
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
                 GenerationStep.Feature.UNDERGROUND_ORES, EldritchRealmsPlacedFeatures.SHADOWSTEEL_ORE_PLACED_KEY);
+
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
+                GenerationStep.Feature.UNDERGROUND_ORES, EldritchRealmsPlacedFeatures.NEBULATIC_LAPIS_ORE_PLACED_KEY);
+
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
+                GenerationStep.Feature.UNDERGROUND_ORES, EldritchRealmsPlacedFeatures.ECLIPSIUM_ORE_PLACED_KEY);
     }
 }

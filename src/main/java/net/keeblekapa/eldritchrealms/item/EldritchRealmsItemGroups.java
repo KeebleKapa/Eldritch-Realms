@@ -160,7 +160,16 @@ public class EldritchRealmsItemGroups {
                         entries.add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_SLAB);
                         entries.add(EldritchRealmsBlocks.ELDRITCH_LIMESTONE_BRICK_WALL);
 
-
+                        entries.add(EldritchRealmsBlocks.ENIGMA_BASALT);
+                        entries.add(EldritchRealmsBlocks.POLISHED_ENIGMA_BASALT);
+                        entries.add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT);
+                        entries.add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_STAIRS);
+                        entries.add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_SLAB);
+                        entries.add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_WALL);
+                        entries.add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICKS);
+                        entries.add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_STAIRS);
+                        entries.add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_SLAB);
+                        entries.add(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICK_WALL);
 
 
 
@@ -195,6 +204,7 @@ public class EldritchRealmsItemGroups {
                         entries.add(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE_WALL);
 
                         entries.add(EldritchRealmsBlocks.GLOOMARBLE);
+                        entries.add(EldritchRealmsBlocks.ECLIPSIUM_BLOCK);
                         entries.add(EldritchRealmsBlocks.SHADOWSTEEL_BLOCK);
                         entries.add(EldritchRealmsBlocks.NEBULATIC_LAPIS_BLOCK);
 
@@ -212,6 +222,7 @@ public class EldritchRealmsItemGroups {
                     .icon(() -> new ItemStack(EldritchRealmsItems.DREADQUARTZ)).entries((displayContext, entries) -> {
                         entries.add(EldritchRealmsItems.SHADOWSTEEL_CLUMP);
                         entries.add(EldritchRealmsItems.DREADQUARTZ);
+                        entries.add(EldritchRealmsItems.ECLIPSIUM);
                         entries.add(EldritchRealmsItems.NEBULATIC_LAPIS);
                         entries.add(EldritchRealmsItems.SHADOWSTEEL_NUGGET);
                         entries.add(EldritchRealmsItems.SHADOWSTEEL_INGOT);
@@ -253,6 +264,8 @@ public class EldritchRealmsItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.eldritch_realms_natural_blocks"))
                     .icon(() -> new ItemStack(EldritchRealmsBlocks.MYTHRAL_GRASS_BLOCK)).entries((displayContext, entries) -> {
                         entries.add(EldritchRealmsBlocks.MYTHRAL_GRASS_BLOCK);
+                        entries.add(EldritchRealmsBlocks.VIRELUME_GRASS_BLOCK);
+                        entries.add(EldritchRealmsBlocks.NOCTURB_GRASS_BLOCK);
                         entries.add(EldritchRealmsBlocks.MARRED_SOIL);
                         entries.add(EldritchRealmsBlocks.TILLED_MARRED_SOIL);
                         entries.add(EldritchRealmsBlocks.EERIE_GRAVEL);
@@ -261,6 +274,8 @@ public class EldritchRealmsItemGroups {
                         entries.add(EldritchRealmsBlocks.GLISTENING_EBON_OBSIDIAN);
                         entries.add(EldritchRealmsBlocks.VEILSTONE_DREADQUARTZ_ORE);
                         entries.add(EldritchRealmsBlocks.SHADOWSLATE_DREADQUARTZ_ORE);
+                        entries.add(EldritchRealmsBlocks.VEILSTONE_ECLIPSIUM_ORE);
+                        entries.add(EldritchRealmsBlocks.SHADOWSLATE_ECLIPSIUM_ORE);
                         entries.add(EldritchRealmsBlocks.VEILSTONE_SHADOWSTEEL_ORE);
                         entries.add(EldritchRealmsBlocks.SHADOWSLATE_SHADOWSTEEL_ORE);
                         entries.add(EldritchRealmsBlocks.VEILSTONE_NEBULATIC_LAPIS_ORE);
@@ -277,6 +292,10 @@ public class EldritchRealmsItemGroups {
                         entries.add(EldritchRealmsBlocks.ELDEM_SAPLING);
                         entries.add(EldritchRealmsBlocks.MYTHRAL_GRASS);
                         entries.add(EldritchRealmsBlocks.TALL_MYTHRAL_GRASS);
+                        entries.add(EldritchRealmsBlocks.VIRELUME_GRASS);
+                        entries.add(EldritchRealmsBlocks.TALL_VIRELUME_GRASS);
+                        entries.add(EldritchRealmsBlocks.NOCTURB_GRASS);
+                        entries.add(EldritchRealmsBlocks.TALL_NOCTURB_GRASS);
                         entries.add(EldritchRealmsBlocks.PHONTUM_PETALS);
                         entries.add(EldritchRealmsItems.ALK_WHEAT_SEEDS);
                         entries.add(EldritchRealmsItems.ALK_WHEAT);

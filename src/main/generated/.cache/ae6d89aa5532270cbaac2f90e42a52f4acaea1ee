@@ -1,9 +1,9 @@
-// 1.20.1	2025-01-15T23:35:18.5079164	Eldritch Realms/Tags for minecraft:block
-047e4ed05037b9cdd96dc5a0ef5f165c2999c5a3 data\minecraft\tags\blocks\mineable\pickaxe.json
+// 1.20.1	2025-01-24T22:44:29.7414462	Eldritch Realms/Tags for minecraft:block
+f97c8a0002c9a39faf39eb167831a66eece27e22 data\minecraft\tags\blocks\mineable\pickaxe.json
 26ee7cab8f8cb609b596d26d8542031ae4277916 data\minecraft\tags\blocks\needs_diamond_tool.json
-e70bf748f8bfc0243c1b1266fa645e2f1dae1f75 data\minecraft\tags\blocks\stairs.json
+b1cf5ec2f2e54cd759fd0ffc40948cc7cc72a993 data\minecraft\tags\blocks\stairs.json
 9512de97c6031da9a436c0ab672e66d2390add24 data\minecraft\tags\blocks\trapdoors.json
-a097ca662f87c674dad60ce43aca84ff0753fd88 data\eldritchrealms\tags\blocks\eldritch_plants_can_place_on.json
+43b80c05d8e9bf8e2b7a1baf0e3feb1caa591a66 data\eldritchrealms\tags\blocks\eldritch_plants_can_place_on.json
 bfad3a2a6b596371e14fe6fc6321df2fe1e9de9c data\fabric\tags\blocks\needs_tool_level_4.json
 f88c5f56bab597f757cc88dbba302bfa01ad391a data\minecraft\tags\blocks\fence_gates.json
 b53fc3526e54ff58d593dbe31ced5e1491c257cf data\minecraft\tags\blocks\wooden_buttons.json
@@ -11,16 +11,16 @@ b53fc3526e54ff58d593dbe31ced5e1491c257cf data\minecraft\tags\blocks\wooden_butto
 b274e5f594f7caccba63002ba390e709e35e675a data\minecraft\tags\blocks\wooden_doors.json
 813bc0e80161690326a6ee7452217548c1f6cbb2 data\minecraft\tags\blocks\wooden_pressure_plates.json
 b53fc3526e54ff58d593dbe31ced5e1491c257cf data\minecraft\tags\blocks\buttons.json
-b76a5e3064bb4e9331dc1e892cab2075fc2bd939 data\minecraft\tags\blocks\slabs.json
+d8850964ead4545d0ec5d56c66e049e17c708e7c data\minecraft\tags\blocks\slabs.json
 1f101122b9ce25c9d04acf8cdae3b675bea6f26d data\eldritchrealms\tags\blocks\eldritch_crops_can_place_on.json
 1ce816169dffd67c8e41ce1069568a6e25744f5f data\minecraft\tags\blocks\logs.json
 172e96faf09cbf11ba1d7443cde4bd5d8aa90b8b data\minecraft\tags\blocks\wooden_fences.json
 f1724a5098e7b2762835f8d8c85e9f1508ed7368 data\minecraft\tags\blocks\mineable\shovel.json
-e542c9a3667e35f0353964f2ea32c6e5387e8961 data\minecraft\tags\blocks\mineable\axe.json
 9af5d018d67572211da984c9b517127beda9c36a data\minecraft\tags\blocks\mineable\hoe.json
-beb4b608c83812726a95b857625eb205d1071d5d data\minecraft\tags\blocks\walls.json
+e542c9a3667e35f0353964f2ea32c6e5387e8961 data\minecraft\tags\blocks\mineable\axe.json
+f8cc4cdaf426e6d7aa624dfc3e0742c9c175f0cf data\minecraft\tags\blocks\walls.json
 813bc0e80161690326a6ee7452217548c1f6cbb2 data\minecraft\tags\blocks\pressure_plates.json
-d0552c440f46bcb8d804b5205f62cb21509a94ff data\minecraft\tags\blocks\needs_iron_tool.json
+901ecdb2f017338063c4e20487699981f7e1dc48 data\minecraft\tags\blocks\needs_iron_tool.json
 172e96faf09cbf11ba1d7443cde4bd5d8aa90b8b data\minecraft\tags\blocks\fences.json
 b274e5f594f7caccba63002ba390e709e35e675a data\minecraft\tags\blocks\doors.json
-199692d7f74e5255d057f6f4e41ab1dd4b56bc4a data\minecraft\tags\blocks\needs_stone_tool.json
+4d1657fa9754cbdaa40aeee59eeeb99c9e7feae3 data\minecraft\tags\blocks\needs_stone_tool.json

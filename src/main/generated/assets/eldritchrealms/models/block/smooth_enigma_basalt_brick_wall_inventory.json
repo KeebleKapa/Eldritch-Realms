@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "eldritchrealms:block/smooth_enigma_basalt_bricks"
+  }
+}

@@ -314,6 +314,28 @@ public class EldritchRealmsBlocks {
     // Ghostly Gabbro
 
     // Enigma Basalt
+    public static final Block ENIGMA_BASALT = registerBlock("enigma_basalt",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.BASALT).strength(3f, 8f)));
+    public static final Block POLISHED_ENIGMA_BASALT = registerBlock("polished_enigma_basalt",
+            new PillarBlock(FabricBlockSettings.copyOf(ENIGMA_BASALT).strength(3f, 8f)));
+
+    public static final Block SMOOTH_ENIGMA_BASALT = registerBlock("smooth_enigma_basalt",
+            new Block(FabricBlockSettings.copyOf(ENIGMA_BASALT).strength(3f, 8f)));
+    public static final Block SMOOTH_ENIGMA_BASALT_STAIRS = registerBlock("smooth_enigma_basalt_stairs",
+            new StairsBlock(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT.getDefaultState(), FabricBlockSettings.copyOf(Blocks.BASALT).strength(3f, 8f)));
+    public static final Block SMOOTH_ENIGMA_BASALT_SLAB = registerBlock("smooth_enigma_basalt_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(SMOOTH_ENIGMA_BASALT).strength(3f, 8f)));
+    public static final Block SMOOTH_ENIGMA_BASALT_WALL = registerBlock("smooth_enigma_basalt_wall",
+            new WallBlock(FabricBlockSettings.copyOf(SMOOTH_ENIGMA_BASALT).strength(3f, 8f)));
+
+    public static final Block SMOOTH_ENIGMA_BASALT_BRICKS = registerBlock("smooth_enigma_basalt_bricks",
+            new Block(FabricBlockSettings.copyOf(ENIGMA_BASALT).strength(3f, 8f)));
+    public static final Block SMOOTH_ENIGMA_BASALT_BRICK_STAIRS = registerBlock("smooth_enigma_basalt_brick_stairs",
+            new StairsBlock(EldritchRealmsBlocks.SMOOTH_ENIGMA_BASALT_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.BASALT).strength(3f, 8f)));
+    public static final Block SMOOTH_ENIGMA_BASALT_BRICK_SLAB = registerBlock("smooth_enigma_basalt_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(SMOOTH_ENIGMA_BASALT_BRICKS).strength(3f, 8f)));
+    public static final Block SMOOTH_ENIGMA_BASALT_BRICK_WALL = registerBlock("smooth_enigma_basalt_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(SMOOTH_ENIGMA_BASALT_BRICKS).strength(3f, 8f)));
 
     // Silent Sandstone
 
@@ -327,9 +349,9 @@ public class EldritchRealmsBlocks {
 
     // Nebula Lapis
     public static final Block VEILSTONE_NEBULATIC_LAPIS_ORE = registerBlock("veilstone_nebulatic_lapis_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(EldritchRealmsBlocks.VEILSTONE).strength(3f, 7f), UniformIntProvider.create(2, 7)));
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(VEILSTONE).strength(3f, 7f), UniformIntProvider.create(2, 7)));
     public static final Block SHADOWSLATE_NEBULATIC_LAPIS_ORE = registerBlock("shadowslate_nebulatic_lapis_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(EldritchRealmsBlocks.SHADOWSLATE).strength(4.75f, 11f), UniformIntProvider.create(2, 7)));
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(SHADOWSLATE).strength(4.75f, 11f), UniformIntProvider.create(2, 7)));
 
     public static final Block NEBULATIC_LAPIS_BLOCK = registerBlock("nebulatic_lapis_block",
             new Block(FabricBlockSettings.copyOf(Blocks.LAPIS_BLOCK).strength(4f)));
@@ -337,54 +359,61 @@ public class EldritchRealmsBlocks {
 
     // Dreadquartz
     public static final Block VEILSTONE_DREADQUARTZ_ORE = registerBlock("veilstone_dreadquartz_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(EldritchRealmsBlocks.VEILSTONE).strength(3f, 7f), UniformIntProvider.create(0, 4)));
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(VEILSTONE).strength(3f, 7f), UniformIntProvider.create(0, 4)));
 
     public static final Block SHADOWSLATE_DREADQUARTZ_ORE = registerBlock("shadowslate_dreadquartz_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(EldritchRealmsBlocks.SHADOWSLATE).strength(4.75f, 11f), UniformIntProvider.create(0, 5)));
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(SHADOWSLATE).strength(4.75f, 11f), UniformIntProvider.create(0, 5)));
 
 
     public static final Block DREADQUARTZ_BLOCK = registerBlock("dreadquartz_block",
             new Block(FabricBlockSettings.copyOf(Blocks.QUARTZ_BLOCK).strength(1.25f, 4.5f)));
     public static final Block DREADQUARTZ_STAIRS = registerBlock("dreadquartz_stairs",
             new StairsBlock(EldritchRealmsBlocks.DREADQUARTZ_BLOCK.getDefaultState(),
-                    FabricBlockSettings.copyOf(EldritchRealmsBlocks.DREADQUARTZ_BLOCK)));
+                    FabricBlockSettings.copyOf(DREADQUARTZ_BLOCK)));
     public static final Block DREADQUARTZ_SLAB = registerBlock("dreadquartz_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(EldritchRealmsBlocks.DREADQUARTZ_BLOCK)));
+            new SlabBlock(FabricBlockSettings.copyOf(DREADQUARTZ_BLOCK)));
     public static final Block DREADQUARTZ_WALL = registerBlock("dreadquartz_wall",
-            new WallBlock(FabricBlockSettings.copyOf(EldritchRealmsBlocks.DREADQUARTZ_BLOCK)));
+            new WallBlock(FabricBlockSettings.copyOf(DREADQUARTZ_BLOCK)));
 
 
     public static final Block SMOOTH_DREADQUARTZ = registerBlock("smooth_dreadquartz",
             new Block(FabricBlockSettings.copyOf(Blocks.QUARTZ_BLOCK).strength(2f, 6f)));
     public static final Block SMOOTH_DREADQUARTZ_STAIRS = registerBlock("smooth_dreadquartz_stairs",
             new StairsBlock(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ.getDefaultState(),
-                    FabricBlockSettings.copyOf(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ)));
+                    FabricBlockSettings.copyOf(SMOOTH_DREADQUARTZ)));
     public static final Block SMOOTH_DREADQUARTZ_SLAB = registerBlock("smooth_dreadquartz_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ)));
+            new SlabBlock(FabricBlockSettings.copyOf(SMOOTH_DREADQUARTZ)));
     public static final Block SMOOTH_DREADQUARTZ_WALL = registerBlock("smooth_dreadquartz_wall",
-            new WallBlock(FabricBlockSettings.copyOf(EldritchRealmsBlocks.SMOOTH_DREADQUARTZ)));
+            new WallBlock(FabricBlockSettings.copyOf(SMOOTH_DREADQUARTZ)));
 
 
     public static final Block DREADQUARTZ_BRICKS = registerBlock("dreadquartz_bricks",
-            new Block(FabricBlockSettings.copyOf(EldritchRealmsBlocks.DREADQUARTZ_BLOCK)));
+            new Block(FabricBlockSettings.copyOf(DREADQUARTZ_BLOCK)));
     public static final Block DREADQUARTZ_BRICK_STAIRS = registerBlock("dreadquartz_brick_stairs",
             new StairsBlock(EldritchRealmsBlocks.DREADQUARTZ_BRICKS.getDefaultState(),
-                    FabricBlockSettings.copyOf(EldritchRealmsBlocks.DREADQUARTZ_BRICKS)));
+                    FabricBlockSettings.copyOf(DREADQUARTZ_BRICKS)));
     public static final Block DREADQUARTZ_BRICK_SLAB = registerBlock("dreadquartz_brick_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(EldritchRealmsBlocks.DREADQUARTZ_BRICKS)));
+            new SlabBlock(FabricBlockSettings.copyOf(DREADQUARTZ_BRICKS)));
     public static final Block DREADQUARTZ_BRICK_WALL = registerBlock("dreadquartz_brick_wall",
-            new WallBlock(FabricBlockSettings.copyOf(EldritchRealmsBlocks.DREADQUARTZ_BRICKS)));
+            new WallBlock(FabricBlockSettings.copyOf(DREADQUARTZ_BRICKS)));
 
 
     public static final Block DREADQUARTZ_PILLAR = registerBlock("dreadquartz_pillar",
-            new PillarBlock(FabricBlockSettings.copyOf(EldritchRealmsBlocks.DREADQUARTZ_BLOCK)));
+            new PillarBlock(FabricBlockSettings.copyOf(DREADQUARTZ_BLOCK)));
 
 
     public static final Block CHISELED_DREADQUARTZ = registerBlock("chiseled_dreadquartz",
-            new PillarBlock(FabricBlockSettings.copyOf(EldritchRealmsBlocks.DREADQUARTZ_BLOCK)));
+            new PillarBlock(FabricBlockSettings.copyOf(DREADQUARTZ_BLOCK)));
 
 
     // Eclipsium
+    public static final Block VEILSTONE_ECLIPSIUM_ORE = registerBlock("veilstone_eclipsium_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(VEILSTONE).strength(3f, 7f), UniformIntProvider.create(2, 5)));
+    public static final Block SHADOWSLATE_ECLIPSIUM_ORE = registerBlock("shadowslate_eclipsium_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(SHADOWSLATE).strength(4.75f, 11f), UniformIntProvider.create(2, 5)));
+    public static final Block ECLIPSIUM_BLOCK = registerBlock("eclipsium_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(8f)));
+
 
     // Soulspark
 
@@ -396,9 +425,9 @@ public class EldritchRealmsBlocks {
 
     // Shadowsteel (Stronger than Netherite)
     public static final Block VEILSTONE_SHADOWSTEEL_ORE = registerBlock("veilstone_shadowsteel_ore",
-            new Block(FabricBlockSettings.copyOf(EldritchRealmsBlocks.VEILSTONE).strength(3f, 7f)));
+            new Block(FabricBlockSettings.copyOf(VEILSTONE).strength(3f, 7f)));
     public static final Block SHADOWSLATE_SHADOWSTEEL_ORE = registerBlock("shadowslate_shadowsteel_ore",
-            new Block(FabricBlockSettings.copyOf(EldritchRealmsBlocks.SHADOWSLATE).strength(4.75f, 11f)));
+            new Block(FabricBlockSettings.copyOf(SHADOWSLATE).strength(4.75f, 11f)));
 
     public static final Block SHADOWSTEEL_BLOCK = registerBlock("shadowsteel_block",
             new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)));
@@ -427,7 +456,7 @@ public class EldritchRealmsBlocks {
                 public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
                     BlockState blockState = world.getBlockState(pos.down());
 
-                    return blockState.isIn(EldritchRealmsTags.Blocks.ELDRITCH_PLANTS_CAN_PLACE_ON);
+                    return blockState.isIn(EldritchRealmsTags.Blocks.ELDRITCH_TOP_GROUND_BLOCKS);
                 }
 
             });
@@ -504,7 +533,7 @@ public class EldritchRealmsBlocks {
                 public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
                     BlockState blockState = world.getBlockState(pos.down());
 
-                    return blockState.isIn(EldritchRealmsTags.Blocks.ELDRITCH_PLANTS_CAN_PLACE_ON);
+                    return blockState.isIn(EldritchRealmsTags.Blocks.ELDRITCH_TOP_GROUND_BLOCKS);
                 }
             });
 
@@ -516,7 +545,7 @@ public class EldritchRealmsBlocks {
                 public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
                     BlockState blockState = world.getBlockState(pos.down());
 
-                    return blockState.isIn(EldritchRealmsTags.Blocks.ELDRITCH_PLANTS_CAN_PLACE_ON);
+                    return blockState.isIn(EldritchRealmsTags.Blocks.ELDRITCH_TOP_GROUND_BLOCKS);
                 }
 
             });
@@ -562,7 +591,7 @@ public class EldritchRealmsBlocks {
                 public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
                     BlockState blockState = world.getBlockState(pos.down());
 
-                    return blockState.isIn(EldritchRealmsTags.Blocks.ELDRITCH_PLANTS_CAN_PLACE_ON);
+                    return blockState.isIn(EldritchRealmsTags.Blocks.ELDRITCH_TOP_GROUND_BLOCKS);
                 }
 
             });
@@ -606,6 +635,8 @@ public class EldritchRealmsBlocks {
     //--------------------------------------------------------
     //                      Ground Blocks
     //--------------------------------------------------------
+
+
 
     // Mythral Grass
     public static final Block MYTHRAL_GRASS_BLOCK = registerBlock("mythral_grass_block",
@@ -751,7 +782,7 @@ public class EldritchRealmsBlocks {
                 public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
                     BlockState blockState = world.getBlockState(pos.down());
 
-                    return blockState.isIn(EldritchRealmsTags.Blocks.ELDRITCH_PLANTS_CAN_PLACE_ON);
+                    return blockState.isIn(EldritchRealmsTags.Blocks.ELDRITCH_TOP_GROUND_BLOCKS);
                 }
 
                 @Override
@@ -787,16 +818,403 @@ public class EldritchRealmsBlocks {
             });
 
     public static final Block TALL_MYTHRAL_GRASS = registerBlock("tall_mythral_grass",
-            new TallPlantBlock(FabricBlockSettings.copyOf(Blocks.GRASS)) {
+            new TallPlantBlock(FabricBlockSettings.copyOf(Blocks.TALL_GRASS)) {
                 @Override
                 public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
                     BlockState blockState = world.getBlockState(pos.down());
 
-                    return blockState.isIn(EldritchRealmsTags.Blocks.ELDRITCH_PLANTS_CAN_PLACE_ON);
+                    return blockState.isIn(EldritchRealmsTags.Blocks.ELDRITCH_TOP_GROUND_BLOCKS);
                 }
 
 
             });
+
+
+    // Virelume Grass
+    public static final Block VIRELUME_GRASS_BLOCK = registerBlock("virelume_grass_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.GRASS_BLOCK).strength(1.5f)) {
+                private BlockState getRandomFlower(Random random) {
+                    Block[] flowers = new Block[]{
+                            Blocks.AIR,
+                            EldritchRealmsBlocks.SABLEBELL,
+                            EldritchRealmsBlocks.PHONTUM_PETALS
+                    };
+
+                    return flowers[random.nextInt(flowers.length)].getDefaultState();
+                }
+
+                @Override
+                public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+                        // Check if there's a solid block directly above
+                        BlockState blockAbove = world.getBlockState(pos.up());
+                        if (blockAbove.isSolidBlock(world, pos.up())) {
+                            // Replace with Marred Soil after a random tick
+                            world.setBlockState(pos, EldritchRealmsBlocks.MARRED_SOIL.getDefaultState(), 3);
+                        }
+                }
+
+                @Override
+                public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+                    ItemStack itemStack = player.getStackInHand(hand);
+
+                    // Check if the item is bonemeal
+                    if (itemStack.isOf(Items.BONE_MEAL)) {
+                        BlockPos.Mutable mutablePos = new BlockPos.Mutable();
+                        Random random = world.getRandom();
+                        boolean hasVirelumeGrassBlockNearby = false;
+
+                        // Check for Virelume Grass Blocks within a 2-block radius
+                        for (int x = -2; x <= 2; x++) {
+                            for (int z = -2; z <= 2; z++) {
+
+                                mutablePos.set(pos.getX() + x, pos.getY(), pos.getZ() + z);
+
+                                // Check if the block is a Virelume Grass Block
+                                if (world.getBlockState(mutablePos).getBlock() == VIRELUME_GRASS_BLOCK) {
+                                    hasVirelumeGrassBlockNearby = true;
+                                    break;
+                                }
+                            }
+                            if (hasVirelumeGrassBlockNearby) break;
+                        }
+
+                        // Only proceed if there is at least one Virelume Grass Block nearby
+                        if (hasVirelumeGrassBlockNearby) {
+
+                            // Loop over the area again to place flowers/grass on top of Virelume Grass Blocks
+                            for (int x = -2; x <= 2; x++) {
+
+                                for (int z = -2; z <= 2; z++) {
+
+                                    mutablePos.set(pos.getX() + x, pos.getY(), pos.getZ() + z);
+
+                                    if (world.getBlockState(mutablePos).getBlock() == VIRELUME_GRASS_BLOCK) {
+
+                                        // Position to place the flower or grass
+                                        BlockPos flowerPos = mutablePos.up();
+
+                                        // Check if the block above is empty
+                                        if (world.isAir(flowerPos)) {
+
+                                            // Random chance to place Virelume Grass, Tall Virelume Grass, or flowers
+                                            if (random.nextInt(10) < 4) {
+
+                                                // Place Virelume Grass (40% chance)
+                                                world.setBlockState(flowerPos, VIRELUME_GRASS.getDefaultState(), 3);
+
+                                            } else if (random.nextInt(10) < 2) {
+                                                // Check for space above before placing Tall Virelume Grass (20% chance)
+
+                                                BlockPos flowerPosAbove = flowerPos.up(); // One block above the current flowerPos
+
+                                                if (world.isAir(flowerPosAbove)) {
+
+                                                    // If space is clear, place Tall Virelume Grass
+                                                    world.setBlockState(flowerPos, TALL_VIRELUME_GRASS.getDefaultState(), 3);
+                                                    world.setBlockState(flowerPosAbove, TALL_VIRELUME_GRASS.getDefaultState().with(TallPlantBlock.HALF, DoubleBlockHalf.UPPER), 3);
+
+                                                } else {
+
+                                                    // If no space above, either place regular Virelume Grass or do nothing
+                                                    if (random.nextInt(2) == 0) {
+                                                        world.setBlockState(flowerPos, VIRELUME_GRASS.getDefaultState(), 3);
+                                                    }
+
+                                                }
+                                            } else if (random.nextInt(10) < 4) {
+                                                // Place a random flower (40% chance)
+
+                                                BlockState flowerState = getRandomFlower(random);
+
+                                                if (flowerState != null) {
+                                                    world.setBlockState(flowerPos, flowerState, 3);
+                                                }
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            // Play the bonemeal particles and sound
+                            world.syncWorldEvent(2005, pos, 0);
+
+                            // Consume the bonemeal
+                            if (!player.isCreative()) {
+                                itemStack.decrement(1);
+                            }
+
+                            return ActionResult.SUCCESS;
+                        }
+                    }
+
+                    // Check if the item is a hoe (using a tag)
+                    if (itemStack.isIn(ItemTags.HOES)) {
+                        if (!world.isClient) {
+                            // Replace the Marred Soil with Tilled Marred Soil
+                            world.setBlockState(pos, EldritchRealmsBlocks.TILLED_MARRED_SOIL.getDefaultState(), 3);
+
+                            // Play a sound effect
+                            world.playSound(null, pos, SoundEvents.ITEM_HOE_TILL, SoundCategory.BLOCKS, 1.0f, 1.0f);
+
+                            // Damage the hoe
+                            itemStack.damage(1, player, (p) -> p.sendToolBreakStatus(hand));
+                        }
+
+                        return ActionResult.SUCCESS;
+                    }
+
+                    return super.onUse(state, world, pos, player, hand, hit);
+                }
+            });
+
+    public static final Block VIRELUME_GRASS = registerBlock("virelume_grass",
+            new PlantBlock(FabricBlockSettings.copyOf(Blocks.GRASS)) {
+                @Override
+                public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
+                    BlockState blockState = world.getBlockState(pos.down());
+
+                    return blockState.isIn(EldritchRealmsTags.Blocks.ELDRITCH_TOP_GROUND_BLOCKS);
+                }
+
+                @Override
+                public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+                    ItemStack itemStack = player.getStackInHand(hand);
+
+                    // Check if the item is bonemeal
+                    if (itemStack.isOf(Items.BONE_MEAL)) {
+
+                        // Check if there's space above for tall grass (2 blocks total height)
+                        if (world.isAir(pos.up()) && world.isAir(pos.up(2))) {
+
+                            // Replace the Virelume Grass with the bottom half of Tall Mythral Grass
+                            world.setBlockState(pos, EldritchRealmsBlocks.TALL_VIRELUME_GRASS.getDefaultState().with(TallPlantBlock.HALF, DoubleBlockHalf.LOWER), 3);
+                            // Place the upper half of Tall Virelume Grass one block above
+                            world.setBlockState(pos.up(), EldritchRealmsBlocks.TALL_VIRELUME_GRASS.getDefaultState().with(TallPlantBlock.HALF, DoubleBlockHalf.UPPER), 3);
+
+                            // Consume the bonemeal
+                            if (!player.isCreative()) {
+                                itemStack.decrement(1);
+                            }
+
+                            // Play the bonemeal particles and sound
+                            world.syncWorldEvent(2005, pos, 0);
+                            return ActionResult.SUCCESS;
+
+                        } else {
+                            return ActionResult.FAIL;
+                        }
+                    }
+                    return super.onUse(state, world, pos, player, hand, hit);
+                }
+            });
+
+    public static final Block TALL_VIRELUME_GRASS = registerBlock("tall_virelume_grass",
+            new TallPlantBlock(FabricBlockSettings.copyOf(Blocks.TALL_GRASS)) {
+                @Override
+                public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
+                    BlockState blockState = world.getBlockState(pos.down());
+
+                    return blockState.isIn(EldritchRealmsTags.Blocks.ELDRITCH_TOP_GROUND_BLOCKS);
+                }
+
+
+            });
+
+
+    // Nocturb Grass
+    public static final Block NOCTURB_GRASS_BLOCK = registerBlock("nocturb_grass_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.GRASS_BLOCK).strength(1.5f)) {
+                private BlockState getRandomFlower(Random random) {
+                    Block[] flowers = new Block[]{
+                            Blocks.AIR,
+                            EldritchRealmsBlocks.SABLEBELL,
+                            EldritchRealmsBlocks.PHONTUM_PETALS
+                    };
+
+                    return flowers[random.nextInt(flowers.length)].getDefaultState();
+                }
+
+                @Override
+                public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+                        // Check if there's a solid block directly above
+                        BlockState blockAbove = world.getBlockState(pos.up());
+                        if (blockAbove.isSolidBlock(world, pos.up())) {
+                            // Replace with Marred Soil after a random tick
+                            world.setBlockState(pos, EldritchRealmsBlocks.MARRED_SOIL.getDefaultState(), 3);
+                        }
+                }
+
+                @Override
+                public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+                    ItemStack itemStack = player.getStackInHand(hand);
+
+                    // Check if the item is bonemeal
+                    if (itemStack.isOf(Items.BONE_MEAL)) {
+                        BlockPos.Mutable mutablePos = new BlockPos.Mutable();
+                        Random random = world.getRandom();
+                        boolean hasNocturbGrassBlockNearby = false;
+
+                        // Check for Nocturb Grass Blocks within a 2-block radius
+                        for (int x = -2; x <= 2; x++) {
+                            for (int z = -2; z <= 2; z++) {
+
+                                mutablePos.set(pos.getX() + x, pos.getY(), pos.getZ() + z);
+
+                                // Check if the block is a Nocturb Grass Block
+                                if (world.getBlockState(mutablePos).getBlock() == NOCTURB_GRASS_BLOCK) {
+                                    hasNocturbGrassBlockNearby = true;
+                                    break;
+                                }
+                            }
+                            if (hasNocturbGrassBlockNearby) break;
+                        }
+
+                        // Only proceed if there is at least one Nocturb Grass Block nearby
+                        if (hasNocturbGrassBlockNearby) {
+
+                            // Loop over the area again to place flowers/grass on top of Nocturb Grass Blocks
+                            for (int x = -2; x <= 2; x++) {
+
+                                for (int z = -2; z <= 2; z++) {
+
+                                    mutablePos.set(pos.getX() + x, pos.getY(), pos.getZ() + z);
+
+                                    if (world.getBlockState(mutablePos).getBlock() == NOCTURB_GRASS_BLOCK) {
+
+                                        // Position to place the flower or grass
+                                        BlockPos flowerPos = mutablePos.up();
+
+                                        // Check if the block above is empty
+                                        if (world.isAir(flowerPos)) {
+
+                                            // Random chance to place Nocturb Grass, Tall Nocturb Grass, or flowers
+                                            if (random.nextInt(10) < 4) {
+
+                                                // Place Nocturb Grass (40% chance)
+                                                world.setBlockState(flowerPos, NOCTURB_GRASS.getDefaultState(), 3);
+
+                                            } else if (random.nextInt(10) < 2) {
+                                                // Check for space above before placing Tall Nocturb Grass (20% chance)
+
+                                                BlockPos flowerPosAbove = flowerPos.up(); // One block above the current flowerPos
+
+                                                if (world.isAir(flowerPosAbove)) {
+
+                                                    // If space is clear, place Tall Nocturb Grass
+                                                    world.setBlockState(flowerPos, TALL_NOCTURB_GRASS.getDefaultState(), 3);
+                                                    world.setBlockState(flowerPosAbove, TALL_NOCTURB_GRASS.getDefaultState().with(TallPlantBlock.HALF, DoubleBlockHalf.UPPER), 3);
+
+                                                } else {
+
+                                                    // If no space above, either place regular Nocturb Grass or do nothing
+                                                    if (random.nextInt(2) == 0) {
+                                                        world.setBlockState(flowerPos, NOCTURB_GRASS.getDefaultState(), 3);
+                                                    }
+
+                                                }
+                                            } else if (random.nextInt(10) < 4) {
+                                                // Place a random flower (40% chance)
+
+                                                BlockState flowerState = getRandomFlower(random);
+
+                                                if (flowerState != null) {
+                                                    world.setBlockState(flowerPos, flowerState, 3);
+                                                }
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            // Play the bonemeal particles and sound
+                            world.syncWorldEvent(2005, pos, 0);
+
+                            // Consume the bonemeal
+                            if (!player.isCreative()) {
+                                itemStack.decrement(1);
+                            }
+
+                            return ActionResult.SUCCESS;
+                        }
+                    }
+
+                    // Check if the item is a hoe (using a tag)
+                    if (itemStack.isIn(ItemTags.HOES)) {
+                        if (!world.isClient) {
+                            // Replace the Marred Soil with Tilled Marred Soil
+                            world.setBlockState(pos, EldritchRealmsBlocks.TILLED_MARRED_SOIL.getDefaultState(), 3);
+
+                            // Play a sound effect
+                            world.playSound(null, pos, SoundEvents.ITEM_HOE_TILL, SoundCategory.BLOCKS, 1.0f, 1.0f);
+
+                            // Damage the hoe
+                            itemStack.damage(1, player, (p) -> p.sendToolBreakStatus(hand));
+                        }
+
+                        return ActionResult.SUCCESS;
+                    }
+
+                    return super.onUse(state, world, pos, player, hand, hit);
+                }
+            });
+
+    public static final Block NOCTURB_GRASS = registerBlock("nocturb_grass",
+            new PlantBlock(FabricBlockSettings.copyOf(Blocks.GRASS)) {
+                @Override
+                public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
+                    BlockState blockState = world.getBlockState(pos.down());
+
+                    return blockState.isIn(EldritchRealmsTags.Blocks.ELDRITCH_TOP_GROUND_BLOCKS);
+                }
+
+                @Override
+                public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+                    ItemStack itemStack = player.getStackInHand(hand);
+
+                    // Check if the item is bonemeal
+                    if (itemStack.isOf(Items.BONE_MEAL)) {
+
+                        // Check if there's space above for tall grass (2 blocks total height)
+                        if (world.isAir(pos.up()) && world.isAir(pos.up(2))) {
+
+                            // Replace the Nocturb Grass with the bottom half of Tall Mythral Grass
+                            world.setBlockState(pos, EldritchRealmsBlocks.TALL_NOCTURB_GRASS.getDefaultState().with(TallPlantBlock.HALF, DoubleBlockHalf.LOWER), 3);
+                            // Place the upper half of Tall Nocturb Grass one block above
+                            world.setBlockState(pos.up(), EldritchRealmsBlocks.TALL_NOCTURB_GRASS.getDefaultState().with(TallPlantBlock.HALF, DoubleBlockHalf.UPPER), 3);
+
+                            // Consume the bonemeal
+                            if (!player.isCreative()) {
+                                itemStack.decrement(1);
+                            }
+
+                            // Play the bonemeal particles and sound
+                            world.syncWorldEvent(2005, pos, 0);
+                            return ActionResult.SUCCESS;
+
+                        } else {
+                            return ActionResult.FAIL;
+                        }
+                    }
+                    return super.onUse(state, world, pos, player, hand, hit);
+                }
+            });
+
+    public static final Block TALL_NOCTURB_GRASS = registerBlock("tall_nocturb_grass",
+            new TallPlantBlock(FabricBlockSettings.copyOf(Blocks.TALL_GRASS)) {
+                @Override
+                public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
+                    BlockState blockState = world.getBlockState(pos.down());
+
+                    return blockState.isIn(EldritchRealmsTags.Blocks.ELDRITCH_TOP_GROUND_BLOCKS);
+                }
+
+
+            });
+
+
+
 
     //    Flowers    //
     public static final Block SABLEBELL = registerBlock("sablebell",
@@ -805,7 +1223,7 @@ public class EldritchRealmsBlocks {
                 public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
                     BlockState blockState = world.getBlockState(pos.down());
 
-                    return blockState.isIn(EldritchRealmsTags.Blocks.ELDRITCH_PLANTS_CAN_PLACE_ON);
+                    return blockState.isIn(EldritchRealmsTags.Blocks.ELDRITCH_TOP_GROUND_BLOCKS);
                 }
             });
 
@@ -851,6 +1269,14 @@ public class EldritchRealmsBlocks {
                         if (adjacentState.isOf(EldritchRealmsBlocks.MYTHRAL_GRASS_BLOCK)) {
                             // Replace with Mythral Grass after a random tick
                             world.setBlockState(pos, EldritchRealmsBlocks.MYTHRAL_GRASS_BLOCK.getDefaultState(), 3);
+                            break;
+                        } else if (adjacentState.isOf(EldritchRealmsBlocks.VIRELUME_GRASS_BLOCK)) {
+                            // Replace with Virelume Grass after a random tick
+                            world.setBlockState(pos, EldritchRealmsBlocks.VIRELUME_GRASS_BLOCK.getDefaultState(), 3);
+                            break;
+                        } else if (adjacentState.isOf(EldritchRealmsBlocks.NOCTURB_GRASS_BLOCK)) {
+                            // Replace with Nocturb Grass after a random tick
+                            world.setBlockState(pos, EldritchRealmsBlocks.NOCTURB_GRASS_BLOCK.getDefaultState(), 3);
                             break;
                         }
                     }
@@ -904,34 +1330,34 @@ public class EldritchRealmsBlocks {
             new StairsBlock(EldritchRealmsBlocks.ASTRAL_SANDSTONE.getDefaultState(), FabricBlockSettings.copyOf(ASTRAL_SANDSTONE)));
 
     public static final Block ASTRAL_SANDSTONE_SLAB = registerBlock("astral_sandstone_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(EldritchRealmsBlocks.ASTRAL_SANDSTONE)));
+            new SlabBlock(FabricBlockSettings.copyOf(ASTRAL_SANDSTONE)));
 
     public static final Block ASTRAL_SANDSTONE_WALL = registerBlock("astral_sandstone_wall",
-            new WallBlock(FabricBlockSettings.copyOf(EldritchRealmsBlocks.ASTRAL_SANDSTONE)));
+            new WallBlock(FabricBlockSettings.copyOf(ASTRAL_SANDSTONE)));
 
     public static final Block ASTRAL_SANDSTONE_BRICKS = registerBlock("astral_sandstone_bricks",
-            new Block(FabricBlockSettings.copyOf(EldritchRealmsBlocks.ASTRAL_SANDSTONE)));
+            new Block(FabricBlockSettings.copyOf(ASTRAL_SANDSTONE)));
 
     public static final Block ASTRAL_SANDSTONE_BRICK_STAIRS = registerBlock("astral_sandstone_brick_stairs",
             new StairsBlock(EldritchRealmsBlocks.ASTRAL_SANDSTONE.getDefaultState(), FabricBlockSettings.copyOf(ASTRAL_SANDSTONE_BRICKS)));
 
     public static final Block ASTRAL_SANDSTONE_BRICK_SLAB = registerBlock("astral_sandstone_brick_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICKS)));
+            new SlabBlock(FabricBlockSettings.copyOf(ASTRAL_SANDSTONE_BRICKS)));
 
     public static final Block ASTRAL_SANDSTONE_BRICK_WALL = registerBlock("astral_sandstone_brick_wall",
-            new WallBlock(FabricBlockSettings.copyOf(EldritchRealmsBlocks.ASTRAL_SANDSTONE_BRICKS)));
+            new WallBlock(FabricBlockSettings.copyOf(ASTRAL_SANDSTONE_BRICKS)));
 
     public static final Block SMOOTH_ASTRAL_SANDSTONE = registerBlock("smooth_astral_sandstone",
-            new Block(FabricBlockSettings.copyOf(EldritchRealmsBlocks.ASTRAL_SANDSTONE)));
+            new Block(FabricBlockSettings.copyOf(ASTRAL_SANDSTONE)));
 
     public static final Block SMOOTH_ASTRAL_SANDSTONE_STAIRS = registerBlock("smooth_astral_sandstone_stairs",
-            new StairsBlock(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE.getDefaultState(), FabricBlockSettings.copyOf(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE).strength(2f, 6f)));
+            new StairsBlock(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE.getDefaultState(), FabricBlockSettings.copyOf(SMOOTH_ASTRAL_SANDSTONE).strength(2f, 6f)));
 
     public static final Block SMOOTH_ASTRAL_SANDSTONE_SLAB = registerBlock("smooth_astral_sandstone_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE)));
+            new SlabBlock(FabricBlockSettings.copyOf(SMOOTH_ASTRAL_SANDSTONE)));
 
     public static final Block SMOOTH_ASTRAL_SANDSTONE_WALL = registerBlock("smooth_astral_sandstone_wall",
-            new WallBlock(FabricBlockSettings.copyOf(EldritchRealmsBlocks.SMOOTH_ASTRAL_SANDSTONE)));
+            new WallBlock(FabricBlockSettings.copyOf(SMOOTH_ASTRAL_SANDSTONE)));
 
 
 

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "eldritchrealms:smooth_enigma_basalt_bricks"
+  },
+  "result": "eldritchrealms:smooth_enigma_basalt_brick_stairs"
+}

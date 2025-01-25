@@ -1,9 +1,9 @@
-// 1.20.1	2025-01-15T23:35:18.5079164	Eldritch Realms/Tags for minecraft:item
+// 1.20.1	2025-01-24T22:44:29.7424446	Eldritch Realms/Tags for minecraft:item
 d20dc83444f406a86662dde7c02056e15c2a86b1 data\minecraft\tags\items\swords.json
 f827c7234e7bf56d5afa2ca038b5f7ddfa65df2a data\minecraft\tags\items\trimmable_armor.json
 cb9b1ca2b32308c0e2722f66461ea1472bf55dd3 data\minecraft\tags\items\planks.json
 fdc587b3de5232f780f317b712812098408e7058 data\minecraft\tags\items\pickaxes.json
-50cf17f987d15298a673ce76c37855d064ca2fde data\minecraft\tags\items\hoes.json
 b9fb3f22dea10d4df63345b4cfdbbc7d21afaa42 data\minecraft\tags\items\shovels.json
+50cf17f987d15298a673ce76c37855d064ca2fde data\minecraft\tags\items\hoes.json
 1ce816169dffd67c8e41ce1069568a6e25744f5f data\minecraft\tags\items\logs_that_burn.json
 ef88899de54c07575c939cf2d7ab8e4be7de268d data\minecraft\tags\items\axes.json
